@@ -1,0 +1,1141 @@
+{
+ "description": "Common-postprocessor diagnostic for every saved DNS velocity field.\n\nThe Section 8 headline comparisons previously measured each route's dissipation\nand peak vorticity through that route's own derivative operator. When the thesis\nis that one operator has the sharper numerical wavenumber, measuring the fields\nthrough the operator being judged is circular. This script removes the bias: one\nFourier postprocessor, identical for every scheme, applied to the raw saved\nvelocity fields.\n\nFor each dump in code/solver/data/{tgvfield,reconfield}_*.bin (x-fastest layout,\nu then v then w, read as C-order [z,y,x]; box [0,2pi)^3) it computes, with the\nexact spectral curl:\n\n  * unfiltered: E = <|u|^2>/2, Z = <|omega|^2>/2, eps_ens = 2 nu Z, max|omega|;\n  * 2/3-bandlimited: the same after the pseudospectral reference's dealias mask\n    (|k_axis| <= (2/3)(N/2), the mask in ps_reference.py), which measures the\n    resolved-band content and discards grid-edge aliasing debris.\n\nThe dump time is inferred by inverting the run's own monotone E(t) history from\nits CSV at the field's (operator-free) energy, which simultaneously checks that\nthe saved field and the CSV agree. TGV records also carry the van Rees 512^3\nworkshop reference (psref/spectral_Re1600_512.gdiag) interpolated to the dump\ntime, so percent-of-reference is like-for-like in time; reconnection records\nnormalize peak vorticity by the same common diagnostic of that run's own t0\ndump. Native CSV values are recorded alongside to quantify the operator-native\nbias. Output: code/results/s8_common_diagnostic.json.",
+ "conventions": {
+  "box": "[0,2pi)^3",
+  "layout": "[z,y,x] x-fastest",
+  "dealias_mask": "|k_axis| <= (2/3)(N/2) per axis (ps_reference.py)",
+  "eps_ens": "nu * <|omega|^2> = 2 nu Z",
+  "E": "<|u|^2>/2"
+ },
+ "reference": {
+  "file": "psref/spectral_Re1600_512.gdiag",
+  "peak_eps": 0.012857528187,
+  "t_peak": 8.97
+ },
+ "tgv": [
+  {
+   "route": "bmc",
+   "p": 11,
+   "N": 64,
+   "file": "tgvfield_bmc_p11_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07868180171203952,
+    "enstrophy": 11.096111294873712,
+    "eps_ens": 0.01387013911859214,
+    "omega_max": 23.29291805084589
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07301784387758517,
+    "enstrophy": 4.8690684889765805,
+    "eps_ens": 0.006086335611220726,
+    "omega_max": 15.522582450932621
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5635043250563511,
+   "native_eps_ens_at_t_dump": 0.0011258200337,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.72521284096528,
+    "common_unfiltered": 1228.6178379589799,
+    "common_bandlimited": 539.12800987895
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 13,
+   "N": 64,
+   "file": "tgvfield_bmc_p13_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07859387743414242,
+    "enstrophy": 11.367489919090767,
+    "eps_ens": 0.01420936239886346,
+    "omega_max": 23.984995743768444
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07256505588376605,
+    "enstrophy": 4.66613364658474,
+    "eps_ens": 0.005832667058230925,
+    "omega_max": 13.722830241558983
+   },
+   "t_dump": 9.012595273017634,
+   "csv_energy_match_residual": 0.0036485601996504285,
+   "native_eps_ens_at_t_dump": 0.012611633221000616,
+   "reference_eps_at_t_dump": 0.012850496611629406,
+   "pct_of_reference_at_t_dump": {
+    "native": 98.1412127651734,
+    "common_unfiltered": 110.57442236126742,
+    "common_bandlimited": 45.38865099542141
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_bmc_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08528103526883195,
+    "enstrophy": 10.316221555851339,
+    "eps_ens": 0.012895276944814174,
+    "omega_max": 40.69518090746727
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08471537671062723,
+    "enstrophy": 8.240292222915675,
+    "eps_ens": 0.010300365278644594,
+    "omega_max": 30.83650973258471
+   },
+   "t_dump": 9.007583469810534,
+   "csv_energy_match_residual": 0.003838496657551573,
+   "native_eps_ens_at_t_dump": 0.011879703380031916,
+   "reference_eps_at_t_dump": 0.012852281255442471,
+   "pct_of_reference_at_t_dump": {
+    "native": 92.4326440101931,
+    "common_unfiltered": 100.33453741415357,
+    "common_bandlimited": 80.14425668036766
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_bmc_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07970652367377618,
+    "enstrophy": 10.351214803664671,
+    "eps_ens": 0.012939018504580839,
+    "omega_max": 20.583681273397964
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07437502141133384,
+    "enstrophy": 4.879272250047771,
+    "eps_ens": 0.006099090312559714,
+    "omega_max": 13.25641607298266
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5434015182181868,
+   "native_eps_ens_at_t_dump": 0.0011237031995,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.53770352790906,
+    "common_unfiltered": 1146.1391125558478,
+    "common_bandlimited": 540.2578221648206
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 7,
+   "N": 64,
+   "file": "tgvfield_bmc_p7_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07881935335980246,
+    "enstrophy": 11.582406278219475,
+    "eps_ens": 0.014478007847774343,
+    "omega_max": 24.56927756420626
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07249534963951265,
+    "enstrophy": 4.864452942717243,
+    "eps_ens": 0.0060805661783965535,
+    "omega_max": 16.23111274626199
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5607756379125453,
+   "native_eps_ens_at_t_dump": 0.0011249217628,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.64564394539595,
+    "common_unfiltered": 1282.4628900831951,
+    "common_bandlimited": 538.6169531388498
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 128,
+   "file": "tgvfield_bmc_p9_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08503292294827522,
+    "enstrophy": 10.414491524951627,
+    "eps_ens": 0.013018114406189534,
+    "omega_max": 36.53633861289465
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08438503870964223,
+    "enstrophy": 7.900023007841716,
+    "eps_ens": 0.009875028759802144,
+    "omega_max": 30.18559801211653
+   },
+   "t_dump": 9.00265229026784,
+   "csv_energy_match_residual": 0.0015331932644969692,
+   "native_eps_ens_at_t_dump": 0.012224350963796168,
+   "reference_eps_at_t_dump": 0.012853749686742591,
+   "pct_of_reference_at_t_dump": {
+    "native": 95.10338431753043,
+    "common_unfiltered": 101.27872973608993,
+    "common_bandlimited": 76.82605465693243
+   }
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 64,
+   "file": "tgvfield_bmc_p9_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07839512375801902,
+    "enstrophy": 11.62947722165643,
+    "eps_ens": 0.014536846527070537,
+    "omega_max": 29.622935189828972
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07206317227262109,
+    "enstrophy": 4.844791606505337,
+    "eps_ens": 0.006055989508131672,
+    "omega_max": 16.065837400722735
+   },
+   "t_dump": 1.13883,
+   "csv_energy_match_residual": 0.5873708736542539,
+   "native_eps_ens_at_t_dump": 0.00053514403484,
+   "reference_eps_at_t_dump": 0.00053514752347,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.99934809938438,
+    "common_unfiltered": 2716.4185368570547,
+    "common_bandlimited": 1131.6486095018183
+   }
+  },
+  {
+   "route": "c10",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c10_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.0849471297046206,
+    "enstrophy": 10.714790110957606,
+    "eps_ens": 0.013393487638697008,
+    "omega_max": 39.08109999480258
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08424634079266506,
+    "enstrophy": 8.046097058439413,
+    "eps_ens": 0.010057621323049267,
+    "omega_max": 29.401273705565394
+   },
+   "t_dump": 9.0027258178903,
+   "csv_energy_match_residual": 0.0046344644132123285,
+   "native_eps_ens_at_t_dump": 0.012292937873063481,
+   "reference_eps_at_t_dump": 0.012853727791319536,
+   "pct_of_reference_at_t_dump": {
+    "native": 95.63714178983336,
+    "common_unfiltered": 104.19924753457114,
+    "common_bandlimited": 78.2467272244667
+   }
+  },
+  {
+   "route": "c10",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c10_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07856227036625082,
+    "enstrophy": 12.120125408451184,
+    "eps_ens": 0.01515015676056398,
+    "omega_max": 22.641158222927835
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07159571627556538,
+    "enstrophy": 4.746377329449866,
+    "eps_ens": 0.005932971661812333,
+    "omega_max": 13.315246560787472
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.565886219001728,
+   "native_eps_ens_at_t_dump": 0.0011247605822,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.63136655721695,
+    "common_unfiltered": 1342.001885111091,
+    "common_bandlimited": 525.5430211249139
+   }
+  },
+  {
+   "route": "c12",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c12_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08491275162808218,
+    "enstrophy": 10.702574486853116,
+    "eps_ens": 0.013378218108566396,
+    "omega_max": 40.3605230124054
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08420185249346548,
+    "enstrophy": 7.947843896260624,
+    "eps_ens": 0.00993480487032578,
+    "omega_max": 29.141217218990498
+   },
+   "t_dump": 9.002775107769107,
+   "csv_energy_match_residual": 0.004636138418955514,
+   "native_eps_ens_at_t_dump": 0.012314629960161501,
+   "reference_eps_at_t_dump": 0.012853713113532976,
+   "pct_of_reference_at_t_dump": {
+    "native": 95.80601225023527,
+    "common_unfiltered": 104.08057181921383,
+    "common_bandlimited": 77.29132261296516
+   }
+  },
+  {
+   "route": "c12",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c12_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07814790894111603,
+    "enstrophy": 12.635972334026619,
+    "eps_ens": 0.015794965417533273,
+    "omega_max": 23.429433658064845
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07081361002244259,
+    "enstrophy": 4.794106408457239,
+    "eps_ens": 0.005992633010571549,
+    "omega_max": 16.86081922942399
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.574188374543642,
+   "native_eps_ens_at_t_dump": 0.0011250664202,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.65845770742914,
+    "common_unfiltered": 1399.119078475137,
+    "common_bandlimited": 530.8278273330945
+   }
+  },
+  {
+   "route": "c6",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c6_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08531492843007718,
+    "enstrophy": 10.71917431917765,
+    "eps_ens": 0.013398967898972063,
+    "omega_max": 38.478703851585784
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08463349720736416,
+    "enstrophy": 8.226141196304456,
+    "eps_ens": 0.01028267649538057,
+    "omega_max": 30.645638234230947
+   },
+   "t_dump": 9.007558443366337,
+   "csv_energy_match_residual": 0.003819381497157802,
+   "native_eps_ens_at_t_dump": 0.011965370382614186,
+   "reference_eps_at_t_dump": 0.012852288707942156,
+   "pct_of_reference_at_t_dump": {
+    "native": 93.09914097416834,
+    "common_unfiltered": 104.25355517178885,
+    "common_bandlimited": 80.0065788206759
+   }
+  },
+  {
+   "route": "c6",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c6_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07911217861185327,
+    "enstrophy": 11.917465552809896,
+    "eps_ens": 0.01489683194101237,
+    "omega_max": 30.57505793241616
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.0721238686607168,
+    "enstrophy": 4.764440202859531,
+    "eps_ens": 0.0059555502535744145,
+    "omega_max": 12.971640080180297
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5550052072711863,
+   "native_eps_ens_at_t_dump": 0.0011232098884,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.49400599813369,
+    "common_unfiltered": 1319.56235588664,
+    "common_bandlimited": 527.5430342724175
+   }
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c8_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08500401457397244,
+    "enstrophy": 10.69368422978766,
+    "eps_ens": 0.013367105287234575,
+    "omega_max": 40.81948300289936
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08432055973298405,
+    "enstrophy": 8.118300981716292,
+    "eps_ens": 0.010147876227145365,
+    "omega_max": 29.275659656228093
+   },
+   "t_dump": 9.0076010856353,
+   "csv_energy_match_residual": 0.0038454111445288576,
+   "native_eps_ens_at_t_dump": 0.012151495258733394,
+   "reference_eps_at_t_dump": 0.012852276009714092,
+   "pct_of_reference_at_t_dump": {
+    "native": 94.54741906841224,
+    "common_unfiltered": 104.00574401865757,
+    "common_bandlimited": 78.95781431612059
+   }
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 32,
+   "file": "tgvfield_c8_p5_N32.bin",
+   "common_unfiltered": {
+    "E": 0.08214388553876581,
+    "enstrophy": 9.126726490008764,
+    "eps_ens": 0.011408408112510956,
+    "omega_max": 14.777094055127002
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.05755854250877283,
+    "enstrophy": 2.076031609997594,
+    "eps_ens": 0.0025950395124969927,
+    "omega_max": 7.230544689751836
+   },
+   "t_dump": 9.032080000021178,
+   "csv_energy_match_residual": 2.85094462869485e-12,
+   "native_eps_ens_at_t_dump": 0.007798989902869417,
+   "reference_eps_at_t_dump": 0.012840783344826072,
+   "pct_of_reference_at_t_dump": {
+    "native": 60.73609135389594,
+    "common_unfiltered": 88.84511019421363,
+    "common_bandlimited": 20.209355167904224
+   }
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c8_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07908051604683991,
+    "enstrophy": 11.808188474535068,
+    "eps_ens": 0.014760235593168835,
+    "omega_max": 25.103282622743407
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07243782235175722,
+    "enstrophy": 4.832415779942488,
+    "eps_ens": 0.00604051972492811,
+    "omega_max": 14.852646653852167
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5556253945932099,
+   "native_eps_ens_at_t_dump": 0.0011242579877,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.58684670325727,
+    "common_unfiltered": 1307.4626423851616,
+    "common_bandlimited": 535.0696356492673
+   }
+  },
+  {
+   "route": "drp",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_drp_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07940333691548296,
+    "enstrophy": 11.848944279844371,
+    "eps_ens": 0.014811180349805464,
+    "omega_max": 21.83827602626813
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07191720887008263,
+    "enstrophy": 4.860610387715626,
+    "eps_ens": 0.006075762984644533,
+    "omega_max": 12.605552984144683
+   },
+   "t_dump": 9.007648513039996,
+   "csv_energy_match_residual": 0.00437277545215169,
+   "native_eps_ens_at_t_dump": 0.008954925193048533,
+   "reference_eps_at_t_dump": 0.012852261886544385,
+   "pct_of_reference_at_t_dump": {
+    "native": 69.67586929133346,
+    "common_unfiltered": 115.24181875963762,
+    "common_bandlimited": 47.273880957915466
+   }
+  },
+  {
+   "route": "fd2",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd2_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.08456628302497021,
+    "enstrophy": 11.860139268215232,
+    "eps_ens": 0.01482517408526904,
+    "omega_max": 30.693873874457605
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07653985967534438,
+    "enstrophy": 5.245487201396131,
+    "eps_ens": 0.006556859001745164,
+    "omega_max": 16.09907070462212
+   },
+   "t_dump": 9.007516404052186,
+   "csv_energy_match_residual": 0.0033865120793550433,
+   "native_eps_ens_at_t_dump": 0.005084375569455535,
+   "reference_eps_at_t_dump": 0.01285230122661932,
+   "pct_of_reference_at_t_dump": {
+    "native": 39.56004049239774,
+    "common_unfiltered": 115.35034717801013,
+    "common_bandlimited": 51.017003773338146
+   }
+  },
+  {
+   "route": "fd4",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd4_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.08118640747133861,
+    "enstrophy": 12.113399901745444,
+    "eps_ens": 0.015141749877181806,
+    "omega_max": 23.182513211428024
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07394567518811085,
+    "enstrophy": 5.656851251450512,
+    "eps_ens": 0.00707106406431314,
+    "omega_max": 17.385898131501094
+   },
+   "t_dump": 9.007439696429632,
+   "csv_energy_match_residual": 0.004215722619078097,
+   "native_eps_ens_at_t_dump": 0.007966653916711405,
+   "reference_eps_at_t_dump": 0.012852324068998703,
+   "pct_of_reference_at_t_dump": {
+    "native": 61.986095852717405,
+    "common_unfiltered": 117.81332151206382,
+    "common_bandlimited": 55.01778531533738
+   }
+  },
+  {
+   "route": "fd6",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_fd6_p5_N128.bin",
+   "common_unfiltered": {
+    "E": 0.08560579819800401,
+    "enstrophy": 10.171614619661538,
+    "eps_ens": 0.012714518274576923,
+    "omega_max": 41.42489636799262
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.08497210343986189,
+    "enstrophy": 8.037708767332091,
+    "eps_ens": 0.010047135959165114,
+    "omega_max": 29.74513153826023
+   },
+   "t_dump": 9.007571021499887,
+   "csv_energy_match_residual": 0.003586642043729782,
+   "native_eps_ens_at_t_dump": 0.010640047534613412,
+   "reference_eps_at_t_dump": 0.012852284962362657,
+   "pct_of_reference_at_t_dump": {
+    "native": 82.78720527728974,
+    "common_unfiltered": 98.92807630558163,
+    "common_bandlimited": 78.17392773804583
+   }
+  },
+  {
+   "route": "fd6",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd6_p5_N64.bin",
+   "common_unfiltered": {
+    "E": 0.07994864261226631,
+    "enstrophy": 11.853212685697791,
+    "eps_ens": 0.014816515857122238,
+    "omega_max": 26.934684866507958
+   },
+   "common_bandlimited_2_3": {
+    "E": 0.07261303087611479,
+    "enstrophy": 4.976298974143155,
+    "eps_ens": 0.0062203737176789444,
+    "omega_max": 16.50273008303353
+   },
+   "t_dump": 3.00415,
+   "csv_energy_match_residual": 0.5387444928442762,
+   "native_eps_ens_at_t_dump": 0.0011181545615,
+   "reference_eps_at_t_dump": 0.0011289221668500003,
+   "pct_of_reference_at_t_dump": {
+    "native": 99.04620480789701,
+    "common_unfiltered": 1312.4479518782368,
+    "common_bandlimited": 551.0011141897832
+   }
+  }
+ ],
+ "reconnection": [
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.0041347099012268304,
+     "enstrophy": 0.03362882333578823,
+     "eps_ens": 8.407205833947059e-06,
+     "omega_max": 4.485344080377918
+    },
+    "bandlimited": {
+     "E": 0.004129743466587071,
+     "enstrophy": 0.02908385065530699,
+     "eps_ens": 7.2709626638267475e-06,
+     "omega_max": 3.358269807863909
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370750640741737,
+     "enstrophy": 0.019419018946143146,
+     "eps_ens": 4.854754736535786e-06,
+     "omega_max": 1.587757217933175
+    },
+    "bandlimited": {
+     "E": 0.004370750640741739,
+     "enstrophy": 0.019419018946143146,
+     "eps_ens": 4.854754736535786e-06,
+     "omega_max": 1.5877572179156836
+    }
+   },
+   "amplification_common_unfiltered": 2.824955874687572,
+   "amplification_common_bandlimited": 2.115102844421298,
+   "native_peak_amplification": 2.558899,
+   "native_peak0": 1.58775
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 128,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004362521257488245,
+     "enstrophy": 0.01939407280112609,
+     "eps_ens": 4.848518200281523e-06,
+     "omega_max": 1.5778551960094762
+    },
+    "bandlimited": {
+     "E": 0.004362521257488222,
+     "enstrophy": 0.019394072801077453,
+     "eps_ens": 4.8485182002693635e-06,
+     "omega_max": 1.577855195732936
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370778780557735,
+     "enstrophy": 0.019419614894738597,
+     "eps_ens": 4.854903723684649e-06,
+     "omega_max": 1.5886296307631065
+    },
+    "bandlimited": {
+     "E": 0.004370778780557735,
+     "enstrophy": 0.019419614894738597,
+     "eps_ens": 4.854903723684649e-06,
+     "omega_max": 1.588629630762903
+    }
+   },
+   "amplification_common_unfiltered": 0.9932177805669816,
+   "amplification_common_bandlimited": 0.9932177803930342,
+   "native_peak_amplification": 1.0,
+   "native_peak0": 1.58863
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 256,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004139865393192924,
+     "enstrophy": 0.033169987191972776,
+     "eps_ens": 8.292496797993194e-06,
+     "omega_max": 6.612522390728495
+    },
+    "bandlimited": {
+     "E": 0.004139864644554393,
+     "enstrophy": 0.03316191134425503,
+     "eps_ens": 8.290477836063757e-06,
+     "omega_max": 6.613203123517291
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.00437078046126395,
+     "enstrophy": 0.01941964969259942,
+     "eps_ens": 4.854912423149855e-06,
+     "omega_max": 1.5889496877583857
+    },
+    "bandlimited": {
+     "E": 0.004370780461263951,
+     "enstrophy": 0.019419649692599426,
+     "eps_ens": 4.854912423149857e-06,
+     "omega_max": 1.5889496877680351
+    }
+   },
+   "amplification_common_unfiltered": 4.161568136280718,
+   "amplification_common_bandlimited": 4.161996553085782,
+   "native_peak_amplification": 4.161824,
+   "native_peak0": 1.58895
+  },
+  {
+   "route": "bmc",
+   "p": 7,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.00413400452088356,
+     "enstrophy": 0.03462293231629855,
+     "eps_ens": 8.655733079074638e-06,
+     "omega_max": 4.439038816816408
+    },
+    "bandlimited": {
+     "E": 0.00412842977532192,
+     "enstrophy": 0.02936161746838433,
+     "eps_ens": 7.340404367096083e-06,
+     "omega_max": 3.381696428508069
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370780442487239,
+     "enstrophy": 0.019419647721631635,
+     "eps_ens": 4.854911930407909e-06,
+     "omega_max": 1.5878653821086588
+    },
+    "bandlimited": {
+     "E": 0.004370780442487241,
+     "enstrophy": 0.019419647721631635,
+     "eps_ens": 4.854911930407909e-06,
+     "omega_max": 1.5878653820896944
+    }
+   },
+   "amplification_common_unfiltered": 2.7956014828671676,
+   "amplification_common_bandlimited": 2.1297122959237393,
+   "native_peak_amplification": 2.810439,
+   "native_peak0": 1.587865
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004133763522867816,
+     "enstrophy": 0.03508017480051692,
+     "eps_ens": 8.770043700129231e-06,
+     "omega_max": 4.568364157253827
+    },
+    "bandlimited": {
+     "E": 0.0041279636035583015,
+     "enstrophy": 0.02956616382689153,
+     "eps_ens": 7.391540956722883e-06,
+     "omega_max": 3.518430943230652
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370780570926483,
+     "enstrophy": 0.019419651926687025,
+     "eps_ens": 4.854912981671757e-06,
+     "omega_max": 1.5878670438548963
+    },
+    "bandlimited": {
+     "E": 0.0043707805709264835,
+     "enstrophy": 0.019419651926687022,
+     "eps_ens": 4.854912981671756e-06,
+     "omega_max": 1.5878670438354519
+    }
+   },
+   "amplification_common_unfiltered": 2.877044507557206,
+   "amplification_common_bandlimited": 2.2158221350397027,
+   "native_peak_amplification": 2.824194,
+   "native_peak0": 1.587867
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 128,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004139747773630931,
+     "enstrophy": 0.03316991051053654,
+     "eps_ens": 8.292477627634136e-06,
+     "omega_max": 6.350826184855384
+    },
+    "bandlimited": {
+     "E": 0.004139668138755034,
+     "enstrophy": 0.032913394681589755,
+     "eps_ens": 8.228348670397438e-06,
+     "omega_max": 6.093368382729319
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.00437078057197358,
+     "enstrophy": 0.01941965197224809,
+     "eps_ens": 4.854912993062023e-06,
+     "omega_max": 1.5886356457820194
+    },
+    "bandlimited": {
+     "E": 0.004370780571973581,
+     "enstrophy": 0.01941965197224809,
+     "eps_ens": 4.854912993062023e-06,
+     "omega_max": 1.5886356457817823
+    }
+   },
+   "amplification_common_unfiltered": 3.997660635223337,
+   "amplification_common_bandlimited": 3.835598426177021,
+   "native_peak_amplification": 4.055904,
+   "native_peak0": 1.588636
+  },
+  {
+   "route": "c10",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004133381353747316,
+     "enstrophy": 0.035291951142863216,
+     "eps_ens": 8.822987785715805e-06,
+     "omega_max": 4.38962437950222
+    },
+    "bandlimited": {
+     "E": 0.004127272322337026,
+     "enstrophy": 0.029457740957021056,
+     "eps_ens": 7.364435239255264e-06,
+     "omega_max": 3.3779477085761056
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370780570635345,
+     "enstrophy": 0.01941965190395322,
+     "eps_ens": 4.854912975988305e-06,
+     "omega_max": 1.5878669978707562
+    },
+    "bandlimited": {
+     "E": 0.004370780570635346,
+     "enstrophy": 0.019419651903953217,
+     "eps_ens": 4.8549129759883045e-06,
+     "omega_max": 1.5878669978509945
+    }
+   },
+   "amplification_common_unfiltered": 2.7644786278627045,
+   "amplification_common_bandlimited": 2.127349276197434,
+   "native_peak_amplification": 2.847027,
+   "native_peak0": 1.587867
+  },
+  {
+   "route": "c12",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004133265791477861,
+     "enstrophy": 0.03546790360903469,
+     "eps_ens": 8.866975902258674e-06,
+     "omega_max": 4.496839116978283
+    },
+    "bandlimited": {
+     "E": 0.004127050091542788,
+     "enstrophy": 0.02950636138389575,
+     "eps_ens": 7.376590345973938e-06,
+     "omega_max": 3.342459174650971
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.0043707805718272204,
+     "enstrophy": 0.01941965196621573,
+     "eps_ens": 4.8549129915539325e-06,
+     "omega_max": 1.5878670721794719
+    },
+    "bandlimited": {
+     "E": 0.004370780571827221,
+     "enstrophy": 0.01941965196621573,
+     "eps_ens": 4.8549129915539325e-06,
+     "omega_max": 1.5878670721596073
+    }
+   },
+   "amplification_common_unfiltered": 2.8319997282933884,
+   "amplification_common_bandlimited": 2.1049993625127565,
+   "native_peak_amplification": 2.798279,
+   "native_peak0": 1.587867
+  },
+  {
+   "route": "c6",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004134004459127441,
+     "enstrophy": 0.034679203259921014,
+     "eps_ens": 8.669800814980254e-06,
+     "omega_max": 4.327813010911576
+    },
+    "bandlimited": {
+     "E": 0.004128249008118643,
+     "enstrophy": 0.02939173241835669,
+     "eps_ens": 7.347933104589173e-06,
+     "omega_max": 3.2604369121050163
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370779972625758,
+     "enstrophy": 0.01941963305137774,
+     "eps_ens": 4.8549082628444355e-06,
+     "omega_max": 1.5878605138564146
+    },
+    "bandlimited": {
+     "E": 0.004370779972625758,
+     "enstrophy": 0.01941963305137774,
+     "eps_ens": 4.8549082628444355e-06,
+     "omega_max": 1.587860513837082
+    }
+   },
+   "amplification_common_unfiltered": 2.7255624616551977,
+   "amplification_common_bandlimited": 2.0533522206091863,
+   "native_peak_amplification": 2.550033,
+   "native_peak0": 1.587844
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.00413361196610859,
+     "enstrophy": 0.03511342218641284,
+     "eps_ens": 8.778355546603211e-06,
+     "omega_max": 4.524851538029623
+    },
+    "bandlimited": {
+     "E": 0.004127527078418766,
+     "enstrophy": 0.029363266716439726,
+     "eps_ens": 7.3408166791099315e-06,
+     "omega_max": 3.4286044108432656
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370780549108742,
+     "enstrophy": 0.019419651005793785,
+     "eps_ens": 4.8549127514484464e-06,
+     "omega_max": 1.5878664283070032
+    },
+    "bandlimited": {
+     "E": 0.004370780549108742,
+     "enstrophy": 0.019419651005793785,
+     "eps_ens": 4.8549127514484464e-06,
+     "omega_max": 1.5878664282874024
+    }
+   },
+   "amplification_common_unfiltered": 2.8496424241767353,
+   "amplification_common_bandlimited": 2.1592524092477956,
+   "native_peak_amplification": 2.700467,
+   "native_peak0": 1.587865
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 128,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004139644502810646,
+     "enstrophy": 0.03318936892709012,
+     "eps_ens": 8.29734223177253e-06,
+     "omega_max": 6.288666864003734
+    },
+    "bandlimited": {
+     "E": 0.004139545283397921,
+     "enstrophy": 0.03287356552254289,
+     "eps_ens": 8.218391380635723e-06,
+     "omega_max": 6.053054012829847
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370780571892864,
+     "enstrophy": 0.019419651968761997,
+     "eps_ens": 4.8549129921905e-06,
+     "omega_max": 1.5886356435213753
+    },
+    "bandlimited": {
+     "E": 0.004370780571892866,
+     "enstrophy": 0.019419651968761997,
+     "eps_ens": 4.8549129921905e-06,
+     "omega_max": 1.5886356435210829
+    }
+   },
+   "amplification_common_unfiltered": 3.9585331536841597,
+   "amplification_common_bandlimited": 3.810221706604631,
+   "native_peak_amplification": 3.998241,
+   "native_peak0": 1.588636
+  },
+  {
+   "route": "drp",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.0041355267577806104,
+     "enstrophy": 0.03463566516582989,
+     "eps_ens": 8.658916291457472e-06,
+     "omega_max": 3.3852095865041996
+    },
+    "bandlimited": {
+     "E": 0.004129108722282,
+     "enstrophy": 0.02936388248642099,
+     "eps_ens": 7.340970621605248e-06,
+     "omega_max": 2.7327497213301593
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.0043709250744112076,
+     "enstrophy": 0.019422366255089946,
+     "eps_ens": 4.855591563772486e-06,
+     "omega_max": 1.588184827063684
+    },
+    "bandlimited": {
+     "E": 0.004370925074411209,
+     "enstrophy": 0.019422366255089946,
+     "eps_ens": 4.855591563772486e-06,
+     "omega_max": 1.5881848270463554
+    }
+   },
+   "amplification_common_unfiltered": 2.131495987631959,
+   "amplification_common_bandlimited": 1.7206748703250245,
+   "native_peak_amplification": 2.347575,
+   "native_peak0": 1.588447
+  },
+  {
+   "route": "fd2",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004127838304051957,
+     "enstrophy": 0.03564683969780982,
+     "eps_ens": 8.911709924452456e-06,
+     "omega_max": 3.685739003717011
+    },
+    "bandlimited": {
+     "E": 0.004118626598991033,
+     "enstrophy": 0.029128919628356682,
+     "eps_ens": 7.282229907089171e-06,
+     "omega_max": 2.81202029484665
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004349778134973312,
+     "enstrophy": 0.0191911453960795,
+     "eps_ens": 4.797786349019875e-06,
+     "omega_max": 1.5700690016075556
+    },
+    "bandlimited": {
+     "E": 0.004349778134973313,
+     "enstrophy": 0.0191911453960795,
+     "eps_ens": 4.797786349019875e-06,
+     "omega_max": 1.5700690015923393
+    }
+   },
+   "amplification_common_unfiltered": 2.347501288123816,
+   "amplification_common_bandlimited": 1.7910170138985888,
+   "native_peak_amplification": 1.878007,
+   "native_peak0": 1.536597
+  },
+  {
+   "route": "fd4",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004136354955607967,
+     "enstrophy": 0.03556619808299905,
+     "eps_ens": 8.891549520749763e-06,
+     "omega_max": 3.3414736854176086
+    },
+    "bandlimited": {
+     "E": 0.004129351175031178,
+     "enstrophy": 0.030006421753961978,
+     "eps_ens": 7.501605438490495e-06,
+     "omega_max": 2.7938297513965726
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.004370337547617377,
+     "enstrophy": 0.019410651900963687,
+     "eps_ens": 4.852662975240922e-06,
+     "omega_max": 1.5864846666888586
+    },
+    "bandlimited": {
+     "E": 0.004370337547617379,
+     "enstrophy": 0.019410651900963683,
+     "eps_ens": 4.852662975240921e-06,
+     "omega_max": 1.5864846666730321
+    }
+   },
+   "amplification_common_unfiltered": 2.106212405060035,
+   "amplification_common_bandlimited": 1.7610190694470602,
+   "native_peak_amplification": 1.996702,
+   "native_peak0": 1.584429
+  },
+  {
+   "route": "fd6",
+   "p": 5,
+   "N": 64,
+   "peak": {
+    "unfiltered": {
+     "E": 0.004135594847301872,
+     "enstrophy": 0.03458950127565661,
+     "eps_ens": 8.647375318914154e-06,
+     "omega_max": 3.5855208016304245
+    },
+    "bandlimited": {
+     "E": 0.004129001090253152,
+     "enstrophy": 0.029281201081057782,
+     "eps_ens": 7.320300270264446e-06,
+     "omega_max": 2.7439151531335573
+    }
+   },
+   "t0": {
+    "unfiltered": {
+     "E": 0.0043707638213560055,
+     "enstrophy": 0.01941914264378938,
+     "eps_ens": 4.854785660947345e-06,
+     "omega_max": 1.5877139214468814
+    },
+    "bandlimited": {
+     "E": 0.004370763821356006,
+     "enstrophy": 0.019419142643789383,
+     "eps_ens": 4.854785660947346e-06,
+     "omega_max": 1.5877139214301244
+    }
+   },
+   "amplification_common_unfiltered": 2.2582914674974597,
+   "amplification_common_bandlimited": 1.7282176065206956,
+   "native_peak_amplification": 2.234348,
+   "native_peak0": 1.587509
+  }
+ ]
+}

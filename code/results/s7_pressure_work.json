@@ -1,0 +1,460 @@
+{
+  "records": [
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 32,
+      "pair_residual": 6.061093383992331e-17,
+      "incompressible_residual": 3.812254647437336e-17
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 32,
+      "pair_residual": 4.50774040359898e-17,
+      "incompressible_residual": 2.2931176819598106e-17
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 32,
+      "pair_residual": 5.718633460240827e-17,
+      "incompressible_residual": 4.513380668446259e-17
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 32,
+      "pair_residual": 3.88169278545226e-17,
+      "incompressible_residual": 3.782686506087962e-17
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 32,
+      "pair_residual": 7.646147435960512e-17,
+      "incompressible_residual": 2.651223578549719e-17
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 32,
+      "pair_residual": 1.0395935229380578e-16,
+      "incompressible_residual": 4.125284007503043e-17
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 32,
+      "pair_residual": 8.238539037208091e-17,
+      "incompressible_residual": 6.918777426845481e-17
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 32,
+      "pair_residual": 4.50774040359898e-17,
+      "incompressible_residual": 2.2931176819598106e-17
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 32,
+      "pair_residual": 3.88169278545226e-17,
+      "incompressible_residual": 3.782686506087962e-17
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 32,
+      "pair_residual": 1.0395935229380578e-16,
+      "incompressible_residual": 4.125284007503043e-17
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 32,
+      "pair_residual": 1.3515372162132337e-16,
+      "incompressible_residual": 1.252033351421512e-16
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 32,
+      "pair_residual": 2.1574134806406995e-16,
+      "incompressible_residual": 2.2106192488022023e-16
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 32,
+      "pair_residual": 4.8017544922932745e-17,
+      "incompressible_residual": 2.5341884102014572e-17
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 32,
+      "pair_residual": 6.887147685361094e-17,
+      "incompressible_residual": 4.1191612785789055e-17
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 32,
+      "pair_residual": 4.3786840192005584e-17,
+      "incompressible_residual": 3.440486820912077e-17
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 32,
+      "pair_residual": 3.822985943336393e-17,
+      "incompressible_residual": 3.0946821602166596e-17
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 32,
+      "pair_residual": 2.81433498563988e-17,
+      "incompressible_residual": 3.252741052371102e-17
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 32,
+      "pair_residual": 3.4440520724007464e-17,
+      "incompressible_residual": 2.2971319969402122e-17
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 32,
+      "pair_residual": 4.5681074474153216e-17,
+      "incompressible_residual": 1.3876320464252727e-17
+    },
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 48,
+      "pair_residual": 4.098793088295456e-17,
+      "incompressible_residual": 1.8032583931798198e-17
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 48,
+      "pair_residual": 3.5458861464421247e-17,
+      "incompressible_residual": 2.4047899922862758e-17
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 48,
+      "pair_residual": 5.941156326561372e-17,
+      "incompressible_residual": 3.662950102670063e-17
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 48,
+      "pair_residual": 5.694067587331513e-17,
+      "incompressible_residual": 2.7542646951127112e-17
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 48,
+      "pair_residual": 6.35029817030338e-17,
+      "incompressible_residual": 3.074317991696501e-17
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 48,
+      "pair_residual": 7.225268703528912e-17,
+      "incompressible_residual": 2.930924940427719e-17
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 48,
+      "pair_residual": 1.0129972696010435e-16,
+      "incompressible_residual": 2.9956221039341154e-17
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 48,
+      "pair_residual": 3.5458861464421247e-17,
+      "incompressible_residual": 2.4047899922862758e-17
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 48,
+      "pair_residual": 5.694067587331513e-17,
+      "incompressible_residual": 2.7542646951127112e-17
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 48,
+      "pair_residual": 7.225268703528912e-17,
+      "incompressible_residual": 2.930924940427719e-17
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 48,
+      "pair_residual": 1.2594876997359885e-16,
+      "incompressible_residual": 6.103806111700975e-17
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 48,
+      "pair_residual": 2.0735376602497801e-16,
+      "incompressible_residual": 1.1372030958099374e-16
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 48,
+      "pair_residual": 3.545886146442125e-17,
+      "incompressible_residual": 2.6579257809479898e-17
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 48,
+      "pair_residual": 3.277539364859836e-17,
+      "incompressible_residual": 2.0157385676919232e-17
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 48,
+      "pair_residual": 4.979066519328899e-17,
+      "incompressible_residual": 2.929747731346182e-17
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 48,
+      "pair_residual": 2.0540058684616766e-17,
+      "incompressible_residual": 1.435147741412464e-17
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 48,
+      "pair_residual": 3.215513486729835e-17,
+      "incompressible_residual": 1.3764235063661153e-17
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 48,
+      "pair_residual": 3.7444799925989307e-17,
+      "incompressible_residual": 2.1536346198721286e-17
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 48,
+      "pair_residual": 2.5368527491749476e-17,
+      "incompressible_residual": 2.0648152388032337e-17
+    },
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 64,
+      "pair_residual": 2.224384644328814e-17,
+      "incompressible_residual": 1.6923997710011713e-17
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 64,
+      "pair_residual": 2.518516021081218e-17,
+      "incompressible_residual": 1.890290973454332e-17
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 64,
+      "pair_residual": 3.813005642177979e-17,
+      "incompressible_residual": 3.230718724661168e-17
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 64,
+      "pair_residual": 2.2208133857538007e-17,
+      "incompressible_residual": 1.9817278520522875e-17
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 64,
+      "pair_residual": 5.493427958912888e-17,
+      "incompressible_residual": 3.633498733226695e-17
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 64,
+      "pair_residual": 4.0630964199223294e-17,
+      "incompressible_residual": 2.0206084624541247e-17
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 64,
+      "pair_residual": 7.442697509554693e-17,
+      "incompressible_residual": 3.316830178447074e-17
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 64,
+      "pair_residual": 2.518516021081218e-17,
+      "incompressible_residual": 1.890290973454332e-17
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 64,
+      "pair_residual": 2.2208133857538007e-17,
+      "incompressible_residual": 1.9817278520522875e-17
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 64,
+      "pair_residual": 4.0630964199223294e-17,
+      "incompressible_residual": 2.0206084624541247e-17
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 64,
+      "pair_residual": 8.323617374678473e-17,
+      "incompressible_residual": 3.7864206717022876e-17
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 64,
+      "pair_residual": 1.57625103920759e-16,
+      "incompressible_residual": 6.905830699902756e-17
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 64,
+      "pair_residual": 3.936184067034569e-17,
+      "incompressible_residual": 1.680258643070517e-17
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 64,
+      "pair_residual": 3.2437621677145605e-17,
+      "incompressible_residual": 2.6183189049087337e-17
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 64,
+      "pair_residual": 4.345535899789331e-17,
+      "incompressible_residual": 3.009579826140471e-17
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 64,
+      "pair_residual": 2.364019612796843e-17,
+      "incompressible_residual": 1.5519400170545877e-17
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 64,
+      "pair_residual": 1.663956329459383e-17,
+      "incompressible_residual": 5.9183268367890454e-18
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 64,
+      "pair_residual": 2.3249447517231178e-17,
+      "incompressible_residual": 2.036291093737889e-17
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 64,
+      "pair_residual": 4.246382953999674e-17,
+      "incompressible_residual": 1.8960023933949947e-17
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "records": [
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 32,
+      "worst_relative": 3.9334343939340444e-16
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 32,
+      "worst_relative": 3.7454104900405944e-16
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 32,
+      "worst_relative": 3.4614222666619595e-16
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 32,
+      "worst_relative": 4.198951330860422e-16
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 32,
+      "worst_relative": 4.776817857027013e-16
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 32,
+      "worst_relative": 9.843139826601118e-16
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 32,
+      "worst_relative": 1.3021311608061913e-15
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 32,
+      "worst_relative": 3.7454104900405944e-16
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 32,
+      "worst_relative": 4.198951330860422e-16
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 32,
+      "worst_relative": 9.843139826601118e-16
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 32,
+      "worst_relative": 1.228479668688582e-15
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 32,
+      "worst_relative": 2.8024127156481076e-15
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 32,
+      "worst_relative": 3.121175408367162e-16
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 32,
+      "worst_relative": 3.8024370697503724e-16
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 32,
+      "worst_relative": 4.972417706596641e-16
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 32,
+      "worst_relative": 1.3733171796815514e-16
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 32,
+      "worst_relative": 2.243656872239961e-16
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 32,
+      "worst_relative": 1.9012185348751862e-16
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 32,
+      "worst_relative": 2.519370798516253e-16
+    },
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 48,
+      "worst_relative": 3.068181298674423e-16
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 48,
+      "worst_relative": 4.856459677722089e-16
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 48,
+      "worst_relative": 1.8881115684150294e-16
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 48,
+      "worst_relative": 4.441521996085466e-16
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 48,
+      "worst_relative": 8.732516003919511e-16
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 48,
+      "worst_relative": 8.965771712717704e-16
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 48,
+      "worst_relative": 1.2422475948572237e-15
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 48,
+      "worst_relative": 4.856459677722089e-16
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 48,
+      "worst_relative": 4.441521996085466e-16
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 48,
+      "worst_relative": 8.965771712717704e-16
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 48,
+      "worst_relative": 1.8253434046881656e-15
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 48,
+      "worst_relative": 2.180271288933087e-15
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 48,
+      "worst_relative": 3.94801955207597e-16
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 48,
+      "worst_relative": 4.194770774080718e-16
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 48,
+      "worst_relative": 2.4904921424215845e-16
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 48,
+      "worst_relative": 1.0030592707204845e-16
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 48,
+      "worst_relative": 2.0281593385424062e-16
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 48,
+      "worst_relative": 1.2337561100237407e-16
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 48,
+      "worst_relative": 3.0422390078136094e-16
+    },
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree": 2,
+      "npts": 64,
+      "worst_relative": 4.821634954820491e-16
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree": 3,
+      "npts": 64,
+      "worst_relative": 4.1423503524721925e-16
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree": 4,
+      "npts": 64,
+      "worst_relative": 5.108898768049037e-16
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree": 5,
+      "npts": 64,
+      "worst_relative": 6.545547902539774e-16
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree": 6,
+      "npts": 64,
+      "worst_relative": 5.661212148378663e-16
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree": 7,
+      "npts": 64,
+      "worst_relative": 5.648777029386732e-16
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree": 8,
+      "npts": 64,
+      "worst_relative": 1.2954730223776636e-15
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree": 1,
+      "npts": 64,
+      "worst_relative": 4.1423503524721925e-16
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree": 2,
+      "npts": 64,
+      "worst_relative": 6.545547902539774e-16
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree": 3,
+      "npts": 64,
+      "worst_relative": 5.648777029386732e-16
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree": 4,
+      "npts": 64,
+      "worst_relative": 5.225118752182726e-16
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree": 5,
+      "npts": 64,
+      "worst_relative": 2.2023496040643822e-15
+    },
+    {
+      "label": "C4",
+      "family": "compact",
+      "degree": 4,
+      "npts": 64,
+      "worst_relative": 4.487628937518952e-16
+    },
+    {
+      "label": "C6",
+      "family": "compact",
+      "degree": 6,
+      "npts": 64,
+      "worst_relative": 7.577431616764949e-16
+    },
+    {
+      "label": "C8",
+      "family": "compact",
+      "degree": 8,
+      "npts": 64,
+      "worst_relative": 4.004272007389786e-16
+    },
+    {
+      "label": "E2",
+      "family": "explicit",
+      "degree": 2,
+      "npts": 64,
+      "worst_relative": 1.9091181382407675e-16
+    },
+    {
+      "label": "E4",
+      "family": "explicit",
+      "degree": 4,
+      "npts": 64,
+      "worst_relative": 3.477322323224255e-16
+    },
+    {
+      "label": "E6",
+      "family": "explicit",
+      "degree": 6,
+      "npts": 64,
+      "worst_relative": 4.3473905332214853e-16
+    },
+    {
+      "label": "DRP",
+      "family": "drp",
+      "degree": 4,
+      "npts": 64,
+      "worst_relative": 3.786436916031616e-16
+    }
+  ]
+}

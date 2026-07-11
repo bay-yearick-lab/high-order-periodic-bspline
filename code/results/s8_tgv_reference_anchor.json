@@ -1,0 +1,18 @@
+{
+  "description": "Audit of the TGV Re=1600 dissipation-peak reference anchor. The canonical van Rees et al. (2011) 512^3 spectral file distributed by the 1st High-Order CFD Workshop (code/solver/psref/spectral_Re1600_512.gdiag, retrieved 2026-07-10 from https://cfd.ku.edu/hiocfd/data.tgz) gives the true peak; the in-repo pseudospectral reference (ps_reference.py, 2/3 de-aliased, SSP-RK3) confirms it independently. The manuscript's previous anchor 1.25e-2 is a factual error (2.8% low) and every percent-of-reference number computed against it is invalid.",
+  "published_reference": {
+    "source": "van Rees, Leonard, Pullin, Koumoutsakos, JCP 230 (2011), 512^3 de-aliased spectral, workshop data file",
+    "peak_dissipation_rate": 0.01285753,
+    "t_peak": 8.97,
+    "peak_enstrophy": 10.28613,
+    "identity_check": "peak -dE/dt equals 2*nu*Z at the peak instant exactly in the file (nu = 1/1600)"
+  },
+  "in_repo_pseudospectral": {
+    "peak_eps_ens_by_N": {"64": 0.01335963777801969, "128": 0.013737679108210728, "256": 0.012908653842405138, "384": 0.012842350807282766},
+    "t_peak_384": 8.933904108645972,
+    "relative_agreement_384_vs_published": 0.00105
+  },
+  "previous_manuscript_anchor": 0.0125,
+  "anchor_error_relative": 0.0278,
+  "consequence": "BMC9 native-curl 64^3 peak previously reported as 102% of the anchor is 99.1% of the true anchor; the '100% at 128^3' statement does not survive. All headline percentages must be recomputed against 1.285753e-2 with the common postprocessor."
+}

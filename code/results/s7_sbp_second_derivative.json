@@ -1,0 +1,182 @@
+{
+  "d2_audit": [
+    {
+      "label": "BMC2",
+      "family": "BMC",
+      "degree_or_order": 2,
+      "symmetry_residual": 2.842170943040401e-14,
+      "rayleigh_max": -5.8923283813406416e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC3",
+      "family": "BMC",
+      "degree_or_order": 3,
+      "symmetry_residual": 2.842170943040401e-14,
+      "rayleigh_max": -2.9834051895605014e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC4",
+      "family": "BMC",
+      "degree_or_order": 4,
+      "symmetry_residual": 2.842170943040401e-14,
+      "rayleigh_max": 1.8234739456279326e-13,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC5",
+      "family": "BMC",
+      "degree_or_order": 5,
+      "symmetry_residual": 5.684341886080802e-14,
+      "rayleigh_max": -2.2920889334081895e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC6",
+      "family": "BMC",
+      "degree_or_order": 6,
+      "symmetry_residual": 5.684341886080802e-14,
+      "rayleigh_max": -5.460286414512776e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC7",
+      "family": "BMC",
+      "degree_or_order": 7,
+      "symmetry_residual": 8.526512829121202e-14,
+      "rayleigh_max": 1.8119637734681504e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC8",
+      "family": "BMC",
+      "degree_or_order": 8,
+      "symmetry_residual": 1.1368683772161603e-13,
+      "rayleigh_max": -2.644987808882023e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC9",
+      "family": "BMC",
+      "degree_or_order": 9,
+      "symmetry_residual": 1.2079226507921703e-13,
+      "rayleigh_max": 6.535624539046169e-13,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC10",
+      "family": "BMC",
+      "degree_or_order": 10,
+      "symmetry_residual": 1.9184653865522705e-13,
+      "rayleigh_max": 5.477840409290366e-13,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMC11",
+      "family": "BMC",
+      "degree_or_order": 11,
+      "symmetry_residual": 3.410605131648481e-13,
+      "rayleigh_max": 6.448494516142489e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMG1",
+      "family": "BMG",
+      "degree_or_order": 1,
+      "symmetry_residual": 2.842170943040401e-14,
+      "rayleigh_max": -2.9834051895605014e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMG2",
+      "family": "BMG",
+      "degree_or_order": 2,
+      "symmetry_residual": 5.684341886080802e-14,
+      "rayleigh_max": -2.2920889334081895e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMG3",
+      "family": "BMG",
+      "degree_or_order": 3,
+      "symmetry_residual": 8.526512829121202e-14,
+      "rayleigh_max": 1.8119637734681504e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMG4",
+      "family": "BMG",
+      "degree_or_order": 4,
+      "symmetry_residual": 1.2079226507921703e-13,
+      "rayleigh_max": 6.535624539046169e-13,
+      "kernel_dim": 1
+    },
+    {
+      "label": "BMG5",
+      "family": "BMG",
+      "degree_or_order": 5,
+      "symmetry_residual": 3.410605131648481e-13,
+      "rayleigh_max": 6.448494516142489e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "C4",
+      "family": "Compact",
+      "degree_or_order": 4,
+      "symmetry_residual": 2.842170943040401e-14,
+      "rayleigh_max": -2.5011014370537627e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "C6",
+      "family": "Compact",
+      "degree_or_order": 6,
+      "symmetry_residual": 1.4210854715202004e-14,
+      "rayleigh_max": -1.0147438437160789e-13,
+      "kernel_dim": 1
+    },
+    {
+      "label": "E2",
+      "family": "Explicit",
+      "degree_or_order": 2,
+      "symmetry_residual": 0.0,
+      "rayleigh_max": 8.263621446287071e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "E4",
+      "family": "Explicit",
+      "degree_or_order": 4,
+      "symmetry_residual": 0.0,
+      "rayleigh_max": 3.1099384522383228e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "E6",
+      "family": "Explicit",
+      "degree_or_order": 6,
+      "symmetry_residual": 0.0,
+      "rayleigh_max": 5.734845700281748e-12,
+      "kernel_dim": 1
+    },
+    {
+      "label": "E8",
+      "family": "Explicit",
+      "degree_or_order": 8,
+      "symmetry_residual": 0.0,
+      "rayleigh_max": -4.929390121949667e-13,
+      "kernel_dim": 1
+    }
+  ],
+  "heat_decay_high_k": {
+    "ppw": 3.2,
+    "mode": 20,
+    "max_relative_error": {
+      "BMC6": 0.08729766552026955,
+      "BMC7 = BMG3": 0.044490806756543703,
+      "C6": 0.14091674087801562,
+      "E6": 0.4285884707350982
+    }
+  }
+}

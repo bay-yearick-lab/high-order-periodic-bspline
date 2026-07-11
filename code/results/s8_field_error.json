@@ -1,0 +1,215 @@
+{
+ "description": "Common field-error headline: every scheme's saved TGV velocity field scored",
+ "reference_grid": 384,
+ "records": [
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 32,
+   "file": "tgvfield_c8_p5_N32.bin",
+   "t_dump": 9.032080000021178,
+   "t_reference": 9.032078879070653,
+   "dt_mismatch": 1.1209505252907093e-06,
+   "rel_L2_velocity_error": 0.966764903590071,
+   "resolved_band_spectrum_error": 0.3259648274259037
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_bmc_p5_N64.bin",
+   "t_dump": 9.012580024302094,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.00013609931637681427,
+   "rel_L2_velocity_error": 0.5684975642630801,
+   "resolved_band_spectrum_error": 0.19853456508901438
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 64,
+   "file": "tgvfield_bmc_p9_N64.bin",
+   "t_dump": 9.01259073347184,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.0001468084861215857,
+   "rel_L2_velocity_error": 0.5961683605648614,
+   "resolved_band_spectrum_error": 0.18459613001749253
+  },
+  {
+   "route": "bmc",
+   "p": 7,
+   "N": 64,
+   "file": "tgvfield_bmc_p7_N64.bin",
+   "t_dump": 9.012469840347451,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 2.591536173390807e-05,
+   "rel_L2_velocity_error": 0.6064111725578388,
+   "resolved_band_spectrum_error": 0.19488506949928228
+  },
+  {
+   "route": "bmc",
+   "p": 11,
+   "N": 64,
+   "file": "tgvfield_bmc_p11_N64.bin",
+   "t_dump": 9.012475929717628,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 3.200473191000697e-05,
+   "rel_L2_velocity_error": 0.6080528351998397,
+   "resolved_band_spectrum_error": 0.16290929553900702
+  },
+  {
+   "route": "c6",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c6_p5_N64.bin",
+   "t_dump": 9.0076472693247,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.0047966556610177236,
+   "rel_L2_velocity_error": 0.614646622610022,
+   "resolved_band_spectrum_error": 0.22289009291045983
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c8_p5_N64.bin",
+   "t_dump": 9.007643078475924,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004800846509793288,
+   "rel_L2_velocity_error": 0.6173431839745148,
+   "resolved_band_spectrum_error": 0.21118249498426503
+  },
+  {
+   "route": "c10",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c10_p5_N64.bin",
+   "t_dump": 9.012506194235916,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 6.22692501988098e-05,
+   "rel_L2_velocity_error": 0.6180911157445503,
+   "resolved_band_spectrum_error": 0.20741017723862695
+  },
+  {
+   "route": "c12",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_c12_p5_N64.bin",
+   "t_dump": 9.012463363743878,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 1.943875816046159e-05,
+   "rel_L2_velocity_error": 0.6287900194978997,
+   "resolved_band_spectrum_error": 0.20761611872767574
+  },
+  {
+   "route": "bmc",
+   "p": 13,
+   "N": 64,
+   "file": "tgvfield_bmc_p13_N64.bin",
+   "t_dump": 9.012595273017634,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.00015134803191685364,
+   "rel_L2_velocity_error": 0.6288492561221628,
+   "resolved_band_spectrum_error": 0.16537081487734728
+  },
+  {
+   "route": "drp",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_drp_p5_N64.bin",
+   "t_dump": 9.007648513039996,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004795411945721639,
+   "rel_L2_velocity_error": 0.6352131303221549,
+   "resolved_band_spectrum_error": 0.2314591656039631
+  },
+  {
+   "route": "fd6",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd6_p5_N64.bin",
+   "t_dump": 9.007589838695605,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004854086290112747,
+   "rel_L2_velocity_error": 0.6457275071905514,
+   "resolved_band_spectrum_error": 0.21925360975912397
+  },
+  {
+   "route": "fd4",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd4_p5_N64.bin",
+   "t_dump": 9.007439696429632,
+   "t_reference": 9.00262644794325,
+   "dt_mismatch": 0.0048132484863820935,
+   "rel_L2_velocity_error": 0.6749953370480142,
+   "resolved_band_spectrum_error": 0.21151473428425915
+  },
+  {
+   "route": "fd2",
+   "p": 5,
+   "N": 64,
+   "file": "tgvfield_fd2_p5_N64.bin",
+   "t_dump": 9.007516404052186,
+   "t_reference": 9.00262644794325,
+   "dt_mismatch": 0.0048899561089363885,
+   "rel_L2_velocity_error": 0.814034635861924,
+   "resolved_band_spectrum_error": 0.3226289085450074
+  },
+  {
+   "route": "bmc",
+   "p": 9,
+   "N": 128,
+   "file": "tgvfield_bmc_p9_N128.bin",
+   "t_dump": 9.00265229026784,
+   "t_reference": 9.00262644794325,
+   "dt_mismatch": 2.5842324589575583e-05,
+   "rel_L2_velocity_error": 0.28236878470206994,
+   "resolved_band_spectrum_error": 0.029440062279775473
+  },
+  {
+   "route": "fd6",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_fd6_p5_N128.bin",
+   "t_dump": 9.007571021499887,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004872903485830804,
+   "rel_L2_velocity_error": 0.29161886494283507,
+   "resolved_band_spectrum_error": 0.04851452403425824
+  },
+  {
+   "route": "bmc",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_bmc_p5_N128.bin",
+   "t_dump": 9.007583469810534,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004860455175183631,
+   "rel_L2_velocity_error": 0.32214190372563284,
+   "resolved_band_spectrum_error": 0.042025479265514094
+  },
+  {
+   "route": "c6",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c6_p5_N128.bin",
+   "t_dump": 9.007558443366337,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004885481619380627,
+   "rel_L2_velocity_error": 0.33074207299583647,
+   "resolved_band_spectrum_error": 0.04369886274014886
+  },
+  {
+   "route": "c8",
+   "p": 5,
+   "N": 128,
+   "file": "tgvfield_c8_p5_N128.bin",
+   "t_dump": 9.0076010856353,
+   "t_reference": 9.012443924985718,
+   "dt_mismatch": 0.004842839350416739,
+   "rel_L2_velocity_error": 0.33155140269144107,
+   "resolved_band_spectrum_error": 0.047462395170547615
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "family": "alpha (u''_{i-1}+u''_{i+1}) + u''_i = (1/h^2)[a_0 u_i + sum_{s=1..5} a_s (u_{i+s}+u_{i-s})]",
+ "symbol": "num(w)=a_0+sum 2 a_s cos(s w); den(w)=1+2 alpha cos(w); target -w^2",
+ "formal_order": 8,
+ "rhs_radius": 5,
+ "method": "order-8 null-space dense scan (501^2, 3 refinement rounds, cut on 60000-pt grid); den floor, |x|<=3, symbol<0 on (0,pi]",
+ "alpha": 0.4320698009820234,
+ "a0": -1.555224078876143,
+ "a": [
+  0.35890831739343104,
+  0.45913001629633177,
+  -0.04560561305199756,
+  0.00559124812826596,
+  -0.0004119293279594219
+ ],
+ "omega_cut_0.01": 0.9581673010513748,
+ "omega_cut_0.01_rad": 3.0101713538929586,
+ "den_min": 0.13586039803595318,
+ "symbol_min": -9.212125962730436,
+ "symbol_max": -9.999999616080787e-09,
+ "strictly_negative": true,
+ "order_residual": 8.743006318923108e-15,
+ "constraints": {
+  "denominator_floor": 0.05,
+  "coefficient_box": 3.0,
+  "dispersion_tol": 0.01
+ },
+ "d1_partner_cut_0.01": 0.8810184709983124
+}
