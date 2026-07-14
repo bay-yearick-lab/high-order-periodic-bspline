@@ -1,0 +1,122 @@
+{
+ "cw12a": {
+  "family": "al_1 (u''_{i-1}+u''_{i+1}) + al_2 (u''_{i-2}+u''_{i+2}) + u''_i = (1/h^2)[a_0 u_i + sum_{s=1..7} a_s (u_{i+s}+u_{i-s})]",
+  "symbol": "num(w)=a_0+sum 2 a_s cos(s w); den(w)=1+2 al_1 cos(w)+2 al_2 cos(2w); target -w^2",
+  "formal_order": 12,
+  "lhs_half_bandwidth": 2,
+  "rhs_radius": 7,
+  "method": "order-12 null-space dense scan (shrinking refinement, cut on 60000-pt grid); den floor, |x|<=3, symbol<0 on (0,pi]",
+  "alpha1": 0.1601749806496769,
+  "alpha2": -0.21726126868097,
+  "a0": -2.4227916839619907,
+  "a": [
+   0.9043854478128212,
+   0.5970618140260426,
+   -0.3252810784893023,
+   0.040779787773292164,
+   -0.006239267401751708,
+   0.0007337128953475037,
+   -4.4574635453931686e-05
+  ],
+  "omega_cut_0.01": 0.9700671205929359,
+  "omega_cut_0.01_rad": 3.047555739543771,
+  "den_min": 0.2451275013387062,
+  "symbol_min": -9.347307407907943,
+  "symbol_max": -9.999999295736943e-09,
+  "strictly_negative": true,
+  "order_residual": 8.021361352916756e-15,
+  "order_residual_exact_series": 7.549516567451064e-15,
+  "leading_error_coeff_c14": 2.8758690692919967e-05,
+  "taylor_slope_w08_w04": 13.210448510539141,
+  "taylor_slope_w08_w04_series_predicted": 13.210563200644696,
+  "constraints": {
+   "denominator_floor": 0.05,
+   "coefficient_box": 3.0,
+   "dispersion_tol": 0.01
+  },
+  "d1_cell": {
+   "L": 2,
+   "r": 7,
+   "q": 12,
+   "floor": 0.05,
+   "alphas": [
+    0.40937878082640167,
+    -0.06462037441519262
+   ],
+   "a": [
+    0.8359351614953894,
+    0.06465601447530303,
+    -0.05254555071859491,
+    0.011976865033900547,
+    -0.0025753384161538,
+    0.00038591694604337513,
+    -2.8343087156344804e-05
+   ],
+   "certified_cut_0.01_pi": 0.8615559156697674,
+   "certification_gap": 0.03910984921472316,
+   "recomputed_grid_cut_0.01_pi": 0.9001515141827833,
+   "max_err_below_certified_cut": 0.009952490722032525,
+   "recomputed_order_residual": 3.4139358007223564e-15,
+   "recomputed_den_min": 0.05200168951681142
+  },
+  "status": "ok"
+ },
+ "cw12b": {
+  "family": "al_1 (u''_{i-1}+u''_{i+1}) + al_2 (u''_{i-2}+u''_{i+2}) + u''_i = (1/h^2)[a_0 u_i + sum_{s=1..5} a_s (u_{i+s}+u_{i-s})]",
+  "symbol": "num(w)=a_0+sum 2 a_s cos(s w); den(w)=1+2 al_1 cos(w)+2 al_2 cos(2w); target -w^2",
+  "formal_order": 12,
+  "lhs_half_bandwidth": 2,
+  "rhs_radius": 5,
+  "method": "order-12 null-space dense scan (shrinking refinement, cut on 60000-pt grid); den floor, |x|<=3, symbol<0 on (0,pi]",
+  "alpha1": 0.5273008328764947,
+  "alpha2": 0.06895526765898032,
+  "a0": -1.2490664485294838,
+  "a": [
+   0.15392188750639246,
+   0.43804625186979695,
+   0.03355551188077371,
+   -0.001018485995992867,
+   2.8059003771746482e-05
+  ],
+  "omega_cut_0.01": 0.9366842935036545,
+  "omega_cut_0.01_rad": 2.9426804952040264,
+  "den_min": 0.0833088695649713,
+  "symbol_min": -9.002904942538214,
+  "symbol_max": -9.999999903203267e-09,
+  "strictly_negative": true,
+  "order_residual": 3.337607967779377e-15,
+  "order_residual_exact_series": 3.3306690738754696e-15,
+  "leading_error_coeff_c14": -3.21931108288686e-07,
+  "taylor_slope_w08_w04": 14.024439074988761,
+  "taylor_slope_w08_w04_series_predicted": 14.024402168277923,
+  "constraints": {
+   "denominator_floor": 0.025,
+   "coefficient_box": 3.0,
+   "dispersion_tol": 0.01
+  },
+  "d1_cell": {
+   "L": 2,
+   "r": 5,
+   "q": 12,
+   "floor": 0.025,
+   "alphas": [
+    0.5796083747693036,
+    0.09310954748722111
+   ],
+   "a": [
+    0.6474244112956682,
+    0.25095267402010113,
+    0.00827175994799237,
+    -0.0003731748662601286,
+    1.3116508343528986e-05
+   ],
+   "certified_cut_0.01_pi": 0.8225422332152466,
+   "certification_gap": 0.01227988415142367,
+   "recomputed_grid_cut_0.01_pi": 0.8227693543347884,
+   "max_err_below_certified_cut": 0.009899601872454422,
+   "recomputed_order_residual": 0.0,
+   "recomputed_den_min": 0.027002345435835018
+  },
+  "status": "ok"
+ }
+}
