@@ -1,0 +1,6018 @@
+{
+  "all_pass": true,
+  "checkpoint_hash_bindings": {
+    "adjoint_control_targets_producer": true,
+    "contract_matches": true,
+    "evaluator_certificate_matches": true,
+    "one_matrix_producer_hash": true,
+    "producer_matches_manifest": true,
+    "reference_certificate_matches": true,
+    "reference_certificate_targets_producer": true
+  },
+  "completion_marker": "results/ibm_cert/runs/ibm_cert_final_floor_20260813T135207/MATRIX_COMPLETED.json",
+  "completion_marker_sha256": "e73b586e92448a117fe218f2b4913720c6f77729c5dfaa26b35d4ab3409a7323",
+  "evaluator_certificate": {
+    "all_pass": true,
+    "path": "results/ibm_cert/evaluator_certificate.json",
+    "sha256": "ff0b750fb5d18599f13d17de21abf1571059b0bc23f19e30860d2cb489dfeb84"
+  },
+  "forward_floor_resolution": {
+    "formula_checks": {
+      "exterior_is_legacy_floor_divided_by_reference_rms": true,
+      "one_recorded_convention": true,
+      "trace_equals_legacy_absolute_forward_floor": true
+    },
+    "path": "results/ibm_cert/forward_floor_resolution.json",
+    "sha256": "1a2caf6a334aaf5232bb6bd33faa06470ed98e9b158ac19184a852bcea53032f",
+    "status": "complete_pass"
+  },
+  "invariants": {
+    "all_pass": true,
+    "checks": {
+      "certified_constant_residual": true,
+      "evaluator_moment_residual": true,
+      "every_cell_invariants_pass": true,
+      "fielded_constant_residual": true,
+      "identical_shared_case_data": true,
+      "reference_translation_residual": true,
+      "weighted_adjoint_residual": true
+    },
+    "maxima": {
+      "certified_constant_residual": 3.2526065174565133e-19,
+      "evaluator_moment_residual": 5.898840443885334e-14,
+      "fielded_constant_residual": 1.5543122344752192e-15,
+      "longdouble_solve_residual": 4572.006589360556,
+      "reference_translation_residual": 6.824515333729672e-13,
+      "schur_condition": 8.785694430375715e+19,
+      "weighted_adjoint_residual": 1.292864956872843e-14
+    },
+    "shared_case_failures": [],
+    "thresholds": {
+      "certified_constant_residual": 1e-13,
+      "evaluator_moment_residual": 1e-12,
+      "fielded_constant_residual": 1e-13,
+      "reference_translation_residual": 1e-12,
+      "weighted_adjoint_residual": 1e-12
+    }
+  },
+  "marker_scaling": {
+    "BMC11": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.202990829999597,
+      "schur_assembly_seconds": [
+        0.016960401000687853,
+        0.03661131300032139,
+        0.08496180099973571,
+        0.14745584900083486
+      ],
+      "schur_solve_exponent": 2.1112273815711835,
+      "schur_solve_seconds": [
+        0.00043967900273855776,
+        0.00145248699845979,
+        0.006956378001632402,
+        0.019214167001337046
+      ],
+      "total_seconds": [
+        0.06572122200668673,
+        0.13466619000246283,
+        0.28415833300095983,
+        0.45576602300207014
+      ],
+      "total_time_exponent": 1.077818373236484
+    },
+    "BMC5": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.0573016565228617,
+      "schur_assembly_seconds": [
+        0.01570853600060218,
+        0.032385409002017695,
+        0.06667623599787476,
+        0.10518452300311765
+      ],
+      "schur_solve_exponent": 2.1600725268666148,
+      "schur_solve_seconds": [
+        0.000421674001700012,
+        0.0014337529974000063,
+        0.006961142000363907,
+        0.020337908001238247
+      ],
+      "total_seconds": [
+        0.04055476499343058,
+        0.0813623410067521,
+        0.16942856000605389,
+        0.26808849400185863
+      ],
+      "total_time_exponent": 1.0520804201589853
+    },
+    "BMC7": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.0823622876611938,
+      "schur_assembly_seconds": [
+        0.01601001499875565,
+        0.034094982998794876,
+        0.07155759399756789,
+        0.11172769399854587
+      ],
+      "schur_solve_exponent": 2.144564691135366,
+      "schur_solve_seconds": [
+        0.00043184999958612025,
+        0.0014280810028139967,
+        0.00704695999957039,
+        0.020041962001414504
+      ],
+      "total_seconds": [
+        0.048105458005011315,
+        0.09780360999866389,
+        0.20306544000050053,
+        0.318532478002453
+      ],
+      "total_time_exponent": 1.0531792150402557
+    },
+    "BMC9": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1409757696709073,
+      "schur_assembly_seconds": [
+        0.01670841799932532,
+        0.0337699400006386,
+        0.07767657099975622,
+        0.12826498600043124
+      ],
+      "schur_solve_exponent": 2.112482506191662,
+      "schur_solve_seconds": [
+        0.00044331000026431866,
+        0.001428496001608437,
+        0.0069487639993894845,
+        0.019358956000360195
+      ],
+      "total_seconds": [
+        0.057664230993395904,
+        0.11381430399342207,
+        0.24143051099963486,
+        0.3873324050073279
+      ],
+      "total_time_exponent": 1.0620262262643247
+    },
+    "C10|Q12-10": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1953816093629746,
+      "schur_assembly_seconds": [
+        0.01707179000004544,
+        0.03685071400104789,
+        0.08434065999972518,
+        0.14691932399728103
+      ],
+      "schur_solve_exponent": 2.286607885393443,
+      "schur_solve_seconds": [
+        0.00033211999834747985,
+        0.0013269359988044016,
+        0.006838593999418663,
+        0.02012306200049352
+      ],
+      "total_seconds": [
+        0.03407819200947415,
+        0.07289762900109054,
+        0.16126425699621905,
+        0.2730323590003536
+      ],
+      "total_time_exponent": 1.1554788347920075
+    },
+    "C10|common_L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1986081366597534,
+      "schur_assembly_seconds": [
+        0.01695090900102514,
+        0.03672740900219651,
+        0.08419127100205515,
+        0.14673494800081244
+      ],
+      "schur_solve_exponent": 2.2873374890803255,
+      "schur_solve_seconds": [
+        0.0003290450003987644,
+        0.0013186190008127596,
+        0.006858979002572596,
+        0.01986552200105507
+      ],
+      "total_seconds": [
+        0.03305877100501675,
+        0.07051776200023596,
+        0.15700209300484858,
+        0.2672933940011717
+      ],
+      "total_time_exponent": 1.1607281192523013
+    },
+    "C10|order_matched_L10": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1134395167760287,
+      "schur_assembly_seconds": [
+        0.016984636000415776,
+        0.03542670699971495,
+        0.07664873299654573,
+        0.12567801600016537
+      ],
+      "schur_solve_exponent": 2.303807298027597,
+      "schur_solve_seconds": [
+        0.00031607100027031265,
+        0.0013181379981688224,
+        0.006913924000400584,
+        0.019586927999625914
+      ],
+      "total_seconds": [
+        0.029632866000611102,
+        0.061819283004297176,
+        0.134951138003089,
+        0.22288188899983652
+      ],
+      "total_time_exponent": 1.1226720865215276
+    },
+    "C12|L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.202825253725687,
+      "schur_assembly_seconds": [
+        0.016825942002469674,
+        0.03656879199843388,
+        0.08419203400262631,
+        0.14664874099980807
+      ],
+      "schur_solve_exponent": 2.2386647572114318,
+      "schur_solve_seconds": [
+        0.00034950199915328994,
+        0.0013349529981496744,
+        0.006846521999250399,
+        0.01919446300234995
+      ],
+      "total_seconds": [
+        0.03312499100502464,
+        0.07129175999216386,
+        0.1569633690014598,
+        0.2665068180031085
+      ],
+      "total_time_exponent": 1.156727129310768
+    },
+    "C6|Q12-6": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1947756423072173,
+      "schur_assembly_seconds": [
+        0.017178238998894813,
+        0.03661975499926484,
+        0.08418301500205416,
+        0.14762376399812638
+      ],
+      "schur_solve_exponent": 2.2889255730113955,
+      "schur_solve_seconds": [
+        0.0003266640014771838,
+        0.001320290997682605,
+        0.007089522998285247,
+        0.01944681800159742
+      ],
+      "total_seconds": [
+        0.03299306500412058,
+        0.06975951099957456,
+        0.15677303100164863,
+        0.2663736080030503
+      ],
+      "total_time_exponent": 1.161501627990155
+    },
+    "C6|common_L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.2011819875518803,
+      "schur_assembly_seconds": [
+        0.01692599000307382,
+        0.03671049100012169,
+        0.08414090299993404,
+        0.1473601489997236
+      ],
+      "schur_solve_exponent": 2.2743154580295966,
+      "schur_solve_seconds": [
+        0.00033342899769195355,
+        0.001354568998067407,
+        0.0068369299988262355,
+        0.019799181001872057
+      ],
+      "total_seconds": [
+        0.032943044003332034,
+        0.06997358900480322,
+        0.1565939809916017,
+        0.2670488209987525
+      ],
+      "total_time_exponent": 1.1626990660496206
+    },
+    "C6|order_matched_L6": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.0642321807439932,
+      "schur_assembly_seconds": [
+        0.015511469999182737,
+        0.03214815500177792,
+        0.06626602400137926,
+        0.10534783699768013
+      ],
+      "schur_solve_exponent": 2.3153761537730606,
+      "schur_solve_seconds": [
+        0.00029928000003565103,
+        0.0012936140010424424,
+        0.00672632399800932,
+        0.01900417499928153
+      ],
+      "total_seconds": [
+        0.022826431009889347,
+        0.04695224200258963,
+        0.09965576900867745,
+        0.16497414301193203
+      ],
+      "total_time_exponent": 1.0976684962287038
+    },
+    "C8|Q12-8": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1976141957432014,
+      "schur_assembly_seconds": [
+        0.01702688300065347,
+        0.03678211200167425,
+        0.08492083799865213,
+        0.14660519500102964
+      ],
+      "schur_solve_exponent": 2.264236072872233,
+      "schur_solve_seconds": [
+        0.0003431250006542541,
+        0.0013321529986569658,
+        0.00703649599745404,
+        0.01961522499914281
+      ],
+      "total_seconds": [
+        0.03368421999766724,
+        0.07212453100510174,
+        0.16097264699055813,
+        0.2692910359983216
+      ],
+      "total_time_exponent": 1.1565805691524347
+    },
+    "C8|common_L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.194355850152351,
+      "schur_assembly_seconds": [
+        0.017016245001286734,
+        0.036932433999027126,
+        0.08372776900068857,
+        0.14666856200346956
+      ],
+      "schur_solve_exponent": 2.27859570668793,
+      "schur_solve_seconds": [
+        0.0003273959991929587,
+        0.0013173910010664258,
+        0.007081322997692041,
+        0.019044380998820998
+      ],
+      "total_seconds": [
+        0.033105779006291414,
+        0.07036124599471805,
+        0.1569863710028585,
+        0.2653355080001347
+      ],
+      "total_time_exponent": 1.1570496710884521
+    },
+    "C8|order_matched_L8": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1156497247036725,
+      "schur_assembly_seconds": [
+        0.015860798997891834,
+        0.033751243998267455,
+        0.07330845999968005,
+        0.1173077210005431
+      ],
+      "schur_solve_exponent": 2.3444603851095365,
+      "schur_solve_seconds": [
+        0.00030148899895721115,
+        0.0013327570013643708,
+        0.007952151998324553,
+        0.01899304800099344
+      ],
+      "total_seconds": [
+        0.025618374995246995,
+        0.05425314299282036,
+        0.11948590599786257,
+        0.19337967799947364
+      ],
+      "total_time_exponent": 1.1273963983058002
+    },
+    "CW12A|L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1929664076248103,
+      "schur_assembly_seconds": [
+        0.017014901000948157,
+        0.03683908000311931,
+        0.08361926399811637,
+        0.14616713899886236
+      ],
+      "schur_solve_exponent": 2.289798595230022,
+      "schur_solve_seconds": [
+        0.0003216479999537114,
+        0.0013210870019975118,
+        0.006819735001045046,
+        0.019519058001606027
+      ],
+      "total_seconds": [
+        0.032949417993222596,
+        0.07053460500901565,
+        0.15519224799936637,
+        0.2648596789986186
+      ],
+      "total_time_exponent": 1.1557725264412946
+    },
+    "CW12B|L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.196839806334842,
+      "schur_assembly_seconds": [
+        0.016957089999777963,
+        0.036872577999019995,
+        0.08316324699990219,
+        0.14731985399703262
+      ],
+      "schur_solve_exponent": 2.2626999784140556,
+      "schur_solve_seconds": [
+        0.0003326559999550227,
+        0.0013510409989976324,
+        0.006826338001701515,
+        0.019231039001169847
+      ],
+      "total_seconds": [
+        0.03285226699881605,
+        0.0718766899954062,
+        0.15568372000416275,
+        0.2642950200061023
+      ],
+      "total_time_exponent": 1.1542965611816445
+    },
+    "Fourier-PS": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.7673848316881562,
+      "schur_assembly_seconds": [
+        0.0545562829975097,
+        0.172690095998405,
+        0.5963218479992065,
+        1.3017234779981663
+      ],
+      "schur_solve_exponent": 2.0815154572208683,
+      "schur_solve_seconds": [
+        0.0005059920003986917,
+        0.0016288830011035316,
+        0.007681081999180606,
+        0.020930899001541547
+      ],
+      "total_seconds": [
+        0.05732173299838905,
+        0.17785967099916888,
+        0.6099512919972767,
+        1.3314180460038187
+      ],
+      "total_time_exponent": 1.752426569938885
+    },
+    "SLC-SL|Q12-4": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.203564859968882,
+      "schur_assembly_seconds": [
+        0.01683230900016497,
+        0.036934257001121296,
+        0.08404866899945773,
+        0.14757551999718999
+      ],
+      "schur_solve_exponent": 2.2882003656744687,
+      "schur_solve_seconds": [
+        0.000321889001497766,
+        0.001336942001216812,
+        0.006929725001100451,
+        0.01938504299687338
+      ],
+      "total_seconds": [
+        0.03274026099825278,
+        0.06970255399573944,
+        0.15531522300443612,
+        0.26339201200244133
+      ],
+      "total_time_exponent": 1.158545744823323
+    },
+    "SLC-SL|common_L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1988213121896376,
+      "schur_assembly_seconds": [
+        0.017017996997310547,
+        0.03669054000056349,
+        0.08391009899787605,
+        0.1476898569999321
+      ],
+      "schur_solve_exponent": 2.2548459457767707,
+      "schur_solve_seconds": [
+        0.00033603400152060203,
+        0.0013342549973458517,
+        0.006835219999629771,
+        0.019025438999960897
+      ],
+      "total_seconds": [
+        0.032879286005481845,
+        0.07138842400308931,
+        0.15826378900601412,
+        0.2668015839990403
+      ],
+      "total_time_exponent": 1.1627272785441563
+    },
+    "SLC-SL|order_matched_L4": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.0141160824490958,
+      "schur_assembly_seconds": [
+        0.01565399100218201,
+        0.030604186998971272,
+        0.06419254000138608,
+        0.09503516699987813
+      ],
+      "schur_solve_exponent": 2.294398749628415,
+      "schur_solve_seconds": [
+        0.0003253499999118503,
+        0.001295156002015574,
+        0.006744931000866927,
+        0.019970282999565825
+      ],
+      "total_seconds": [
+        0.020602237003913615,
+        0.04087219899520278,
+        0.08835864200591459,
+        0.1408261090000451
+      ],
+      "total_time_exponent": 1.0743864533426053
+    },
+    "OPT-q8|Q12-8": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.2004015402356671,
+      "schur_assembly_seconds": [
+        0.01687648200095282,
+        0.036645955999119906,
+        0.08416061800016905,
+        0.146491278999747
+      ],
+      "schur_solve_exponent": 2.301571701674237,
+      "schur_solve_seconds": [
+        0.0003085530006501358,
+        0.0013215199978731107,
+        0.006827493001765106,
+        0.019082409002294298
+      ],
+      "total_seconds": [
+        0.03393168099501054,
+        0.0716938539990224,
+        0.15908957200372242,
+        0.26770051000494277
+      ],
+      "total_time_exponent": 1.1484114891462924
+    },
+    "OPT-q8|common_L12": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1954480100575549,
+      "schur_assembly_seconds": [
+        0.017138246999820694,
+        0.03672888199798763,
+        0.08444882999901893,
+        0.14735470700179576
+      ],
+      "schur_solve_exponent": 2.3042143700240976,
+      "schur_solve_seconds": [
+        0.00032701599775464274,
+        0.0013350290028029121,
+        0.007094786000379827,
+        0.020224569001584314
+      ],
+      "total_seconds": [
+        0.033027872996171936,
+        0.0712731880012143,
+        0.15950606699698255,
+        0.26809164200676605
+      ],
+      "total_time_exponent": 1.1645098463572783
+    },
+    "OPT-q8|order_matched_L8": {
+      "marker_counts_total": [
+        120,
+        240,
+        480,
+        720
+      ],
+      "schur_assembly_exponent": 1.1185023445296143,
+      "schur_assembly_seconds": [
+        0.0159090870001819,
+        0.033387677001883276,
+        0.07376376100000925,
+        0.11769269199794508
+      ],
+      "schur_solve_exponent": 2.3097326990715588,
+      "schur_solve_seconds": [
+        0.0003107529992121272,
+        0.0012978790000488516,
+        0.006805007000366459,
+        0.019516369997290894
+      ],
+      "total_seconds": [
+        0.025803322001593187,
+        0.053334505999373505,
+        0.11882791200332576,
+        0.1944736049954372
+      ],
+      "total_time_exponent": 1.1274315294680315
+    }
+  },
+  "matrix_resource_receipt": {
+    "cpu_hours": 0.049758333333333335,
+    "exit_status": 0.0,
+    "maximum_rss_kib": 195628.0,
+    "system_seconds": 0.26,
+    "user_seconds": 178.87
+  },
+  "orders": {
+    "BMC11@shift_0_0": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 4.741609693812686,
+          "error_over_floor": [
+            2.3050376534617034,
+            0.028029077591444365,
+            0.006860601031213065,
+            0.002268635416227307
+          ],
+          "errors": [
+            3.3343052529021852e-12,
+            1.5220777036681022e-13,
+            9.867339134654112e-14,
+            1.2644115884388078e-13
+          ],
+          "floors": [
+            1.446529625186265e-12,
+            5.430352457023785e-12,
+            1.4382616172783636e-11,
+            5.573445514403093e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 2.290415927983667,
+          "error_over_floor": [
+            9.03034880544474,
+            0.2533265160910922,
+            0.15000480091262783,
+            0.03878736264276132
+          ],
+          "errors": [
+            2.345207361642565e-13,
+            2.5368596112684827e-14,
+            4.032885136950881e-14,
+            4.075906279155106e-14
+          ],
+          "floors": [
+            2.5970285447097575e-14,
+            1.0014189001660878e-13,
+            2.68850404281386e-13,
+            1.0508335708965174e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC11@shift_1_2_1_2": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 4.58168605019347,
+          "error_over_floor": [
+            2.6057804847274473,
+            0.02878243925645937,
+            0.006157319586851301,
+            0.003851381360739702
+          ],
+          "errors": [
+            3.5739444491524773e-12,
+            1.7089568456049565e-13,
+            1.0936678227324628e-13,
+            1.546089232526739e-13
+          ],
+          "floors": [
+            1.3715447138005163e-12,
+            5.9374983140854935e-12,
+            1.77620766196373e-11,
+            4.01437585040863e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 3.1527431114253726,
+          "error_over_floor": [
+            10.491938306138954,
+            0.23413165736603656,
+            0.11293222439578325,
+            0.03023834987205839
+          ],
+          "errors": [
+            2.5837665340588956e-13,
+            2.556288514199423e-14,
+            3.7567171595753734e-14,
+            2.2912227670701668e-14
+          ],
+          "floors": [
+            2.4626207843283866e-14,
+            1.0918166910692366e-13,
+            3.326523655825241e-13,
+            7.577208335655118e-13
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC11@shift_1_4_3_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 4.306510039040665,
+          "error_over_floor": [
+            2.4069485460262015,
+            0.012257270558313929,
+            0.00531484661090934,
+            0.004000179912070907
+          ],
+          "errors": [
+            3.3740448083371627e-12,
+            1.390387041631977e-13,
+            1.0942361313012776e-13,
+            1.7224974416344228e-13
+          ],
+          "floors": [
+            1.4017934923900254e-12,
+            1.1343365841662828e-11,
+            2.0588291843742596e-11,
+            4.3060499264961306e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 3.055674729729494,
+          "error_over_floor": [
+            12.027350118126995,
+            0.12259737917795177,
+            0.10541264636485884,
+            0.0355851222305553
+          ],
+          "errors": [
+            3.02022296061466e-13,
+            2.5646151868841116e-14,
+            4.045375145977914e-14,
+            2.88935542158697e-14
+          ],
+          "floors": [
+            2.5111291605810476e-14,
+            2.091900499081255e-13,
+            3.83765637756203e-13,
+            8.119560199531966e-13
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC11@shift_3_4_1_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 4.469865490104759,
+          "error_over_floor": [
+            2.3593601907168567,
+            0.03205802788893197,
+            0.010297415841224896,
+            0.0017596875327341316
+          ],
+          "errors": [
+            3.334792475960452e-12,
+            1.4598519131844473e-13,
+            1.0270856882286681e-13,
+            1.5430174734935048e-13
+          ],
+          "floors": [
+            1.4134308483636934e-12,
+            4.553779534543548e-12,
+            9.974208132071458e-12,
+            8.768701515410673e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 3.2928826253967105,
+          "error_over_floor": [
+            14.933373504878368,
+            0.3029126298739236,
+            0.25048830273976264,
+            0.01734065459128869
+          ],
+          "errors": [
+            3.7680969455777813e-13,
+            2.5271451598030126e-14,
+            4.661548924644876e-14,
+            2.8727020762175925e-14
+          ],
+          "floors": [
+            2.52327241687676e-14,
+            8.342818722530141e-14,
+            1.8609846741976822e-13,
+            1.6566283937520636e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC5@shift_0_0": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.212521243511985,
+          "diagnostic_four_grid_order": 6.212521243511985,
+          "error_over_floor": [
+            198923.16675324683,
+            11717.663730047963,
+            848.0708665386071,
+            181.40093210387155
+          ],
+          "errors": [
+            2.3835179192777554e-07,
+            3.8476398342831795e-08,
+            1.0036499124049141e-08,
+            3.174870651596534e-09
+          ],
+          "floors": [
+            1.1982103232020117e-12,
+            3.2836237008718377e-12,
+            1.183450525191723e-11,
+            1.7501953351477703e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.542655467387244,
+          "diagnostic_four_grid_order": 6.542655467387244,
+          "error_over_floor": [
+            999598.9101318191,
+            61481.96494950157,
+            3568.183289077093,
+            711.7637210114513
+          ],
+          "errors": [
+            2.1503453864757383e-08,
+            3.7229644228586878e-09,
+            7.893508208178801e-10,
+            2.348727046186383e-10
+          ],
+          "floors": [
+            2.1512082142948395e-14,
+            6.055376443997126e-14,
+            2.2121924712618811e-13,
+            3.299869011093634e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "BMC5@shift_1_2_1_2": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.260757570520171,
+          "diagnostic_four_grid_order": 6.260757570520171,
+          "error_over_floor": [
+            171422.71122684277,
+            10738.888386329283,
+            954.4702091320717,
+            135.34038092731043
+          ],
+          "errors": [
+            2.432204078399185e-07,
+            4.155324220582441e-08,
+            9.915100246244141e-09,
+            3.2032849022866887e-09
+          ],
+          "floors": [
+            1.4188342145520391e-12,
+            3.869417458395613e-12,
+            1.0388066753031757e-11,
+            2.366836032482524e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.642658892586356,
+          "diagnostic_four_grid_order": 6.642658892586356,
+          "error_over_floor": [
+            1124184.2196633508,
+            46205.28248156688,
+            5255.436824837504,
+            584.2433681220012
+          ],
+          "errors": [
+            2.863892469007201e-08,
+            3.2876338734721955e-09,
+            1.0224461138852448e-09,
+            2.61007604418495e-10
+          ],
+          "floors": [
+            2.5475295053197104e-14,
+            7.115277078511019e-14,
+            1.9455016737202588e-13,
+            4.4674465926328087e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "BMC5@shift_1_4_3_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.259393864886897,
+          "diagnostic_four_grid_order": 6.259393864886897,
+          "error_over_floor": [
+            211498.81233772764,
+            7720.0869982451895,
+            710.4660086678463,
+            111.32151792413677
+          ],
+          "errors": [
+            2.487200731509681e-07,
+            4.046375148902719e-08,
+            9.973346552117243e-09,
+            3.2601135341899933e-09
+          ],
+          "floors": [
+            1.175988037009893e-12,
+            5.241359520718456e-12,
+            1.4037753292121166e-11,
+            2.928556486636924e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.3697444342489185,
+          "diagnostic_four_grid_order": 6.3697444342489185,
+          "error_over_floor": [
+            1082396.2324020704,
+            39205.21653797349,
+            3837.660100239762,
+            476.6836135213519
+          ],
+          "errors": [
+            2.2802065430260754e-08,
+            3.789543456811373e-09,
+            1.0041761033807717e-09,
+            2.632311452144265e-10
+          ],
+          "floors": [
+            2.1066283074228797e-14,
+            9.665916404621531e-14,
+            2.6166363803767684e-13,
+            5.522135390178158e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "BMC5@shift_3_4_1_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.225274323403041,
+          "diagnostic_four_grid_order": 6.225274323403041,
+          "error_over_floor": [
+            186929.60599926513,
+            16180.262108099127,
+            1420.9275862991544,
+            93.93952809080118
+          ],
+          "errors": [
+            2.3353368174731783e-07,
+            4.214331697280806e-08,
+            9.693021329655639e-09,
+            3.1900675751139995e-09
+          ],
+          "floors": [
+            1.2493135076111803e-12,
+            2.6046127492405065e-12,
+            6.821615276610529e-12,
+            3.395873536889079e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.402036487228093,
+          "diagnostic_four_grid_order": 6.402036487228093,
+          "error_over_floor": [
+            978417.3668700696,
+            72964.88256232733,
+            5266.961873678043,
+            441.49206675368794
+          ],
+          "errors": [
+            2.182152826490924e-08,
+            3.481752178235986e-09,
+            6.703656726947393e-10,
+            2.832462875357322e-10
+          ],
+          "floors": [
+            2.230288321099176e-14,
+            4.7718190668803434e-14,
+            1.2727748724457868e-13,
+            6.415659733558874e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "BMC7@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.464555940434515,
+          "error_over_floor": [
+            3238.456865232375,
+            86.80159515450657,
+            4.864418553740385,
+            0.551107516018848
+          ],
+          "errors": [
+            3.6653145402145756e-09,
+            2.9596622557536853e-10,
+            4.988687866714535e-11,
+            1.0036352082396741e-11
+          ],
+          "floors": [
+            1.1318089734542662e-12,
+            3.4096864815508235e-12,
+            1.0255465913554245e-11,
+            1.8211241528510557e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.824041356577649,
+          "error_over_floor": [
+            17972.645263686038,
+            334.88484811255194,
+            22.2411779731823,
+            2.1057366938497233
+          ],
+          "errors": [
+            3.652031593803784e-10,
+            2.105705887434084e-11,
+            4.263693564876547e-12,
+            7.230258058932293e-13
+          ],
+          "floors": [
+            2.0319944783992156e-14,
+            6.287850582975239e-14,
+            1.917026863423139e-13,
+            3.4336002597332726e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC7@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.520421888478502,
+          "error_over_floor": [
+            2767.6347471668205,
+            83.41487026572034,
+            4.750099757397505,
+            0.5098086277591304
+          ],
+          "errors": [
+            3.858572577209351e-09,
+            3.283100686903639e-10,
+            4.565266865415198e-11,
+            1.086031606332973e-11
+          ],
+          "floors": [
+            1.394176952417332e-12,
+            3.935869799287864e-12,
+            9.610886294136329e-12,
+            2.130273100921491e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.14574644574152,
+          "error_over_floor": [
+            13404.245332296867,
+            398.9374130302474,
+            24.72551489125535,
+            3.0682837729571464
+          ],
+          "errors": [
+            3.355427324880367e-10,
+            2.8872987334338518e-11,
+            4.450467772088018e-12,
+            1.2337353361147052e-12
+          ],
+          "floors": [
+            2.5032571709170605e-14,
+            7.23747294469706e-14,
+            1.7999494820073538e-13,
+            4.0209297034011216e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC7@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.460281168523798,
+          "error_over_floor": [
+            2868.3029823887864,
+            63.916350541820556,
+            3.4975877040536267,
+            0.41714946954291443
+          ],
+          "errors": [
+            3.8746961990294135e-09,
+            3.111476215384075e-10,
+            4.606935195525577e-11,
+            1.1269278725067297e-11
+          ],
+          "floors": [
+            1.3508671234593497e-12,
+            4.868044231261658e-12,
+            1.3171750318616002e-11,
+            2.701496597230592e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.421395916564702,
+          "error_over_floor": [
+            17382.02834598237,
+            284.2499711037332,
+            17.020771389848658,
+            2.4877644201054405
+          ],
+          "errors": [
+            4.206279213825326e-10,
+            2.55184345876458e-11,
+            4.178962731415936e-12,
+            1.267264071458385e-12
+          ],
+          "floors": [
+            2.419901250936317e-14,
+            8.977462508987623e-14,
+            2.4552134775209465e-13,
+            5.093987441964757e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC7@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.395552562724248,
+          "error_over_floor": [
+            2690.4610180731383,
+            114.22064072095897,
+            6.90074826698169,
+            0.384505111913256
+          ],
+          "errors": [
+            3.3724169680853426e-09,
+            3.4534434596100074e-10,
+            4.6507267668971743e-11,
+            1.0362899911850626e-11
+          ],
+          "floors": [
+            1.2534717825053675e-12,
+            3.0234845802054025e-12,
+            6.739452863611485e-12,
+            2.6951266942293573e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.18429875440911,
+          "error_over_floor": [
+            13433.467615868742,
+            513.0439274910326,
+            36.85312451406348,
+            2.0199460815555867
+          ],
+          "errors": [
+            3.00602279179607e-10,
+            2.8418628561510673e-11,
+            4.634077843679307e-12,
+            1.028510610012745e-12
+          ],
+          "floors": [
+            2.2377117195303343e-14,
+            5.539219360901098e-14,
+            1.2574450347923422e-13,
+            5.091772594349031e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC9@shift_0_0": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.658380695383665,
+          "error_over_floor": [
+            84.69689075104465,
+            1.2941897936940379,
+            0.04071688088758015,
+            0.003043767397053169
+          ],
+          "errors": [
+            9.901500707846804e-11,
+            4.208399660841192e-12,
+            3.946219476803011e-13,
+            1.4287554489995015e-13
+          ],
+          "floors": [
+            1.1690512626904996e-12,
+            3.251763907694754e-12,
+            9.691851121156789e-12,
+            4.694036247259743e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.960447100612795,
+          "error_over_floor": [
+            437.0748716705283,
+            3.3473558538872017,
+            0.2574596756757638,
+            0.04671260943461276
+          ],
+          "errors": [
+            9.173578563448359e-12,
+            2.007283228522283e-13,
+            4.664324482206439e-14,
+            4.1341929879479267e-14
+          ],
+          "floors": [
+            2.098857463112979e-14,
+            5.996623353299215e-14,
+            1.811671855005572e-13,
+            8.850271988626273e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC9@shift_1_2_1_2": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.567773753078056,
+          "error_over_floor": [
+            81.16042096520026,
+            1.2057913463586964,
+            0.03230650158017975,
+            0.005296954653916189
+          ],
+          "errors": [
+            1.047337459535856e-10,
+            4.475888713035006e-12,
+            3.619992934683404e-13,
+            1.735943308483028e-13
+          ],
+          "floors": [
+            1.2904534588169898e-12,
+            3.711992731206355e-12,
+            1.120515301138113e-11,
+            3.27724781861139e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.65730528610677,
+          "error_over_floor": [
+            411.6018039942996,
+            4.032119636392784,
+            0.2204809999339854,
+            0.042603445887523336
+          ],
+          "errors": [
+            9.536899048256942e-12,
+            2.752242878045763e-13,
+            4.62685445512534e-14,
+            2.6353919047039653e-14
+          ],
+          "floors": [
+            2.3170207116946993e-14,
+            6.82579666834483e-14,
+            2.0985275177954901e-13,
+            6.185865602659514e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC9@shift_1_4_3_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.433333688530796,
+          "error_over_floor": [
+            74.72070799370131,
+            0.8788007944514697,
+            0.02866323454265556,
+            0.0040229650013842155
+          ],
+          "errors": [
+            1.0129406055303852e-10,
+            4.348027954768533e-12,
+            3.6877729749319364e-13,
+            1.8393822636386206e-13
+          ],
+          "floors": [
+            1.3556357169631911e-12,
+            4.94768323176413e-12,
+            1.286586470010539e-11,
+            4.5722054827862754e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.592172572325843,
+          "error_over_floor": [
+            468.42694112367667,
+            2.560088589777799,
+            0.22244306583357204,
+            0.03568672964029747
+          ],
+          "errors": [
+            1.1375483888187432e-11,
+            2.3359092438113294e-13,
+            5.334621633323877e-14,
+            3.076705556992465e-14
+          ],
+          "floors": [
+            2.428443560675562e-14,
+            9.124329732722541e-14,
+            2.398196416387799e-13,
+            8.621427595086349e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "BMC9@shift_3_4_1_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.548415336183988,
+          "error_over_floor": [
+            63.3719613874996,
+            1.5498654778237748,
+            0.05326527918881015,
+            0.0031720335513582467
+          ],
+          "errors": [
+            9.372450748722543e-11,
+            4.698588149873566e-12,
+            3.7238871476303484e-13,
+            1.551390238586252e-13
+          ],
+          "floors": [
+            1.4789586030662608e-12,
+            3.0316103023799416e-12,
+            6.991209291197435e-12,
+            4.890838049055173e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.486771829142755,
+          "error_over_floor": [
+            366.74055219111455,
+            5.940549076258231,
+            0.476630229299762,
+            0.03093957668212174
+          ],
+          "errors": [
+            9.682879498207342e-12,
+            3.299444051307887e-13,
+            6.217248937900877e-14,
+            2.858824288409778e-14
+          ],
+          "floors": [
+            2.6402532908772614e-14,
+            5.554106209633581e-14,
+            1.3044176713329544e-13,
+            9.240023927223715e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|Q12-10@shift_0_0": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.396258859894866,
+          "error_over_floor": [
+            20680.935947602822,
+            319.7626505906255,
+            13.593676328268838,
+            0.8026627452135745
+          ],
+          "errors": [
+            3.8538055187639634e-08,
+            2.1472319191676968e-09,
+            2.916760107223296e-10,
+            5.6457398348751627e-11
+          ],
+          "floors": [
+            1.8634579830080985e-12,
+            6.715080436072189e-12,
+            2.1456742361576788e-11,
+            7.03376339383103e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 8.576561315740559,
+          "diagnostic_four_grid_order": 8.576561315740559,
+          "error_over_floor": [
+            277971.41406772,
+            4496.928478922245,
+            280.04170110263885,
+            16.999185871925363
+          ],
+          "errors": [
+            9.299704131771058e-09,
+            5.568714656067897e-10,
+            1.123205695119367e-10,
+            2.254374464882858e-11
+          ],
+          "floors": [
+            3.345561327937643e-14,
+            1.2383373856554022e-13,
+            4.0108515649520987e-13,
+            1.3261661363477537e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|Q12-10@shift_1_2_1_2": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.463816120780352,
+          "error_over_floor": [
+            18531.177427530372,
+            349.82732991286,
+            13.955415160524051,
+            0.8695636391995469
+          ],
+          "errors": [
+            3.785426309754607e-08,
+            2.59705291966548e-09,
+            2.7893334912940137e-10,
+            5.6035316874408934e-11
+          ],
+          "floors": [
+            2.0427338330541723e-12,
+            7.423813686347465e-12,
+            1.9987463355330728e-11,
+            6.444073136037601e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 9.604048591064545,
+          "diagnostic_four_grid_order": 9.604048591064545,
+          "error_over_floor": [
+            294416.2415309244,
+            5501.375293530529,
+            210.63010324959427,
+            11.775866888148629
+          ],
+          "errors": [
+            1.0798442404147401e-08,
+            7.510080057837598e-10,
+            7.884515262901459e-11,
+            1.4323348063172148e-11
+          ],
+          "floors": [
+            3.667746843039966e-14,
+            1.3651277466326015e-13,
+            3.743299339106528e-13,
+            1.2163306701086554e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C10|Q12-10@shift_1_4_3_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.497527412902267,
+          "error_over_floor": [
+            21922.515919418882,
+            228.69676893242675,
+            9.279466010893248,
+            1.4505802165043828
+          ],
+          "errors": [
+            4.25265815455359e-08,
+            2.457715449491627e-09,
+            2.4421767301002187e-10,
+            6.50967950687207e-11
+          ],
+          "floors": [
+            1.9398586230636976e-12,
+            1.0746612035510701e-11,
+            2.631807398435778e-11,
+            4.487638417239093e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 9.588309811916249,
+          "diagnostic_four_grid_order": 9.588309811916249,
+          "error_over_floor": [
+            338331.4327084478,
+            3140.2368484716008,
+            135.7931876594847,
+            19.368938713339112
+          ],
+          "errors": [
+            1.1757024936942528e-08,
+            6.223476595179633e-10,
+            6.661589335710261e-11,
+            1.6389931078997222e-11
+          ],
+          "floors": [
+            3.4750022611922004e-14,
+            1.981849425851012e-13,
+            4.905687428455452e-13,
+            8.461966513276078e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C10|Q12-10@shift_3_4_1_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.446716031923192,
+          "error_over_floor": [
+            18802.153680774107,
+            426.5926112179332,
+            12.903297554698694,
+            0.6809034944725956
+          ],
+          "errors": [
+            3.279321268986654e-08,
+            2.952194950503543e-09,
+            2.6900179036988546e-10,
+            5.0545926556969984e-11
+          ],
+          "floors": [
+            1.7441200219206169e-12,
+            6.9204080728799976e-12,
+            2.084752283124164e-11,
+            7.423361308509823e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 8.811998788609113,
+          "diagnostic_four_grid_order": 8.811998788609113,
+          "error_over_floor": [
+            203471.7031379843,
+            6631.336293492252,
+            238.38519901814072,
+            10.231800155282686
+          ],
+          "errors": [
+            6.335340516083754e-09,
+            8.40762945375495e-10,
+            9.272527190518076e-11,
+            1.434968810443138e-11
+          ],
+          "floors": [
+            3.11362239484841e-14,
+            1.2678635318202588e-13,
+            3.8897243741262864e-13,
+            1.4024597711696533e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|common_L12@shift_0_0": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.745786474972256,
+          "error_over_floor": [
+            1524.4589587926764,
+            16.588680566270092,
+            0.5301665694946828,
+            0.05114951544728402
+          ],
+          "errors": [
+            3.910976298015534e-09,
+            1.504056582762045e-10,
+            1.6304191075508763e-11,
+            2.1701715070152274e-12
+          ],
+          "floors": [
+            2.565484807221642e-12,
+            9.066764392463233e-12,
+            3.0752959567120126e-11,
+            4.2427997372758315e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.635241492865232,
+          "error_over_floor": [
+            21510.81928521344,
+            202.46020186740787,
+            6.618504392994337,
+            0.7567859486090078
+          ],
+          "errors": [
+            9.907767106742682e-10,
+            3.3851643710391954e-11,
+            3.804692672026988e-12,
+            6.0539073754029e-13
+          ],
+          "floors": [
+            4.6059459546263266e-14,
+            1.6720147168756433e-13,
+            5.748568628366012e-13,
+            7.999497594438875e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|common_L12@shift_1_2_1_2": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.743755028516244,
+          "error_over_floor": [
+            693.6069116291342,
+            10.842785220622032,
+            0.4753435474795148,
+            0.039806526220443214
+          ],
+          "errors": [
+            4.092986058507562e-09,
+            1.4510707379802285e-10,
+            1.3431326879296258e-11,
+            2.4679971605919863e-12
+          ],
+          "floors": [
+            5.901016829394064e-12,
+            1.3382822849062973e-11,
+            2.8256041236943664e-11,
+            6.199981246604007e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.755425178705487,
+          "error_over_floor": [
+            5644.330532661452,
+            127.52496746449516,
+            4.350797869459469,
+            0.31620153261157097
+          ],
+          "errors": [
+            5.980353573464825e-10,
+            3.138261872592807e-11,
+            2.3023805084676496e-12,
+            3.700373341075647e-13
+          ],
+          "floors": [
+            1.0595328425326872e-13,
+            2.460899959426804e-13,
+            5.291858131652737e-13,
+            1.1702578765237257e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|common_L12@shift_1_4_3_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.917814249213071,
+          "error_over_floor": [
+            1157.8618728452961,
+            10.017432620633807,
+            0.3476786202345424,
+            0.047632651081441234
+          ],
+          "errors": [
+            4.338533331391943e-09,
+            1.6147628141737307e-10,
+            1.360673531756305e-11,
+            2.3361407288809293e-12
+          ],
+          "floors": [
+            3.747021499836208e-12,
+            1.6119527580826034e-11,
+            3.913595638519277e-11,
+            4.904494450427814e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.531391732561604,
+          "error_over_floor": [
+            12864.266679941862,
+            87.42113058745497,
+            2.3341318604753596,
+            0.34727493562478856
+          ],
+          "errors": [
+            8.634878506663668e-10,
+            2.5987698104579238e-11,
+            1.7027351750797948e-12,
+            3.2115976544844216e-13
+          ],
+          "floors": [
+            6.712297499341557e-14,
+            2.9727021293303317e-13,
+            7.294939947107456e-13,
+            9.247997263915344e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|common_L12@shift_3_4_1_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.562562855191231,
+          "error_over_floor": [
+            1333.460137624581,
+            28.660893835150485,
+            0.7165859455446615,
+            0.018576542832199314
+          ],
+          "errors": [
+            3.014735006192034e-09,
+            2.036050930551928e-10,
+            1.4122538117428974e-11,
+            2.1542927270043875e-12
+          ],
+          "floors": [
+            2.2608362418410702e-12,
+            7.103933820985237e-12,
+            1.970808694370183e-11,
+            1.1596844183893481e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.487349344245468,
+          "error_over_floor": [
+            19005.989195290556,
+            351.9471915799244,
+            6.601436612558665,
+            0.13225774129788195
+          ],
+          "errors": [
+            7.670950125104881e-10,
+            4.580545664989444e-11,
+            2.4274332544038657e-12,
+            2.8976820942716586e-13
+          ],
+          "floors": [
+            4.036069917900219e-14,
+            1.3014866362271395e-13,
+            3.67712877797824e-13,
+            2.190935718269418e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|order_matched_L10@shift_0_0": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.450889816455408,
+          "error_over_floor": [
+            9732.674652791808,
+            131.62677966010642,
+            5.593977930952604,
+            0.2901934864387016
+          ],
+          "errors": [
+            2.249493624175643e-08,
+            1.1131431315577108e-09,
+            1.5703117406292998e-10,
+            3.158455325050816e-11
+          ],
+          "floors": [
+            2.3112799969434693e-12,
+            8.45681353317408e-12,
+            2.8071468282712546e-11,
+            1.0883963536921032e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.70201991064373,
+          "error_over_floor": [
+            146596.2314814342,
+            2028.7447352543425,
+            118.51791516920844,
+            6.695671691752508
+          ],
+          "errors": [
+            6.083097220388467e-09,
+            3.163894007895962e-10,
+            6.219019743625154e-11,
+            1.3740147908336553e-11
+          ],
+          "floors": [
+            4.1495590704586874e-14,
+            1.5595328248624175e-13,
+            5.247324621552985e-13,
+            2.052094030425832e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|order_matched_L10@shift_1_2_1_2": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.731021107853635,
+          "error_over_floor": [
+            6075.272175475097,
+            108.5635529691873,
+            4.181135267321581,
+            0.45566859371537793
+          ],
+          "errors": [
+            2.3643397351531097e-08,
+            1.3530180271658837e-09,
+            1.4229365136881288e-10,
+            2.9098470383210486e-11
+          ],
+          "floors": [
+            3.891742899515797e-12,
+            1.2462912185177834e-11,
+            3.403230038524098e-11,
+            6.38588456271492e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.794023949244451,
+          "error_over_floor": [
+            92847.87351337867,
+            1872.5436720587659,
+            67.24022860088778,
+            6.274624630262672
+          ],
+          "errors": [
+            6.487892917350635e-09,
+            4.2913873843364314e-10,
+            4.2856565518611944e-11,
+            7.563102921714915e-12
+          ],
+          "floors": [
+            6.987659137304614e-14,
+            2.2917422158802153e-13,
+            6.373649586022691e-13,
+            1.2053474697494859e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|order_matched_L10@shift_1_4_3_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.759379487961938,
+          "error_over_floor": [
+            10407.496739326714,
+            62.28373381296476,
+            2.486723409344457,
+            0.2882826716083514
+          ],
+          "errors": [
+            2.6139174142431815e-08,
+            1.350410703571145e-09,
+            1.245353670080527e-10,
+            3.3808639623531e-11
+          ],
+          "floors": [
+            2.5115716869417748e-12,
+            2.168159519187413e-11,
+            5.0080104019643405e-11,
+            1.1727600356590973e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.756606345249402,
+          "error_over_floor": [
+            152263.44687438276,
+            884.1368000690288,
+            38.33999083035428,
+            3.8586428848230003
+          ],
+          "errors": [
+            6.85056272820006e-09,
+            3.535165771229032e-10,
+            3.5790106989175285e-11,
+            8.532910489300605e-12
+          ],
+          "floors": [
+            4.49915122035282e-14,
+            3.998437539250741e-13,
+            9.334928416529454e-13,
+            2.2113760573342142e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C10|order_matched_L10@shift_3_4_1_8": {
+      "formal_order": 10,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.61539047674096,
+          "error_over_floor": [
+            7239.5909090828145,
+            152.67917890632813,
+            5.671474592799991,
+            0.2652469425798074
+          ],
+          "errors": [
+            1.8397259555903348e-08,
+            1.7425632712363636e-09,
+            1.3683250983259872e-10,
+            2.6035513706974535e-11
+          ],
+          "floors": [
+            2.5412015384490975e-12,
+            1.1413234494177248e-11,
+            2.4126443236880462e-11,
+            9.815575423321223e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 9.089237535089305,
+          "error_over_floor": [
+            89093.83911626045,
+            2346.946120331213,
+            110.40823167694899,
+            4.121107737728081
+          ],
+          "errors": [
+            4.041814313793246e-09,
+            4.907413642118996e-10,
+            4.9700313309308797e-11,
+            7.642220190007265e-12
+          ],
+          "floors": [
+            4.536581152956038e-14,
+            2.0909783993790352e-13,
+            4.501504331192474e-13,
+            1.8544092211043076e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C12|L12@shift_0_0": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.400395920054653,
+          "error_over_floor": [
+            1804.6607655789592,
+            13.339998108937644,
+            0.38358717114233826,
+            0.015535393031519006
+          ],
+          "errors": [
+            3.91672487105709e-09,
+            1.266027624442549e-10,
+            1.1384867248225532e-11,
+            1.4017220129853538e-12
+          ],
+          "floors": [
+            2.170338573189157e-12,
+            9.49046329769961e-12,
+            2.96800000227352e-11,
+            9.022765051012665e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.682947331239296,
+          "error_over_floor": [
+            25375.829448409855,
+            201.55248053544238,
+            6.950371381566944,
+            0.34291103970204545
+          ],
+          "errors": [
+            9.887742014047518e-10,
+            3.5274699827780864e-11,
+            3.856068242491517e-12,
+            5.833528105014807e-13
+          ],
+          "floors": [
+            3.896519731167692e-14,
+            1.7501496252524622e-13,
+            5.548003165295861e-13,
+            1.7011782735497652e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C12|L12@shift_1_2_1_2": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.524368039604749,
+          "error_over_floor": [
+            1013.7689103949518,
+            12.663344865071533,
+            0.2998552008143331,
+            0.019835525333353234
+          ],
+          "errors": [
+            4.425591775068055e-09,
+            1.2745671078715036e-10,
+            9.450504842020177e-12,
+            1.5812531589277195e-12
+          ],
+          "floors": [
+            4.365483819526384e-12,
+            1.006501142827641e-11,
+            3.151689487577646e-11,
+            7.971823948967253e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.218867483739928,
+          "error_over_floor": [
+            8205.254091554729,
+            176.70398795706552,
+            3.8930306315183163,
+            0.18379557922862919
+          ],
+          "errors": [
+            6.431495752634575e-10,
+            3.270445025904678e-11,
+            2.2978841052179177e-12,
+            2.765565554341265e-13
+          ],
+          "floors": [
+            7.838265190658998e-14,
+            1.8508043104829705e-13,
+            5.902558501888085e-13,
+            1.5046964491464126e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C12|L12@shift_1_4_3_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.643706686593037,
+          "error_over_floor": [
+            1389.0836948521044,
+            9.210941970208312,
+            0.2135934509807795,
+            0.02256439395652459
+          ],
+          "errors": [
+            4.446488761105785e-09,
+            1.4396947390645108e-10,
+            9.517306654324743e-12,
+            1.481801731057845e-12
+          ],
+          "floors": [
+            3.2010229315802328e-12,
+            1.563026608701945e-11,
+            4.4558045251964076e-11,
+            6.5669910475454e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.492506188781537,
+          "error_over_floor": [
+            15022.014747728635,
+            90.81083983210657,
+            2.068062853171454,
+            0.26668852764763146
+          ],
+          "errors": [
+            8.613942753532555e-10,
+            2.6175991929555664e-11,
+            1.7176537969731953e-12,
+            3.302358386747528e-13
+          ],
+          "floors": [
+            5.734212685974765e-14,
+            2.882474380586119e-13,
+            8.305616990020911e-13,
+            1.238282882235882e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C12|L12@shift_3_4_1_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.493703726124656,
+          "error_over_floor": [
+            1326.4553284413694,
+            31.87660895843614,
+            0.25611030667886603,
+            0.010373065728217699
+          ],
+          "errors": [
+            3.2977091286524486e-09,
+            1.8140524834649212e-10,
+            9.504548722040528e-12,
+            1.2621116775561399e-12
+          ],
+          "floors": [
+            2.4861064356591412e-12,
+            5.690857788010831e-12,
+            3.7111152789169784e-11,
+            1.2167200233994816e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.341100075905354,
+          "error_over_floor": [
+            15828.62996499206,
+            438.71483335181165,
+            3.5689441133255833,
+            0.1275612355282859
+          ],
+          "errors": [
+            7.025101750324225e-10,
+            4.574049472516606e-11,
+            2.4712037971497125e-12,
+            2.9322377859131166e-13
+          ],
+          "floors": [
+            4.438224764784783e-14,
+            1.0426019648277109e-13,
+            6.924187431018684e-13,
+            2.298690329996773e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C6|Q12-6@shift_0_0": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.609262064915543,
+          "diagnostic_four_grid_order": 5.609262064915543,
+          "error_over_floor": [
+            2391843.14579357,
+            197288.84517824443,
+            14727.154306267015,
+            3387.565693170571
+          ],
+          "errors": [
+            3.185825420329642e-06,
+            6.546425438462213e-07,
+            1.8003448788515e-07,
+            6.603497395472633e-08
+          ],
+          "floors": [
+            1.3319541567482856e-12,
+            3.3181933994026463e-12,
+            1.2224662289885687e-11,
+            1.9493341217811575e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 4.791052587874076,
+          "diagnostic_four_grid_order": 4.791052587874076,
+          "error_over_floor": [
+            18594765.00479491,
+            1776752.2919843316,
+            222357.24532196784,
+            38455.31900542429
+          ],
+          "errors": [
+            4.4466132972931227e-07,
+            1.0872172760689747e-07,
+            5.0811376328674385e-08,
+            1.4133602802002265e-08
+          ],
+          "floors": [
+            2.3913253521335192e-14,
+            6.11912690910187e-14,
+            2.285123484737399e-13,
+            3.6753310510851986e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C6|Q12-6@shift_1_2_1_2": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.8001387859981,
+          "diagnostic_four_grid_order": 5.8001387859981,
+          "error_over_floor": [
+            1783783.5488614405,
+            156494.99944999858,
+            12176.891360846046,
+            2475.7689050368435
+          ],
+          "errors": [
+            3.1430313717190524e-06,
+            6.8381294514445e-07,
+            1.7286881058723162e-07,
+            5.70454634842534e-08
+          ],
+          "floors": [
+            1.7620026677144754e-12,
+            4.3695514076980704e-12,
+            1.4196464882907582e-11,
+            2.3041513837659443e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.686326346701114,
+          "diagnostic_four_grid_order": 5.686326346701114,
+          "error_over_floor": [
+            21296840.714052744,
+            2101281.0951832444,
+            211985.12916675606,
+            26806.361058611506
+          ],
+          "errors": [
+            6.737663454381426e-07,
+            1.6883684825219625e-07,
+            5.6361492570267124e-08,
+            1.1658429985295093e-08
+          ],
+          "floors": [
+            3.163691528169045e-14,
+            8.034948234161534e-14,
+            2.6587474693062504e-13,
+            4.34912816394743e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|Q12-6@shift_1_4_3_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.381084818611734,
+          "diagnostic_four_grid_order": 5.381084818611734,
+          "error_over_floor": [
+            2216457.915202428,
+            103692.19769786941,
+            11311.25593305025,
+            3132.7388729598943
+          ],
+          "errors": [
+            3.2809759855901923e-06,
+            6.222538968782879e-07,
+            1.7980670190855808e-07,
+            8.164513311536446e-08
+          ],
+          "floors": [
+            1.4802789455582974e-12,
+            6.0009712465673155e-12,
+            1.589626324192547e-11,
+            2.6061901877644844e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.5234601996346715,
+          "diagnostic_four_grid_order": 5.5234601996346715,
+          "error_over_floor": [
+            30042088.37862596,
+            1132627.730278415,
+            104835.46131955946,
+            39451.773601330424
+          ],
+          "errors": [
+            7.966337346593244e-07,
+            1.2534523263774133e-07,
+            3.10634026695622e-08,
+            1.9387690702865612e-08
+          ],
+          "floors": [
+            2.6517255545593338e-14,
+            1.1066763534646093e-13,
+            2.96306252469999e-13,
+            4.91427607254945e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|Q12-6@shift_3_4_1_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.644414957487709,
+          "diagnostic_four_grid_order": 5.644414957487709,
+          "error_over_floor": [
+            2381315.017715933,
+            199825.04698605533,
+            18115.99447197413,
+            1643.4147041536507
+          ],
+          "errors": [
+            3.019183694259801e-06,
+            6.407373568902111e-07,
+            1.7984556097318797e-07,
+            5.991647562263926e-08
+          ],
+          "floors": [
+            1.2678640464610547e-12,
+            3.206491711396543e-12,
+            9.927446227222762e-12,
+            3.645852472367643e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 4.88967878872001,
+          "diagnostic_four_grid_order": 4.88967878872001,
+          "error_over_floor": [
+            19092736.8772276,
+            2514259.085037974,
+            264455.15887179004,
+            20144.61366751241
+          ],
+          "errors": [
+            4.3214595131513267e-07,
+            1.4770015661913494e-07,
+            4.8983967354532254e-08,
+            1.3875474630387075e-08
+          ],
+          "floors": [
+            2.263404948666968e-14,
+            5.874500265230389e-14,
+            1.852259852426629e-13,
+            6.887932853616502e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C6|common_L12@shift_0_0": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.183528556703799,
+          "diagnostic_four_grid_order": 6.183528556703799,
+          "error_over_floor": [
+            434610.8254154165,
+            22644.122464106513,
+            1736.3211201271408,
+            357.84157636999083
+          ],
+          "errors": [
+            5.92503185049363e-07,
+            9.656312504992818e-08,
+            2.5123207168602887e-08,
+            8.08228498247735e-09
+          ],
+          "floors": [
+            1.3632959659553519e-12,
+            4.264379209350754e-12,
+            1.4469217057477973e-11,
+            2.2586209977234897e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.789250898294783,
+          "diagnostic_four_grid_order": 6.789250898294783,
+          "error_over_floor": [
+            2130127.035360235,
+            105312.10384793986,
+            7071.392003675884,
+            1063.629368919411
+          ],
+          "errors": [
+            5.213688075711431e-08,
+            8.281745331184531e-09,
+            1.9125938194308745e-09,
+            4.529433217381751e-10
+          ],
+          "floors": [
+            2.4475949035733087e-14,
+            7.864001409697923e-14,
+            2.7046921149848023e-13,
+            4.2584694911004626e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C6|common_L12@shift_1_2_1_2": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.184160462934372,
+          "diagnostic_four_grid_order": 6.184160462934372,
+          "error_over_floor": [
+            326387.4657305586,
+            22810.577125415217,
+            2101.667821279032,
+            312.9472691536092
+          ],
+          "errors": [
+            5.81615004873634e-07,
+            1.0413481577870112e-07,
+            2.4946117906216964e-08,
+            8.090459790089234e-09
+          ],
+          "floors": [
+            1.7819771466155885e-12,
+            4.5651986447408034e-12,
+            1.1869676860273413e-11,
+            2.585246968912854e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.624561330775121,
+          "diagnostic_four_grid_order": 6.624561330775121,
+          "error_over_floor": [
+            2056414.8336698895,
+            85489.06588993885,
+            8906.790880425078,
+            1324.7503262936254
+          ],
+          "errors": [
+            6.579614179880178e-08,
+            7.176562663580022e-09,
+            1.979962790943368e-09,
+            6.464385832183339e-10
+          ],
+          "floors": [
+            3.199555883448945e-14,
+            8.394714094571275e-14,
+            2.2229811135398233e-13,
+            4.879701256816701e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|common_L12@shift_1_4_3_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.27264012632264,
+          "diagnostic_four_grid_order": 6.27264012632264,
+          "error_over_floor": [
+            436401.145642402,
+            13031.04530484827,
+            1289.6154605874835,
+            276.8887798594728
+          ],
+          "errors": [
+            6.185611810588512e-07,
+            9.991134236112012e-08,
+            2.5113691821529424e-08,
+            7.960421427237152e-09
+          ],
+          "floors": [
+            1.417414200753991e-12,
+            7.667177883569138e-12,
+            1.9473783146248028e-11,
+            2.874952690851989e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.698486707726851,
+          "diagnostic_four_grid_order": 6.698486707726851,
+          "error_over_floor": [
+            2451330.998193587,
+            60653.92339524457,
+            5719.295320347236,
+            1079.5213624273215
+          ],
+          "errors": [
+            6.224202998839079e-08,
+            8.576172785823566e-09,
+            2.0760538843589416e-09,
+            5.852149181917454e-10
+          ],
+          "floors": [
+            2.5391116105600437e-14,
+            1.4139518609435842e-13,
+            3.629912022505769e-13,
+            5.421059170852165e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|common_L12@shift_3_4_1_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.176616911042557,
+          "diagnostic_four_grid_order": 6.176616911042557,
+          "error_over_floor": [
+            409982.0548024896,
+            35236.32924035712,
+            2692.1597314990727,
+            181.75516752789528
+          ],
+          "errors": [
+            5.739594314959522e-07,
+            1.0465588361917705e-07,
+            2.4379533142914834e-08,
+            8.107496532069378e-09
+          ],
+          "floors": [
+            1.3999623270644356e-12,
+            2.9701131155089744e-12,
+            9.05575284321618e-12,
+            4.460669065062517e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.458558983148646,
+          "diagnostic_four_grid_order": 6.458558983148646,
+          "error_over_floor": [
+            2037267.3236533857,
+            154316.21753312828,
+            10278.863339037494,
+            721.3634756670033
+          ],
+          "errors": [
+            5.091596075312843e-08,
+            8.397023437689555e-09,
+            1.7367368654319648e-09,
+            6.079165504324635e-10
+          ],
+          "floors": [
+            2.499228263369089e-14,
+            5.441439384610953e-14,
+            1.6896195699344628e-13,
+            8.427326458001745e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|order_matched_L6@shift_0_0": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.76167838014583,
+          "diagnostic_four_grid_order": 5.76167838014583,
+          "error_over_floor": [
+            494858.8211017839,
+            27066.7239536642,
+            1531.472534903511,
+            397.0361560518477
+          ],
+          "errors": [
+            2.1398607057948486e-06,
+            4.165513089019655e-07,
+            1.0157955089199339e-07,
+            4.148719010834275e-08
+          ],
+          "floors": [
+            4.324184220926955e-12,
+            1.5389794110844886e-11,
+            6.632802650841748e-11,
+            1.0449222186939837e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.437430177624067,
+          "diagnostic_four_grid_order": 5.437430177624067,
+          "error_over_floor": [
+            5962350.371330462,
+            353230.9954488887,
+            28539.728047220036,
+            5006.391960212879
+          ],
+          "errors": [
+            4.628828300934362e-07,
+            1.0024884561365965e-07,
+            3.5385041508018134e-08,
+            9.863226152484472e-09
+          ],
+          "floors": [
+            7.763428870587267e-14,
+            2.8380534807332704e-13,
+            1.2398520914240063e-12,
+            1.9701266362822046e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|order_matched_L6@shift_1_2_1_2": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.18341057164085,
+          "diagnostic_four_grid_order": 6.18341057164085,
+          "error_over_floor": [
+            275774.90135225386,
+            30829.982331083622,
+            2071.650828084391,
+            390.89167458714314
+          ],
+          "errors": [
+            2.2155680472480077e-06,
+            4.1012578681368515e-07,
+            1.0041084333117073e-07,
+            3.0383788679514965e-08
+          ],
+          "floors": [
+            8.033972766861803e-12,
+            1.3302822635749136e-11,
+            4.846899968370557e-11,
+            7.772943414977077e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.575524511608549,
+          "diagnostic_four_grid_order": 6.575524511608549,
+          "error_over_floor": [
+            5812518.07736449,
+            631917.6432034471,
+            45483.08277654436,
+            5441.425694501607
+          ],
+          "errors": [
+            8.384597934424365e-07,
+            1.545790065254904e-07,
+            4.128676227288519e-08,
+            7.983427877111815e-09
+          ],
+          "floors": [
+            1.4425069862709323e-13,
+            2.446189122713312e-13,
+            9.077388724006366e-13,
+            1.4671573821505681e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|order_matched_L6@shift_1_4_3_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.464199369671322,
+          "diagnostic_four_grid_order": 5.464199369671322,
+          "error_over_floor": [
+            489966.19157223555,
+            15109.616112995762,
+            1031.8041048495352,
+            638.588420609276
+          ],
+          "errors": [
+            2.2534964341373295e-06,
+            3.6803196285919466e-07,
+            1.1067589074409199e-07,
+            5.269948720678862e-08
+          ],
+          "floors": [
+            4.5992896507944004e-12,
+            2.4357466139900858e-11,
+            1.0726444120924631e-10,
+            8.252496522957328e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 6.111197780442725,
+          "diagnostic_four_grid_order": 6.111197780442725,
+          "error_over_floor": [
+            9990381.778604418,
+            227020.65605328686,
+            11917.533704286558,
+            8399.071200586564
+          ],
+          "errors": [
+            8.231099619254723e-07,
+            1.0197566976954953e-07,
+            2.3828018752558577e-08,
+            1.3069833590395596e-08
+          ],
+          "floors": [
+            8.239024095037683e-14,
+            4.4919115089515703e-13,
+            1.9994085474235326e-12,
+            1.5561046308885726e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C6|order_matched_L6@shift_3_4_1_8": {
+      "formal_order": 6,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.868747164582287,
+          "diagnostic_four_grid_order": 5.868747164582287,
+          "error_over_floor": [
+            577595.7725911108,
+            30597.73346664942,
+            3374.238884665951,
+            99.96077294155832
+          ],
+          "errors": [
+            1.943477972537423e-06,
+            4.101930474867394e-07,
+            1.0485740754780956e-07,
+            3.331292523853592e-08
+          ],
+          "floors": [
+            3.364771808870634e-12,
+            1.3405994530079724e-11,
+            3.107586959071821e-11,
+            3.3325998047266197e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 5.518350274401366,
+          "diagnostic_four_grid_order": 5.518350274401366,
+          "error_over_floor": [
+            7174811.656251436,
+            533226.393307866,
+            62547.68809412767,
+            1431.2736849562934
+          ],
+          "errors": [
+            4.3097859035723385e-07,
+            1.3096386446143082e-07,
+            3.626593862715577e-08,
+            9.011470486486317e-09
+          ],
+          "floors": [
+            6.006827928113218e-14,
+            2.456064930488483e-13,
+            5.798126154971445e-13,
+            6.29611972972276e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|Q12-8@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.474930814353302,
+          "diagnostic_four_grid_order": 7.474930814353302,
+          "error_over_floor": [
+            211285.045259818,
+            6385.838521396308,
+            428.91996714865013,
+            49.597092574953784
+          ],
+          "errors": [
+            3.121906597856825e-07,
+            3.421520884259729e-08,
+            6.110529126157809e-09,
+            1.8146491491332426e-09
+          ],
+          "floors": [
+            1.4775804856504657e-12,
+            5.357982155038254e-12,
+            1.4246315383214819e-11,
+            3.6587813013249667e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.806906943793498,
+          "diagnostic_four_grid_order": 6.806906943793498,
+          "error_over_floor": [
+            2463600.9686207008,
+            101539.23523337116,
+            8405.95786277618,
+            827.7330567399755
+          ],
+          "errors": [
+            6.535380885075437e-08,
+            1.0032817590599485e-08,
+            2.238528182263444e-09,
+            5.710010797521647e-10
+          ],
+          "floors": [
+            2.6527757410058205e-14,
+            9.880729914442147e-14,
+            2.6630257001123486e-13,
+            6.898372308592471e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C8|Q12-8@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.546757207004015,
+          "diagnostic_four_grid_order": 7.546757207004015,
+          "error_over_floor": [
+            130695.43626648119,
+            7625.138655360776,
+            527.8433667590957,
+            39.07614858222755
+          ],
+          "errors": [
+            2.750111025092154e-07,
+            3.709755798618464e-08,
+            6.5571848871667864e-09,
+            1.4612415102382211e-09
+          ],
+          "floors": [
+            2.104213508637609e-12,
+            4.865165036717539e-12,
+            1.2422595982265025e-11,
+            3.739471680949685e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.674292404243172,
+          "diagnostic_four_grid_order": 7.674292404243172,
+          "error_over_floor": [
+            2875669.4258000115,
+            158547.01249959585,
+            10793.43617617059,
+            738.5655085753858
+          ],
+          "errors": [
+            1.0864664860832374e-07,
+            1.4184102795078424e-08,
+            2.511128666116136e-09,
+            5.21303292200237e-10
+          ],
+          "floors": [
+            3.778134149689276e-14,
+            8.946307200278895e-14,
+            2.326533112467119e-13,
+            7.058321653901432e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|Q12-8@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 7.2139445589017885,
+          "diagnostic_four_grid_order": 7.2139445589017885,
+          "error_over_floor": [
+            189971.82883534263,
+            4306.89238127693,
+            232.9367028663452,
+            68.20611778468243
+          ],
+          "errors": [
+            3.2313432815806454e-07,
+            3.273075693503315e-08,
+            5.595062115591053e-09,
+            2.412096059798538e-09
+          ],
+          "floors": [
+            1.700959190313107e-12,
+            7.599622660023133e-12,
+            2.4019667346289334e-11,
+            3.53648050665074e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.617715654516755,
+          "diagnostic_four_grid_order": 7.617715654516755,
+          "error_over_floor": [
+            3933770.097218961,
+            72973.66345388358,
+            3924.7782785066643,
+            982.3734616596058
+          ],
+          "errors": [
+            1.1986375549055683e-07,
+            1.0227212104974015e-08,
+            1.7572270721855077e-09,
+            6.550905512492378e-10
+          ],
+          "floors": [
+            3.047045265184571e-14,
+            1.4014935828783219e-13,
+            4.477264567551861e-13,
+            6.668447151885988e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|Q12-8@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.449236922527334,
+          "diagnostic_four_grid_order": 7.449236922527334,
+          "error_over_floor": [
+            172899.07685101606,
+            6510.934180761106,
+            563.1614461104855,
+            29.91070138269236
+          ],
+          "errors": [
+            2.5912203988445184e-07,
+            4.055254604721e-08,
+            6.372716975785326e-09,
+            1.533505327569826e-09
+          ],
+          "floors": [
+            1.498689551175178e-12,
+            6.228375978217851e-12,
+            1.1315968129208681e-11,
+            5.126945396396419e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.981752283661789,
+          "diagnostic_four_grid_order": 6.981752283661789,
+          "error_over_floor": [
+            2406183.8801985527,
+            104937.79363909304,
+            11650.583879416554,
+            503.6890629790017
+          ],
+          "errors": [
+            6.43769010599815e-08,
+            1.1974228900091255e-08,
+            2.459822540101797e-09,
+            4.87877765964484e-10
+          ],
+          "floors": [
+            2.675477198137878e-14,
+            1.141078774847657e-13,
+            2.1113298402560248e-13,
+            9.686090126297285e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C8|common_L12@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.333846896106772,
+          "error_over_floor": [
+            18408.74341176078,
+            497.49696337069025,
+            20.86054102419923,
+            2.9333524574609258
+          ],
+          "errors": [
+            2.879254888220014e-08,
+            2.490096977432818e-09,
+            4.114250483577469e-10,
+            8.771307290011413e-11
+          ],
+          "floors": [
+            1.5640692163597362e-12,
+            5.00525060607741e-12,
+            1.9722645154815213e-11,
+            2.990198899454363e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.558788530572018,
+          "diagnostic_four_grid_order": 8.558788530572018,
+          "error_over_floor": [
+            92329.92467108394,
+            1779.618933946585,
+            115.35574054328576,
+            10.067524057707939
+          ],
+          "errors": [
+            2.592673568890813e-09,
+            1.642633251641712e-10,
+            4.2528217059079054e-11,
+            5.675876435518035e-12
+          ],
+          "floors": [
+            2.8080533782811498e-14,
+            9.230252726064867e-14,
+            3.6867014037433955e-13,
+            5.637807670469332e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|common_L12@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.313797729853327,
+          "error_over_floor": [
+            13636.609333423383,
+            503.4724467356001,
+            28.30512663912386,
+            3.0632602293112656
+          ],
+          "errors": [
+            2.8433532673939734e-08,
+            2.7127356873458333e-09,
+            3.9513674665118394e-10,
+            9.150749264255561e-11
+          ],
+          "floors": [
+            2.0850881607533505e-12,
+            5.3880519280341746e-12,
+            1.3959900327915111e-11,
+            2.9872582083282515e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.96264370285909,
+          "diagnostic_four_grid_order": 7.96264370285909,
+          "error_over_floor": [
+            66536.86966839586,
+            2381.1958738545763,
+            145.53675992260673,
+            18.276281293755837
+          ],
+          "errors": [
+            2.491003611715392e-09,
+            2.35924543789956e-10,
+            3.8049757788982674e-11,
+            1.0305090114570703e-11
+          ],
+          "floors": [
+            3.743794416734616e-14,
+            9.907817596208563e-14,
+            2.6144431007820087e-13,
+            5.638504873577032e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|common_L12@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.364603521293299,
+          "error_over_floor": [
+            16716.977320584727,
+            287.0981731511962,
+            16.89240178700841,
+            2.5551319718662264
+          ],
+          "errors": [
+            2.94533149390876e-08,
+            2.544650871106879e-09,
+            3.908969152248585e-10,
+            9.024911679518766e-11
+          ],
+          "floors": [
+            1.7618804149970208e-12,
+            8.86334748555427e-12,
+            2.3140398870070038e-11,
+            3.532072620470996e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.299468934623734,
+          "diagnostic_four_grid_order": 8.299468934623734,
+          "error_over_floor": [
+            85680.85514626958,
+            1234.277751959637,
+            72.31121382536968,
+            13.4221731227287
+          ],
+          "errors": [
+            2.7042399985965915e-09,
+            2.01748243111588e-10,
+            3.1190494631516685e-11,
+            8.939349260828067e-12
+          ],
+          "floors": [
+            3.156177647830503e-14,
+            1.6345449214431399e-13,
+            4.313368975777559e-13,
+            6.660135567533729e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|common_L12@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.238799423376376,
+          "error_over_floor": [
+            15919.548199829273,
+            821.831217510973,
+            39.32857977259897,
+            1.636578111037165
+          ],
+          "errors": [
+            2.63095611307478e-08,
+            2.781556259677033e-09,
+            3.959721781280713e-10,
+            8.952449219052389e-11
+          ],
+          "floors": [
+            1.652657525232403e-12,
+            3.3845833553285457e-12,
+            1.00683060618414e-11,
+            5.470224218860451e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.064134665045744,
+          "error_over_floor": [
+            83990.11478466536,
+            4222.49240476773,
+            220.72638829386008,
+            9.019931424125344
+          ],
+          "errors": [
+            2.477996079164324e-09,
+            2.6182728207757577e-10,
+            4.146436666241371e-11,
+            9.321765581660202e-12
+          ],
+          "floors": [
+            2.950342531996097e-14,
+            6.200775678884338e-14,
+            1.878541436885692e-13,
+            1.033463021318272e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C8|order_matched_L8@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.635695334511619,
+          "error_over_floor": [
+            56372.83608160997,
+            1507.6102574951099,
+            74.07312886426381,
+            4.9151083133283064
+          ],
+          "errors": [
+            1.7854465357075412e-07,
+            1.6652894623604826e-08,
+            2.9337036321634555e-09,
+            9.37110363322246e-10
+          ],
+          "floors": [
+            3.167210769958037e-12,
+            1.1045888379184659e-11,
+            3.9605504413609366e-11,
+            1.9065914799498567e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.966495187834107,
+          "diagnostic_four_grid_order": 6.966495187834107,
+          "error_over_floor": [
+            738697.3901214404,
+            26619.86393886791,
+            1539.789508912225,
+            94.30158891124941
+          ],
+          "errors": [
+            4.200421964417611e-08,
+            5.422433654866943e-09,
+            1.1399602511952267e-09,
+            3.3898996110171e-10
+          ],
+          "floors": [
+            5.68625531995865e-14,
+            2.0369877424315443e-13,
+            7.403351202207792e-13,
+            3.5947428353592805e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "C8|order_matched_L8@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.928003205896403,
+          "error_over_floor": [
+            44429.30490302584,
+            1431.807937687235,
+            79.43387359008774,
+            7.9862744884835575
+          ],
+          "errors": [
+            1.6535357970454106e-07,
+            1.8604675645116898e-08,
+            3.0775736700542512e-09,
+            6.770635040919369e-10
+          ],
+          "floors": [
+            3.72172330999668e-12,
+            1.2993834686493346e-11,
+            3.874384479769711e-11,
+            8.477839135986151e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.192047838595478,
+          "diagnostic_four_grid_order": 8.192047838595478,
+          "error_over_floor": [
+            1046779.9738703675,
+            32563.593403377527,
+            1642.7509868225902,
+            148.61672864731676
+          ],
+          "errors": [
+            6.994989355801895e-08,
+            7.780650193578431e-09,
+            1.1919864817411252e-09,
+            2.3781764058039556e-10
+          ],
+          "floors": [
+            6.68238744570036e-14,
+            2.389370883365536e-13,
+            7.256038750259198e-13,
+            1.6002077474384598e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|order_matched_L8@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.587230540100607,
+          "diagnostic_four_grid_order": 7.587230540100607,
+          "error_over_floor": [
+            63111.41559225909,
+            889.6556384728173,
+            39.67761150685524,
+            14.037031614142226
+          ],
+          "errors": [
+            1.952828468713532e-07,
+            1.6411293480032088e-08,
+            2.622830377028674e-09,
+            1.1323453927296723e-09
+          ],
+          "floors": [
+            3.0942555326758597e-12,
+            1.8446793085247807e-11,
+            6.610353490092311e-11,
+            8.066843645125377e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.009231348424938,
+          "diagnostic_four_grid_order": 8.009231348424938,
+          "error_over_floor": [
+            1287306.4984610965,
+            16359.769276731513,
+            708.9449226199317,
+            194.9701051831717
+          ],
+          "errors": [
+            7.135479283826296e-08,
+            5.56540963314589e-09,
+            8.73540309531684e-10,
+            2.9656856137538767e-10
+          ],
+          "floors": [
+            5.542952896110107e-14,
+            3.4018876055064956e-13,
+            1.2321694981656461e-12,
+            1.521097611845496e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "C8|order_matched_L8@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.748394911367296,
+          "error_over_floor": [
+            45385.30840954783,
+            1682.8661273850219,
+            120.77988652128035,
+            4.8507951113514585
+          ],
+          "errors": [
+            1.4386180670457056e-07,
+            2.198305175836578e-08,
+            2.954290804192838e-09,
+            7.11873090332671e-10
+          ],
+          "floors": [
+            3.1697880161216653e-12,
+            1.3062864241331474e-11,
+            2.4460122370394164e-11,
+            1.467538978644553e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.262224555383598,
+          "diagnostic_four_grid_order": 7.262224555383598,
+          "error_over_floor": [
+            645284.4535198802,
+            26790.879584424587,
+            2598.9373092179253,
+            83.36517474369151
+          ],
+          "errors": [
+            3.651497400281034e-08,
+            6.411596628619343e-09,
+            1.1860931542484465e-09,
+            2.3113415348330335e-10
+          ],
+          "floors": [
+            5.658740700109765e-14,
+            2.393201241644508e-13,
+            4.563762080915167e-13,
+            2.7725504587968725e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "CW12A|L12@shift_0_0": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.413705797482185,
+          "error_over_floor": [
+            903.8276279788251,
+            4.862190443372131,
+            0.1655361697602275,
+            0.0025269139187665385
+          ],
+          "errors": [
+            4.937212156188446e-09,
+            1.3834186110233927e-10,
+            1.4767082975096478e-11,
+            1.661601223871477e-12
+          ],
+          "floors": [
+            5.462559456418957e-12,
+            2.8452579699118787e-11,
+            8.920759128646027e-11,
+            6.575614671838737e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.577131459387216,
+          "error_over_floor": [
+            10308.355770216616,
+            64.15463572590875,
+            2.2784911480534435,
+            0.05243353495638653
+          ],
+          "errors": [
+            1.0109623138632173e-09,
+            3.366180945096886e-11,
+            3.799460746023442e-12,
+            6.500633364936448e-13
+          ],
+          "floors": [
+            9.807212094717734e-14,
+            5.246980061547539e-13,
+            1.6675336874884901e-12,
+            1.2397854484431733e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12A|L12@shift_1_2_1_2": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.373462094785394,
+          "error_over_floor": [
+            428.23963678014144,
+            7.0458451980624925,
+            0.07351918274530593,
+            0.010999838307536144
+          ],
+          "errors": [
+            5.020835091796356e-09,
+            1.4665756671665498e-10,
+            1.0049691748518374e-11,
+            2.10073311907874e-12
+          ],
+          "floors": [
+            1.1724358654764265e-11,
+            2.0814758569629622e-11,
+            1.36694824034344e-10,
+            1.9097854535184378e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.01637567918512,
+          "error_over_floor": [
+            2997.655045172824,
+            86.82544921997624,
+            0.9184737165259423,
+            0.08839268954251812
+          ],
+          "errors": [
+            6.310420797017713e-10,
+            3.323262498522439e-11,
+            2.351341343853619e-12,
+            3.1863400806741993e-13
+          ],
+          "floors": [
+            2.105119068713224e-13,
+            3.8275212260667975e-13,
+            2.5600529460411676e-12,
+            3.6047552090170592e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12A|L12@shift_1_4_3_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.773092954753638,
+          "error_over_floor": [
+            769.024761462917,
+            5.063661629826109,
+            0.06973760371903923,
+            0.0041825074165194095
+          ],
+          "errors": [
+            5.6470015546270355e-09,
+            1.7229896098567693e-10,
+            1.0718813810810735e-11,
+            1.7505937793769867e-12
+          ],
+          "floors": [
+            7.343068568929739e-12,
+            3.402655500730878e-11,
+            1.537020665922934e-10,
+            4.18551267228545e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.45949461429079,
+          "error_over_floor": [
+            6542.886425446997,
+            42.01553685300463,
+            0.5948303687429235,
+            0.04320041710101193
+          ],
+          "errors": [
+            8.606607093675223e-10,
+            2.6364951888346866e-11,
+            1.7041923427996153e-12,
+            3.4094949086238557e-13
+          ],
+          "floors": [
+            1.3154144110161955e-13,
+            6.275048199571308e-13,
+            2.86500560891191e-12,
+            7.892273124705528e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12A|L12@shift_3_4_1_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.469139194382201,
+          "error_over_floor": [
+            604.8189356359637,
+            19.129632382585942,
+            0.17860879543527805,
+            0.002967891329318932
+          ],
+          "errors": [
+            3.287677421978801e-09,
+            2.7675772210260255e-10,
+            1.0846898102958949e-11,
+            1.357059954721164e-12
+          ],
+          "floors": [
+            5.435804384202731e-12,
+            1.4467487747152958e-11,
+            6.072992137103073e-11,
+            4.572471846644669e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.52574584059392,
+          "error_over_floor": [
+            8169.893319154936,
+            177.53532259147406,
+            2.2360309563672303,
+            0.033376540953199495
+          ],
+          "errors": [
+            7.928112055743952e-10,
+            4.7056400442890833e-11,
+            2.5336399644970697e-12,
+            2.8832491949515315e-13
+          ],
+          "floors": [
+            9.704058236789814e-14,
+            2.650537355384323e-13,
+            1.1330969981799134e-12,
+            8.638550049252906e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12B|L12@shift_0_0": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.379585269423746,
+          "error_over_floor": [
+            1287.8247319477846,
+            9.414144729202786,
+            0.2378026331156181,
+            0.008369032818293022
+          ],
+          "errors": [
+            4.504929451352497e-09,
+            1.431125242854928e-10,
+            1.3247974658144593e-11,
+            1.624821931846183e-12
+          ],
+          "floors": [
+            3.4980920459098246e-12,
+            1.520186149694046e-11,
+            5.570995781070058e-11,
+            1.9414691842223979e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 10.597999199796718,
+          "error_over_floor": [
+            15711.490921530627,
+            125.41220830513745,
+            3.6695590931686914,
+            0.17120413965733308
+          ],
+          "errors": [
+            9.867292954934825e-10,
+            3.515801538789276e-11,
+            3.821373772971981e-12,
+            6.266931418252852e-13
+          ],
+          "floors": [
+            6.280303380637759e-14,
+            2.8033965642603654e-13,
+            1.0413713680441637e-12,
+            3.660502269861104e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12B|L12@shift_1_2_1_2": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.508721266907052,
+          "error_over_floor": [
+            1007.7062608528067,
+            9.012088500509664,
+            0.10985944465409657,
+            0.016538841087833465
+          ],
+          "errors": [
+            5.216017011344271e-09,
+            1.4265752585921917e-10,
+            1.078754782523612e-11,
+            1.8882896138743154e-12
+          ],
+          "floors": [
+            5.1761284155662915e-12,
+            1.582957444893616e-11,
+            9.81940866277068e-11,
+            1.1417303085785166e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.187171030646834,
+          "error_over_floor": [
+            7186.9330723850835,
+            116.58674449280147,
+            1.2648846212232512,
+            0.138344036865198
+          ],
+          "errors": [
+            6.679380937235635e-10,
+            3.393631209380743e-11,
+            2.32612540340682e-12,
+            2.9813651547527797e-13
+          ],
+          "floors": [
+            9.293784803562933e-14,
+            2.9108208005501684e-13,
+            1.8390020436466835e-12,
+            2.155036980493646e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12B|L12@shift_1_4_3_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.688628161349978,
+          "error_over_floor": [
+            1382.0522311989575,
+            8.974432940467667,
+            0.13822529572216516,
+            0.011083040715431635
+          ],
+          "errors": [
+            5.216967811945336e-09,
+            1.633388655789897e-10,
+            1.0663577175928245e-11,
+            1.6928078041521535e-12
+          ],
+          "floors": [
+            3.7747978652149154e-12,
+            1.820046644311746e-11,
+            7.7146350964314e-11,
+            1.527385712654784e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.456408173090509,
+          "error_over_floor": [
+            12653.199164900021,
+            78.7259070246874,
+            1.1870271845175246,
+            0.11786701401572403
+          ],
+          "errors": [
+            8.556163139106232e-10,
+            2.642404350883254e-11,
+            1.7069540225733704e-12,
+            3.3946456756694943e-13
+          ],
+          "floors": [
+            6.762055214337439e-14,
+            3.3564609805697517e-13,
+            1.438007524037601e-12,
+            2.880064201182387e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "CW12B|L12@shift_3_4_1_8": {
+      "formal_order": 12,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.56626923670904,
+          "error_over_floor": [
+            1010.2110824208851,
+            13.456520716430253,
+            0.24793384397991075,
+            0.006346113876021188
+          ],
+          "errors": [
+            3.705312058509271e-09,
+            2.292594382985114e-10,
+            1.038219240291818e-11,
+            1.3938457049439827e-12
+          ],
+          "floors": [
+            3.667859245445819e-12,
+            1.703705163687582e-11,
+            4.187484950122184e-11,
+            2.1963767624949707e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 11.322586122141704,
+          "error_over_floor": [
+            10509.586340207288,
+            149.0590836574482,
+            3.214220015083655,
+            0.06989548051566812
+          ],
+          "errors": [
+            6.881575170814003e-10,
+            4.652578322605905e-11,
+            2.511268970550873e-12,
+            2.9003188739551433e-13
+          ],
+          "floors": [
+            6.547902979289166e-14,
+            3.121298084253602e-13,
+            7.812996492978136e-13,
+            4.149508455421511e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "Fourier-PS@shift_0_0": {
+      "formal_order": null,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": -0.05220550266000068,
+          "error_over_floor": [
+            0.025879283295381847,
+            0.00803313393344399,
+            0.0037979359115863404,
+            0.0013942077249186956
+          ],
+          "errors": [
+            7.844092736860058e-14,
+            8.421125682795149e-14,
+            8.659915049201149e-14,
+            8.002191368916663e-14
+          ],
+          "floors": [
+            3.0310316739953286e-12,
+            1.0482989269898575e-11,
+            2.2801635548357724e-11,
+            5.7395976409349746e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 0.30576757969702106,
+          "error_over_floor": [
+            0.6883087049201493,
+            0.1419233995685862,
+            0.09549782989769473,
+            0.023801623845004706
+          ],
+          "errors": [
+            3.745614929329122e-14,
+            2.743638649604918e-14,
+            4.07035516403198e-14,
+            2.5757174171303632e-14
+          ],
+          "floors": [
+            5.441766031077074e-14,
+            1.933182729518131e-13,
+            4.2622488577934025e-13,
+            1.0821603743943438e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "Fourier-PS@shift_1_2_1_2": {
+      "formal_order": null,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": -0.030532999531924933,
+          "error_over_floor": [
+            0.025940463220229488,
+            0.0062488607751937115,
+            0.0036086534051085117,
+            0.0006543629008276893
+          ],
+          "errors": [
+            7.979490839290064e-14,
+            8.397274792438544e-14,
+            8.83641374111256e-14,
+            7.94124486192837e-14
+          ],
+          "floors": [
+            3.076078777601517e-12,
+            1.3438089108615535e-11,
+            2.448673438297921e-11,
+            1.213584213268152e-10
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 0.3237725446745861,
+          "error_over_floor": [
+            0.673646462337073,
+            0.11086223878356499,
+            0.08890870548005063,
+            0.01097785071939948
+          ],
+          "errors": [
+            3.720634911275056e-14,
+            2.7394753132625738e-14,
+            4.0772940579358874e-14,
+            2.5146551507759796e-14
+          ],
+          "floors": [
+            5.5231269208586127e-14,
+            2.4710625938294627e-13,
+            4.585933442536459e-13,
+            2.2906625486646612e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "Fourier-PS@shift_1_4_3_8": {
+      "formal_order": null,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": -0.082434293513435,
+          "error_over_floor": [
+            0.02483902159895507,
+            0.006616041539498022,
+            0.003113348518562184,
+            0.001103134623289609
+          ],
+          "errors": [
+            7.824098992983719e-14,
+            1.0221005964716437e-13,
+            8.653235404496715e-14,
+            8.61856729605989e-14
+          ],
+          "floors": [
+            3.1499223758929634e-12,
+            1.5448823747095055e-11,
+            2.7793982436932496e-11,
+            7.812797381301334e-11
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 0.31425557821777467,
+          "error_over_floor": [
+            0.6618340046949447,
+            0.09649620092122367,
+            0.07891443234591909,
+            0.01727665129230569
+          ],
+          "errors": [
+            3.73451269908287e-14,
+            2.749189764728044e-14,
+            4.088396288182139e-14,
+            2.5451862839531714e-14
+          ],
+          "floors": [
+            5.642672743604641e-14,
+            2.849013472532864e-13,
+            5.180796676406128e-13,
+            1.4731942208538369e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "Fourier-PS@shift_3_4_1_8": {
+      "formal_order": null,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": -0.09953267460393334,
+          "error_over_floor": [
+            0.02128624593881399,
+            0.007679977941738542,
+            0.003929012228929104,
+            0.0007421831337748749
+          ],
+          "errors": [
+            7.830948504143343e-14,
+            9.986625933127649e-14,
+            8.966451718357096e-14,
+            8.565604371250724e-14
+          ],
+          "floors": [
+            3.678877208622377e-12,
+            1.3003456531890694e-11,
+            2.2821134666717497e-11,
+            1.1541092732307919e-10
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 0.3268401561216334,
+          "error_over_floor": [
+            0.5690517053346696,
+            0.11534155887047146,
+            0.09627845886340049,
+            0.011545713627501258
+          ],
+          "errors": [
+            3.737288256644433e-14,
+            2.7478019859472624e-14,
+            4.0994985184283905e-14,
+            2.5174307083375425e-14
+          ],
+          "floors": [
+            6.567572369274363e-14,
+            2.382317364925719e-13,
+            4.2579602611262643e-13,
+            2.1804028659962258e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|Q12-4@shift_0_0": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.4762061791451124,
+          "diagnostic_four_grid_order": 3.4762061791451124,
+          "error_over_floor": [
+            7525572.41239784,
+            672516.7033802381,
+            129759.54472899852,
+            15416.448630014449
+          ],
+          "errors": [
+            1.8654353981973895e-05,
+            7.045853611226062e-06,
+            3.3105719749585934e-06,
+            1.6544013663188512e-06
+          ],
+          "floors": [
+            2.478795360634918e-12,
+            1.0476845520433662e-11,
+            2.5513128778870864e-11,
+            1.07314038792169e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.453363092555545,
+          "diagnostic_four_grid_order": 3.453363092555545,
+          "error_over_floor": [
+            75362513.45213443,
+            5668499.498971651,
+            1505920.1011684076,
+            132949.0860847091
+          ],
+          "errors": [
+            3.3538639364338874e-06,
+            1.095182305163589e-06,
+            7.181885133128452e-07,
+            2.6899987307094086e-07
+          ],
+          "floors": [
+            4.45030796188088e-14,
+            1.9320497520768433e-13,
+            4.769101048293464e-13,
+            2.023329990396071e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "SLC-SL|Q12-4@shift_1_2_1_2": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.5421603852505616,
+          "diagnostic_four_grid_order": 3.5421603852505616,
+          "error_over_floor": [
+            4426651.119404101,
+            830108.5676953696,
+            114964.2057718067,
+            25667.223144005296
+          ],
+          "errors": [
+            1.8708108388735647e-05,
+            7.3947490572316755e-06,
+            2.7930824572194728e-06,
+            1.7120298348652299e-06
+          ],
+          "floors": [
+            4.226244148026299e-12,
+            8.90817098510586e-12,
+            2.4295235534123403e-11,
+            6.670101495825748e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 3.2445805395439193,
+          "diagnostic_four_grid_order": 3.2445805395439193,
+          "error_over_floor": [
+            30526616.22594464,
+            7525204.609794255,
+            1670276.968779242,
+            166536.4264697326
+          ],
+          "errors": [
+            2.316438738811377e-06,
+            1.2326877699836425e-06,
+            7.59987560050579e-07,
+            2.0966835158342523e-07
+          ],
+          "floors": [
+            7.588259116785537e-14,
+            1.6380787419112383e-13,
+            4.550069085883596e-13,
+            1.258993939212042e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|Q12-4@shift_1_4_3_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 3.1204651900673794,
+          "diagnostic_four_grid_order": 3.1204651900673794,
+          "error_over_floor": [
+            6910999.973849263,
+            577278.767707401,
+            41304.28495451074,
+            17516.606264405433
+          ],
+          "errors": [
+            1.719707409652887e-05,
+            7.502033103468973e-06,
+            3.3948144063042124e-06,
+            2.038463333448643e-06
+          ],
+          "floors": [
+            2.488362633714569e-12,
+            1.2995511914048859e-11,
+            8.219036862744366e-11,
+            1.1637318911431471e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 3.337317496491547,
+          "error_over_floor": [
+            75380306.37050164,
+            4649929.505998119,
+            216958.05625999862,
+            189521.79719453916
+          ],
+          "errors": [
+            3.3601338770977707e-06,
+            1.1143942054425704e-06,
+            3.3238581340078177e-07,
+            4.1587761737127416e-07
+          ],
+          "floors": [
+            4.457575245956658e-14,
+            2.396583010570529e-13,
+            1.5320279833372797e-12,
+            2.1943524361178713e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|Q12-4@shift_3_4_1_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.570827469818097,
+          "diagnostic_four_grid_order": 3.570827469818097,
+          "error_over_floor": [
+            5718346.293138965,
+            853322.6374619326,
+            113529.25421888477,
+            12661.035723923593
+          ],
+          "errors": [
+            1.8234900083873606e-05,
+            7.032595931953176e-06,
+            3.288166429268661e-06,
+            1.4921552778342626e-06
+          ],
+          "floors": [
+            3.1888415197506242e-12,
+            8.241426657647889e-12,
+            2.8963164180829246e-11,
+            1.178541242889607e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 2.9971973978757416,
+          "diagnostic_four_grid_order": 2.9971973978757416,
+          "error_over_floor": [
+            38004926.13132771,
+            7928907.350009871,
+            1372633.8416816515,
+            107250.73301967127
+          ],
+          "errors": [
+            2.1635274184694797e-06,
+            1.1971719903886013e-06,
+            7.417628495320905e-07,
+            2.3880029993705865e-07
+          ],
+          "floors": [
+            5.692755225976008e-14,
+            1.509882683125451e-13,
+            5.403938231796299e-13,
+            2.226561005352377e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|common_L12@shift_0_0": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.166538731652283,
+          "diagnostic_four_grid_order": 4.166538731652283,
+          "error_over_floor": [
+            682843.9446453268,
+            68153.13200273366,
+            7384.352748449188,
+            1938.6470108024346
+          ],
+          "errors": [
+            1.6214709925215735e-06,
+            5.047037080694728e-07,
+            1.99390762811436e-07,
+            8.978652964326699e-08
+          ],
+          "floors": [
+            2.3745850061887495e-12,
+            7.405436745727678e-12,
+            2.7001792791292465e-11,
+            4.6314016498600754e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 4.811847806433498,
+          "diagnostic_four_grid_order": 4.811847806433498,
+          "error_over_floor": [
+            1521248.8675563743,
+            157025.91651963998,
+            14311.106222586337,
+            2541.940612306364
+          ],
+          "errors": [
+            6.485409147216625e-08,
+            2.1444196543485283e-08,
+            7.223349168805626e-09,
+            2.2196680188324436e-09
+          ],
+          "floors": [
+            4.2632137880466094e-14,
+            1.3656469593542002e-13,
+            5.047373037735866e-13,
+            8.732178903339859e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|common_L12@shift_1_2_1_2": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.183562171045251,
+          "diagnostic_four_grid_order": 4.183562171045251,
+          "error_over_floor": [
+            572609.4177774779,
+            69517.22867469763,
+            9903.541870942765,
+            1896.9800846245441
+          ],
+          "errors": [
+            1.622196579232795e-06,
+            5.157689248191955e-07,
+            1.987380847809343e-07,
+            8.920158563913437e-08
+          ],
+          "floors": [
+            2.8329896939683204e-12,
+            7.419296405394843e-12,
+            2.0067374619179098e-11,
+            4.7022942603421906e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 4.84541667364473,
+          "diagnostic_four_grid_order": 4.84541667364473,
+          "error_over_floor": [
+            1799341.0507782921,
+            119497.99008650702,
+            20251.184521470015,
+            3301.050814892219
+          ],
+          "errors": [
+            9.152633090314666e-08,
+            1.630307597255687e-08,
+            7.610932425961003e-09,
+            2.9299027787255127e-09
+          ],
+          "floors": [
+            5.086658299912493e-14,
+            1.3642970865664553e-13,
+            3.7582653093165996e-13,
+            8.875667001270247e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|common_L12@shift_1_4_3_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.212068678621464,
+          "diagnostic_four_grid_order": 4.212068678621464,
+          "error_over_floor": [
+            716717.350563751,
+            40463.052386633804,
+            5628.202550893362,
+            1543.5471459203723
+          ],
+          "errors": [
+            1.6645554609900232e-06,
+            5.195866662984325e-07,
+            2.0122652609544013e-07,
+            8.944933829541136e-08
+          ],
+          "floors": [
+            2.3224712778066943e-12,
+            1.2841015090351116e-11,
+            3.575324879938792e-11,
+            5.795050610007466e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 5.188961922022928,
+          "diagnostic_four_grid_order": 5.188961922022928,
+          "error_over_floor": [
+            2137507.7855832274,
+            89368.07034726221,
+            12405.874995548651,
+            2012.0656065478963
+          ],
+          "errors": [
+            8.892893040013394e-08,
+            2.1163174920846295e-08,
+            8.267775616910278e-09,
+            2.1986333725854124e-09
+          ],
+          "floors": [
+            4.1604026427379464e-14,
+            2.368091292405826e-13,
+            6.664403453909407e-13,
+            1.0927244943854542e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|common_L12@shift_3_4_1_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.20094310011584,
+          "diagnostic_four_grid_order": 4.20094310011584,
+          "error_over_floor": [
+            609121.8510753622,
+            97846.60668092749,
+            12922.010031111182,
+            1043.9725365096058
+          ],
+          "errors": [
+            1.6391046628484982e-06,
+            5.145631599084298e-07,
+            1.968041280171021e-07,
+            8.930179713199647e-08
+          ],
+          "floors": [
+            2.690930656903497e-12,
+            5.258875880963277e-12,
+            1.5230148215585207e-11,
+            8.554037008537225e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 4.793966232124781,
+          "diagnostic_four_grid_order": 4.793966232124781,
+          "error_over_floor": [
+            1339939.2961225195,
+            217557.11022624472,
+            16618.10713520258,
+            1649.6303217282666
+          ],
+          "errors": [
+            6.436906560547406e-08,
+            2.0960759183896727e-08,
+            4.722261734424471e-09,
+            2.6659228019587644e-09
+          ],
+          "floors": [
+            4.803879234808886e-14,
+            9.63460084669214e-14,
+            2.84163635244665e-13,
+            1.616072866050231e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|order_matched_L4@shift_0_0": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.959199821238973,
+          "diagnostic_four_grid_order": 3.959199821238973,
+          "error_over_floor": [
+            5413358.829729262,
+            415652.2667111423,
+            42272.37452325062,
+            6257.2272545019105
+          ],
+          "errors": [
+            5.399458932077571e-05,
+            1.9090007462451743e-05,
+            7.055974324949264e-06,
+            3.583720405166428e-06
+          ],
+          "floors": [
+            9.97432297010249e-12,
+            4.592783196757676e-11,
+            1.669169145222335e-10,
+            5.727329789065972e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.617043422794283,
+          "diagnostic_four_grid_order": 3.617043422794283,
+          "error_over_floor": [
+            45165209.52661554,
+            2915839.169177601,
+            483626.36282523366,
+            54604.45788150692
+          ],
+          "errors": [
+            8.08791999419578e-06,
+            2.4696037500965273e-06,
+            1.5089787291228118e-06,
+            5.896447958092521e-07
+          ],
+          "floors": [
+            1.7907411653719055e-13,
+            8.469615801179691e-13,
+            3.1201333200855845e-12,
+            1.0798473580468403e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "SLC-SL|order_matched_L4@shift_1_2_1_2": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.259041174081637,
+          "diagnostic_four_grid_order": 4.259041174081637,
+          "error_over_floor": [
+            2305467.368542672,
+            507971.2873875001,
+            22778.94307901752,
+            15998.727890240161
+          ],
+          "errors": [
+            6.182631558285469e-05,
+            1.7915709636948668e-05,
+            6.221556420211767e-06,
+            3.3891958817982285e-06
+          ],
+          "floors": [
+            2.681725901934419e-11,
+            3.526913839774151e-11,
+            2.731275282891707e-10,
+            2.118415854716654e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.461070556269449,
+          "diagnostic_four_grid_order": 4.461070556269449,
+          "error_over_floor": [
+            24062645.799601406,
+            5285180.953054782,
+            319591.7731355794,
+            116612.18608669571
+          ],
+          "errors": [
+            1.1586315090517108e-05,
+            3.4276852955289483e-06,
+            1.634774831532626e-06,
+            4.6627953223521423e-07
+          ],
+          "floors": [
+            4.815062810220575e-13,
+            6.485464406942926e-13,
+            5.115196850949948e-12,
+            3.998548932858159e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "SLC-SL|order_matched_L4@shift_1_4_3_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.6325530114584903,
+          "diagnostic_four_grid_order": 3.6325530114584903,
+          "error_over_floor": [
+            5718533.539169994,
+            160018.35536741145,
+            18152.33336232279,
+            12925.743087234761
+          ],
+          "errors": [
+            5.692652719735851e-05,
+            1.853880077339729e-05,
+            9.067154550071278e-06,
+            4.461300961001337e-06
+          ],
+          "floors": [
+            9.95474220924496e-12,
+            1.1585421391709172e-10,
+            4.995035276782199e-10,
+            3.451485095202952e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 4.2535541887002495,
+          "error_over_floor": [
+            67594435.10088843,
+            1295017.5288429928,
+            75636.80414704699,
+            121155.22052997333
+          ],
+          "errors": [
+            1.2053855270935387e-05,
+            2.7668560587806867e-06,
+            7.042348289382216e-07,
+            7.884997861307141e-07
+          ],
+          "floors": [
+            1.7832614849054276e-13,
+            2.1365394654176443e-12,
+            9.310742790891918e-12,
+            6.508178373837736e-12
+          ],
+          "three_consecutive_monotone_refinements": false,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "SLC-SL|order_matched_L4@shift_3_4_1_8": {
+      "formal_order": 4,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 4.118896125262133,
+          "diagnostic_four_grid_order": 4.118896125262133,
+          "error_over_floor": [
+            2599077.015496831,
+            595350.1179234628,
+            43219.34398032979,
+            3285.3196173985352
+          ],
+          "errors": [
+            5.410321924880325e-05,
+            1.7384370418343576e-05,
+            7.31606897355935e-06,
+            3.018152695822625e-06
+          ],
+          "floors": [
+            2.0816320149890233e-11,
+            2.920024687150307e-11,
+            1.692776497692579e-10,
+            9.186785601738606e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 3.4308072406002235,
+          "diagnostic_four_grid_order": 3.4308072406002235,
+          "error_over_floor": [
+            14967895.466629392,
+            6389708.580247799,
+            510806.0423156377,
+            27198.361576928848
+          ],
+          "errors": [
+            5.562298284411682e-06,
+            3.4182858774933766e-06,
+            1.613318139137565e-06,
+            4.720588431122996e-07
+          ],
+          "floors": [
+            3.716152545835658e-13,
+            5.349674143293734e-13,
+            3.158377163715425e-12,
+            1.7356149993708664e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|Q12-8@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.4466914793682095,
+          "diagnostic_four_grid_order": 7.4466914793682095,
+          "error_over_floor": [
+            102436.23543932017,
+            2814.5915078289545,
+            235.34804719425452,
+            23.507054209869676
+          ],
+          "errors": [
+            3.5709806098467696e-07,
+            3.872915434360954e-08,
+            7.353966486937206e-09,
+            2.073492729507487e-09
+          ],
+          "floors": [
+            3.486052171413601e-12,
+            1.376013330384963e-11,
+            3.124719569424469e-11,
+            8.820725519222695e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.637907875454166,
+          "diagnostic_four_grid_order": 6.637907875454166,
+          "error_over_floor": [
+            1047987.8389487833,
+            39272.390163159784,
+            4045.8354044210837,
+            387.29135957752453
+          ],
+          "errors": [
+            6.559028470354278e-08,
+            9.96546895004613e-09,
+            2.3631542001023575e-09,
+            6.440985106381802e-10
+          ],
+          "floors": [
+            6.258687578792436e-14,
+            2.537525449468168e-13,
+            5.840954868109618e-13,
+            1.6630851546515082e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "OPT-q8|Q12-8@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.604587207906673,
+          "diagnostic_four_grid_order": 7.604587207906673,
+          "error_over_floor": [
+            78027.38289628657,
+            3174.220436119161,
+            231.3691393017682,
+            19.197319270699307
+          ],
+          "errors": [
+            3.334478767019568e-07,
+            3.8679159098745876e-08,
+            6.833815729755389e-09,
+            1.7308194613993974e-09
+          ],
+          "floors": [
+            4.27347252111702e-12,
+            1.2185404220393548e-11,
+            2.953641851449444e-11,
+            9.015943512702481e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.5165234506784895,
+          "diagnostic_four_grid_order": 7.5165234506784895,
+          "error_over_floor": [
+            1388965.6897175123,
+            61467.96524780061,
+            4584.485261492756,
+            337.70528760598785
+          ],
+          "errors": [
+            1.0657614411824223e-07,
+            1.3773204868283706e-08,
+            2.535976886819391e-09,
+            5.746987330468301e-10
+          ],
+          "floors": [
+            7.673058082515896e-14,
+            2.2407126724886222e-13,
+            5.531650211901108e-13,
+            1.701775939372766e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|Q12-8@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.255216051447845,
+          "diagnostic_four_grid_order": 7.255216051447845,
+          "error_over_floor": [
+            105612.00402502913,
+            2273.899073296057,
+            88.01753529624706,
+            31.827085650672448
+          ],
+          "errors": [
+            4.112176294556838e-07,
+            3.5800526665762614e-08,
+            6.179765157419707e-09,
+            3.027487569274733e-09
+          ],
+          "floors": [
+            3.893663729344903e-12,
+            1.5744114189672067e-11,
+            7.021061356262726e-11,
+            9.512299060315526e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.629788446085467,
+          "diagnostic_four_grid_order": 7.629788446085467,
+          "error_over_floor": [
+            1713740.4541584465,
+            34456.51812075597,
+            1288.510422995789,
+            364.7017529260985
+          ],
+          "errors": [
+            1.1953318790336454e-07,
+            1.0004346032155276e-08,
+            1.6863063445615722e-09,
+            6.541491653910825e-10
+          ],
+          "floors": [
+            6.974987817630925e-14,
+            2.903469815810798e-13,
+            1.3087254200403803e-12,
+            1.7936551172092564e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|Q12-8@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.298255074687759,
+          "error_over_floor": [
+            73462.72771717417,
+            4894.749863310516,
+            273.16673027430613,
+            9.368518139298088
+          ],
+          "errors": [
+            2.5682226828669023e-07,
+            5.1896381257388566e-08,
+            6.9896867304882986e-09,
+            1.767085943758258e-09
+          ],
+          "floors": [
+            3.4959533394327e-12,
+            1.0602458288295239e-11,
+            2.5587620877071877e-11,
+            1.88619578623205e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 7.053339887377964,
+          "diagnostic_four_grid_order": 7.053339887377964,
+          "error_over_floor": [
+            1040234.9261542528,
+            62539.724407453046,
+            5238.735606755439,
+            129.78974392385354
+          ],
+          "errors": [
+            6.492121414070073e-08,
+            1.2147959679853493e-08,
+            2.5010406939918184e-09,
+            4.625055616269691e-10
+          ],
+          "floors": [
+            6.241014650480385e-14,
+            1.9424389529938165e-13,
+            4.774130404227088e-13,
+            3.563498529578091e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "OPT-q8|common_L12@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.10230089383794,
+          "error_over_floor": [
+            42411.06478745703,
+            1104.1926435360112,
+            57.55977250936094,
+            7.229039600355419
+          ],
+          "errors": [
+            1.018486078112035e-07,
+            9.593829731019404e-09,
+            1.6843829475998863e-09,
+            3.617450193902641e-10
+          ],
+          "floors": [
+            2.401463116326308e-12,
+            8.688547045827623e-12,
+            2.9263196746060025e-11,
+            5.004053641820951e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.403158356757071,
+          "diagnostic_four_grid_order": 8.403158356757071,
+          "error_over_floor": [
+            136048.6876294027,
+            2754.838106986466,
+            202.49074785092043,
+            15.274514842415813
+          ],
+          "errors": [
+            5.86569758043165e-09,
+            4.413986537388226e-10,
+            1.1076428663159277e-10,
+            1.4411180582207805e-11
+          ],
+          "floors": [
+            4.311469432479819e-14,
+            1.6022671264035594e-13,
+            5.470091241558388e-13,
+            9.43478776961831e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|common_L12@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.150102781993247,
+          "error_over_floor": [
+            34375.276288087894,
+            1326.322399267294,
+            76.68656552827596,
+            7.345541268400184
+          ],
+          "errors": [
+            1.0448891779055159e-07,
+            1.0537857046330913e-08,
+            1.5795930215783017e-09,
+            3.774339667440674e-10
+          ],
+          "floors": [
+            3.039653177326178e-12,
+            7.945170082441786e-12,
+            2.05980410088371e-11,
+            5.1382730414673765e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.13690270870052,
+          "diagnostic_four_grid_order": 8.13690270870052,
+          "error_over_floor": [
+            137427.39892001927,
+            4539.351311958842,
+            236.02860454660242,
+            29.975708934843453
+          ],
+          "errors": [
+            7.500408724658847e-09,
+            6.63198024275502e-10,
+            9.105156906219491e-11,
+            2.907219603942579e-11
+          ],
+          "floors": [
+            5.457724430209128e-14,
+            1.4609973511596652e-13,
+            3.85764976398093e-13,
+            9.698584978463202e-13
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|common_L12@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.156857320151145,
+          "error_over_floor": [
+            42054.62974590003,
+            769.6454020891975,
+            40.328076111918925,
+            6.68085934230647
+          ],
+          "errors": [
+            1.064757222521672e-07,
+            9.9688038470366e-09,
+            1.5974417540339162e-09,
+            3.7617910984327327e-10
+          ],
+          "floors": [
+            2.5318430549860614e-12,
+            1.295246332918555e-11,
+            3.961115699148846e-11,
+            5.630699444023961e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.23129375439989,
+          "diagnostic_four_grid_order": 8.23129375439989,
+          "error_over_floor": [
+            158391.72412718827,
+            2441.090287301339,
+            112.18517227888131,
+            24.219836048173274
+          ],
+          "errors": [
+            7.1838007625890654e-09,
+            5.830896043779177e-10,
+            8.283211616610942e-11,
+            2.57150273297313e-11
+          ],
+          "floors": [
+            4.5354647170962585e-14,
+            2.388644153848696e-13,
+            7.383517311913282e-13,
+            1.0617341619730245e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|common_L12@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.032290104032942,
+          "error_over_floor": [
+            33614.526480376306,
+            1778.7006277647986,
+            92.89022669136912,
+            4.1229367653592925
+          ],
+          "errors": [
+            9.455504426183763e-08,
+            1.078691776057943e-08,
+            1.6073896108729238e-09,
+            3.7030476152111216e-10
+          ],
+          "floors": [
+            2.8129220953636685e-12,
+            6.064493143028118e-12,
+            1.7304184391900877e-11,
+            8.9815775161141e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.024805633433596,
+          "diagnostic_four_grid_order": 8.024805633433596,
+          "error_over_floor": [
+            119569.62110096279,
+            6935.516313291665,
+            304.5411206419642,
+            14.622586156222162
+          ],
+          "errors": [
+            6.004379479729316e-09,
+            7.705735771690314e-10,
+            9.83244319296972e-11,
+            2.481227723283297e-11
+          ],
+          "floors": [
+            5.021659702893353e-14,
+            1.11105437917038e-13,
+            3.2286093819590617e-13,
+            1.6968460276279459e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|order_matched_L8@shift_0_0": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.631022538855367,
+          "error_over_floor": [
+            24039.302671404592,
+            454.7319081710872,
+            32.09657141390658,
+            1.5382369702241512
+          ],
+          "errors": [
+            2.2417319043373863e-07,
+            1.9778703871128748e-08,
+            3.806062091169634e-09,
+            1.1475671291448444e-09
+          ],
+          "floors": [
+            9.325278420010027e-12,
+            4.3495306829639184e-11,
+            1.1858157814079075e-10,
+            7.46027531101155e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": false,
+          "claimed_four_grid_order": 6.821889561233447,
+          "diagnostic_four_grid_order": 6.821889561233447,
+          "error_over_floor": [
+            251482.12977018268,
+            6602.099097378816,
+            500.6375064895685,
+            27.418626385662904
+          ],
+          "errors": [
+            4.21035123987501e-08,
+            5.295563779150747e-09,
+            1.1097199964504867e-09,
+            3.856654440248519e-10
+          ],
+          "floors": [
+            1.6742148810822643e-13,
+            8.021030434476827e-13,
+            2.2166137815597506e-12,
+            1.4065819293796386e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        }
+      }
+    },
+    "OPT-q8|order_matched_L8@shift_1_2_1_2": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 8.048289168676067,
+          "error_over_floor": [
+            30054.121484418225,
+            536.8936041922383,
+            45.430232391812794,
+            3.380598711492438
+          ],
+          "errors": [
+            2.2384884467510704e-07,
+            2.019333510880515e-08,
+            3.353154306201825e-09,
+            8.581026256117599e-10
+          ],
+          "floors": [
+            7.448191250280368e-12,
+            3.761142794611275e-11,
+            7.380887417177539e-11,
+            2.538315543618403e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.019448320330548,
+          "diagnostic_four_grid_order": 8.019448320330548,
+          "error_over_floor": [
+            509049.4785926661,
+            10745.61875951453,
+            867.3856158214313,
+            54.750726434666156
+          ],
+          "errors": [
+            6.807668295749636e-08,
+            7.431859322393208e-09,
+            1.1989958331737327e-09,
+            2.623171541094038e-10
+          ],
+          "floors": [
+            1.3373293917460295e-13,
+            6.916176247005592e-13,
+            1.3823100260179665e-12,
+            4.791117327409819e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|order_matched_L8@shift_1_4_3_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.763949344550642,
+          "error_over_floor": [
+            36430.77852017669,
+            354.6543532051993,
+            17.74077193845471,
+            2.7975908520018358
+          ],
+          "errors": [
+            2.7531686282639574e-07,
+            1.9417088947305716e-08,
+            3.0320723477299358e-09,
+            1.4315397779295132e-09
+          ],
+          "floors": [
+            7.557259932666969e-12,
+            5.474933205196326e-11,
+            1.7090983178458249e-10,
+            5.117044820564683e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 8.028800543732455,
+          "diagnostic_four_grid_order": 8.028800543732455,
+          "error_over_floor": [
+            522744.65410905797,
+            5363.6638972404035,
+            262.9824591649894,
+            30.270977777049758
+          ],
+          "errors": [
+            7.076833405395e-08,
+            5.415511289408315e-09,
+            8.377985388774434e-10,
+            2.920781810855644e-10
+          ],
+          "floors": [
+            1.353783984162675e-13,
+            1.00966641332515e-12,
+            3.1857582499516707e-12,
+            9.648785818441794e-12
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    },
+    "OPT-q8|order_matched_L8@shift_3_4_1_8": {
+      "formal_order": 8,
+      "metrics": {
+        "exterior_relative_l2": {
+          "all_four_values_above_ten_times_floor": false,
+          "claim_pass": false,
+          "claimed_four_grid_order": null,
+          "diagnostic_four_grid_order": 7.691253363036496,
+          "error_over_floor": [
+            22361.31305942954,
+            1290.8916777676893,
+            29.212664758063326,
+            1.5806639235245514
+          ],
+          "errors": [
+            1.538926673488364e-07,
+            3.116530348501527e-08,
+            3.3387377607970567e-09,
+            8.408433526861696e-10
+          ],
+          "floors": [
+            6.882094398474575e-12,
+            2.4142462161433053e-11,
+            1.1429076355916805e-10,
+            5.319558067797638e-10
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": false
+        },
+        "wall_trace": {
+          "all_four_values_above_ten_times_floor": true,
+          "claim_pass": true,
+          "claimed_four_grid_order": 7.306651131953198,
+          "diagnostic_four_grid_order": 7.306651131953198,
+          "error_over_floor": [
+            296741.16936624766,
+            14412.856215107096,
+            561.982168323209,
+            21.987186049468725
+          ],
+          "errors": [
+            3.645759395765058e-08,
+            6.374885952453724e-09,
+            1.1983896236467118e-09,
+            2.209708666045529e-10
+          ],
+          "floors": [
+            1.2285991200854717e-13,
+            4.4230552621289397e-13,
+            2.1324335382781936e-12,
+            1.0049983936434294e-11
+          ],
+          "three_consecutive_monotone_refinements": true,
+          "within_0_75_of_design": true
+        }
+      }
+    }
+  },
+  "periodic_reference_control": {
+    "all_pass": true,
+    "maximum_grid_shift_covariance_residual": 6.825837914220704e-13,
+    "path": "results/ibm_cert/periodic_reference_certificate.json",
+    "sha256": "b0632f11790b2368379645a27a374db7def07d4c1947bc3bcacd8955150a5707"
+  },
+  "primary_conditioning": {
+    "maximum_longdouble_solve_residual": 3.048149647897977e-15,
+    "maximum_schur_condition": 109280.8468841864
+  },
+  "primary_distinct_cells": 368,
+  "primary_logical_rows": 464,
+  "reference_sampler_resolution": {
+    "path": "results/ibm_cert/reference_sampler_resolution.json",
+    "sha256": "8003d0d0d2a97e8529682f95307bd62f7c518517ed0d933adb7c73092e08bf28",
+    "status": "admitted"
+  },
+  "resource_checks": {
+    "cpu_hours_at_most_6": true,
+    "exit_status_zero": true,
+    "nice_19": true,
+    "peak_rss_below_8_gib": true,
+    "single_thread_environment": true
+  },
+  "run_id": "ibm_cert_final_floor_20260813T135207",
+  "scaling_conditioning": {
+    "interpretation": "The highest marker counts expose dense-Schur conditioning and are used for measured timing scaling, not primary error ranking.",
+    "maximum_longdouble_solve_residual": 4572.006589360556,
+    "maximum_schur_condition": 8.785694430375715e+19
+  },
+  "scaling_distinct_cells": 92,
+  "schema_version": "ibm-cert-controls-v2",
+  "weighted_adjoint_resolution": {
+    "normwise_relative_residual_max": 7.988044368758293e-15,
+    "path": "results/ibm_cert/adjoint_normalization_resolution.json",
+    "sha256": "f2dd488c56f8dccf1a20b4bdb57d25a648ac9d0df58d1f3ad81a9eccf472efe8",
+    "status": "complete_pass"
+  }
+}

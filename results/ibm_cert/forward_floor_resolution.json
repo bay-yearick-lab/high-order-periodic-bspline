@@ -1,0 +1,46 @@
+{
+  "schema_version": "ibm-cert-forward-floor-resolution-v1",
+  "classification": "forward_error_floor_implementation_repair",
+  "status": "complete_pass",
+  "resolved_at": "2026-08-13T13:58:14-05:00",
+  "scientific_contract_changed": false,
+  "wall_solutions_changed": false,
+  "routes_changed": false,
+  "evaluators_changed": false,
+  "grids_shifts_metrics_or_thresholds_changed": false,
+  "wall_data_used_to_choose_formula": false,
+  "wall_data_used_to_detect_materiality": true,
+  "frozen_formula_source": {
+    "path": "code/experiment_ibm_exterior.py",
+    "sha256": "9473b8becbfc3b143a654f3f540f7d88d9a62ccc2106b091941a0381cfb56d41",
+    "formula": "cond2(weight-balanced Schur) times (relative long-double 2-norm residual plus eps64) times max_abs(u_h)",
+    "trace_floor": "absolute forward-error floor",
+    "exterior_relative_l2_floor": "absolute forward-error floor divided by the exterior reference RMS"
+  },
+  "defect": {
+    "excluded_run_id": "ibm_cert_final_20260813T133400",
+    "excluded_producer_sha256": "ab6491ea53b6c24d831157852361acf77cd4e7416de8a041937135986f9a8c40",
+    "description": "The trace floor multiplied the frozen forward-error floor by a route-dependent evaluator norm and used a different residual normalization. The evaluator multiplier was not part of the frozen predecessor and was not an end-to-end bound for the Schur correction map.",
+    "materiality": "The unequal multiplier obscured the high-order BMC trace advantage and made the strongest-comparator factors indeterminate.",
+    "checkpoint_policy": "The completed defective-floor matrix is preserved as superseded diagnostic evidence and excluded from ranking. No checkpoint was reused."
+  },
+  "repair": {
+    "admitted_run_id": "ibm_cert_final_floor_20260813T135207",
+    "producer_sha256": "ddd6b88772748da18defa1217ad2e5c8138e99ef9f1684ad6a902c58c996449c",
+    "tiny_proof_path": "results/ibm_cert/tiny_proof.json",
+    "tiny_proof_sha256": "7ebfd357deb4ad9b7674aff34ea5a091ec3bfa74b5252ad6878713c57392b3c0",
+    "completion_record": "results/ibm_cert/runs/ibm_cert_final_floor_20260813T135207/MATRIX_COMPLETED.json",
+    "completion_record_sha256": "e73b586e92448a117fe218f2b4913720c6f77729c5dfaa26b35d4ab3409a7323",
+    "matrix_log": "results/ibm_cert/runs/ibm_cert_final_floor_20260813T135207/matrix.log",
+    "matrix_log_sha256": "3240854d993bac6bd46fb88c616e55c35fc7818098ebdd55aec6919ab44885bc",
+    "primary_distinct_cells": 368,
+    "scaling_distinct_cells": 92,
+    "peak_rss_kib": 195628,
+    "user_seconds": 178.87,
+    "system_seconds": 0.26,
+    "wall_seconds": 186.47,
+    "exit_status": 0,
+    "all_cell_invariants_pass": true
+  },
+  "scientific_consequence": "The corrected floor certifies BMC9 worst-shift exact compact-over-BMC factors of 62.707527291670914 for wall trace and 32.16591996072041 for exterior relative L2. The composite verdict remains reject_compact_wall_advantage because BMC9 costs 1.699800439571433 and 1.7582010277920994 times its C10 plus L12 blockers and lacks a four-grid above-floor order receipt."
+}

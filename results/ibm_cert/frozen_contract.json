@@ -1,0 +1,127 @@
+{
+  "schema_version": "ibm-cert-contract-v1",
+  "frozen_at": "2026-08-13T11:43:00-05:00",
+  "northstar": "Decide whether one periodic cardinal B-spline coefficient space gives a decisive, practical smooth immersed-wall advantage over the strongest stable local compact derivative plus evaluator at comparable total work, with Fourier-PS as the unrestricted global boundary.",
+  "information_boundary": "Evaluator construction and certification precede every IBM-CERT wall solve. No wall error, ranking, blocker, or Pareto result may alter an evaluator, route, metric, shift, grid, source, geometry, reference, tolerance, or threshold.",
+  "problem": {
+    "equation": "(-div_h grad_h + kappa^2) u = f on the periodic torus, with immersed Dirichlet constraints",
+    "box": [
+      0.0,
+      6.283185307179586
+    ],
+    "kappa": 2.0,
+    "sigma": 0.22,
+    "sources_box_fractions": [
+      [0.55, 0.78],
+      [0.30, 0.42],
+      [0.70, 0.34]
+    ],
+    "source_coefficients": [1.0, 0.8, 1.3],
+    "geometries": ["disk", "trefoil", "kite"],
+    "marker_rule": "theta-uniform, shared per-obstacle count max(48,N/2), closed-curve chord-trapezoid weights",
+    "query_rule": "same count as markers, interleaved by one half marker phase",
+    "bulk_operator": "composed div-grad from the route first-derivative symbol in each coordinate",
+    "exterior_mask": "outside all obstacles and outside one binary-dilation grid layer",
+    "reference": "existing 768 by 768 Fourier Helmholtz response, translated by periodic coordinate covariance",
+    "reference_grid": 768,
+    "linear_solve": "float64 dense Schur solve with long-double residual accumulation and iterative-refinement floor receipt"
+  },
+  "grids": [96, 128, 160, 192],
+  "translations_cell_units": [
+    [0.0, 0.0],
+    [0.25, 0.375],
+    [0.5, 0.5],
+    [0.75, 0.125]
+  ],
+  "bmc_routes": ["BMC5", "BMC7", "BMC9", "BMC11"],
+  "compact_routes": {
+    "C6": 6,
+    "C8": 8,
+    "C10": 10,
+    "C12": 12,
+    "SLC-SL": 4,
+    "OPT-q8": 8,
+    "CW12A": 12,
+    "CW12B": 12
+  },
+  "global_route": "Fourier-PS",
+  "evaluators": {
+    "offsets": [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6],
+    "admitted_per_compact": ["order_matched_periodic_lagrange", "L12", "Q12-q"],
+    "q12_alias_identity": "For q=12, the twelve moment equations on twelve distinct offsets uniquely give L12, so order-matched L12, common L12, and Q12-12 retain separate admitted labels but share one numerical cell and evaluator hash.",
+    "q_family_definition": "For each q, pointwise minimax weights are optimized without wall data on 1025 uniform anchors over delta in [0,1/2]. The fielded Q12-q map is the moment-exact piecewise-linear interpolation of the null-space coordinates over those anchors, reflected by w_r(1-delta)=w_(1-r)(delta). Nodal endpoint weights are imposed. A fixed 64-direction complex-magnitude outer polygon and deterministic HiGHS variable ordering define the optimizer tie handling.",
+    "objective": "min_w max_{|theta|<=2*pi/3} |sum_r w_r(delta) exp(i r theta) - exp(i delta theta)|",
+    "band_endpoint": 2.0943951023931953,
+    "continuum_certificate_gap_abs": 5e-7,
+    "continuum_certificate_gap_rel": 0.0005,
+    "moment_residual_max": 1e-12,
+    "constant_residual_max": 1e-13,
+    "l1_max": 4.0,
+    "translation_equivariance": "real weights depend only on q and fractional cell coordinate; periodic integer translation changes only the base node"
+  },
+  "logical_rows": 464,
+  "distinct_primary_cells": 368,
+  "decision_quantities": [
+    "maximum off-marker wall-trace error",
+    "exterior relative L2 error",
+    "total wall time",
+    "recurring Schur-assembly time",
+    "marker-count scaling",
+    "three-consecutive-refinement order",
+    "all-route error-time Pareto placement",
+    "same-shift compact-over-BMC factors at the finest common grid where both errors exceed ten times their certified floors"
+  ],
+  "promotion_thresholds": {
+    "wall_trace_factor_min": 4.0,
+    "exterior_relative_l2_factor_min": 2.0,
+    "bmc_over_blocker_total_time_max": 1.25,
+    "bmc_must_be_on_all_route_pareto_front": true,
+    "order_absolute_tolerance": 0.75,
+    "minimum_consecutive_monotone_refinements": 3,
+    "minimum_error_over_floor": 10.0
+  },
+  "invariants": {
+    "weighted_adjoint_residual_max": 1e-12,
+    "evaluator_moment_residual_max": 1e-12,
+    "constant_reproduction_residual_max": 1e-13,
+    "shift_reference_relative_residual_max": 1e-12,
+    "real_translation_equivariance": true,
+    "identical_within_shift": [
+      "marker quadrature",
+      "off-marker queries",
+      "bulk convention",
+      "solve tolerance",
+      "exterior mask",
+      "reference"
+    ]
+  },
+  "timing_contract": {
+    "aggregation": "median of three complete charged solves per distinct primary cell",
+    "charged_components": [
+      "evaluator construction",
+      "sparse coupling construction",
+      "bulk solve",
+      "Schur assembly",
+      "Schur solve",
+      "reconstruction",
+      "marker evaluation",
+      "off-marker evaluator construction and evaluation",
+      "exterior error evaluation"
+    ],
+    "recurring_schur_assembly_reported_separately": true
+  },
+  "compute_guardrails": {
+    "cpu_hours_max": 6.0,
+    "peak_rss_bytes_max": 8589934592,
+    "available_ram_bytes_min": 10737418240,
+    "nice": 19,
+    "cpu_only": true,
+    "heavy_job_concurrency": 1
+  },
+  "terminal_verdicts": [
+    "promote_full",
+    "promote_high_order_only",
+    "reject_compact_wall_advantage"
+  ],
+  "fallback": "If rejected, retain native p+1/p off-grid order, coefficient locality, the exact weighted-adjoint construction, and the Fourier locality boundary; move existing matched-Lagrange wall factors to appendix evidence and do not execute a second experiment family."
+}

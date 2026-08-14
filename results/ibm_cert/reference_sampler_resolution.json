@@ -1,0 +1,23 @@
+{
+  "certificate_path": "results/ibm_cert/periodic_reference_certificate.json",
+  "certificate_sha256": "b0632f11790b2368379645a27a374db7def07d4c1947bc3bcacd8955150a5707",
+  "checkpoint_dependency_decision": {
+    "new_checkpoint_policy": "Use a new run-local checkpoint tree for all 368 primary and 92 scaling cells.",
+    "preserve_prior_cells": true,
+    "prior_primary_cells": 161,
+    "reason": "Exterior error values depend on seam reference samples, and all checkpoint provenance is bound to the prior producer and sampler hashes. A clean rerun is cheaper and less ambiguous than cellwise dependency admission.",
+    "reuse": false
+  },
+  "classification": "reference_sampler_implementation_repair",
+  "implementation_repair_ledger": {
+    "evaluator_continuum_enclosure": "certification_algorithm repair; evaluator candidate unchanged",
+    "periodic_reference_sampler": "reference sampling implementation repair; underlying Fourier reference unchanged",
+    "scientific_mechanism_family_changes": 0
+  },
+  "repair_scope": "Sampling operation only. The 768-square Fourier field, spectrum, grid, PDE, source, geometry, routes, shifts, metrics, thresholds, evaluator pool, timing contract, and promotion rules are unchanged.",
+  "schema_version": "ibm-cert-reference-sampler-resolution-v1",
+  "scientific_contract_sha256": "8d9384658cae444be5a8d5fa9114054a87b8198f25e892a588f2621874865ce3",
+  "status": "admitted",
+  "supersedes_state": "blocked_by_specific_information",
+  "superseding_condition": "The independent periodic reference certificate passes every residual at 1e-12 without wall data."
+}

@@ -1,0 +1,34 @@
+{
+  "case": {
+    "N": 160,
+    "markers_per_obstacle": 80,
+    "route": "BMC11",
+    "shift_cell_units": [
+      0.0,
+      0.0
+    ]
+  },
+  "classification": "weighted_adjoint_diagnostic_normalization_repair",
+  "periodic_reference_certificate_sha256": "b0632f11790b2368379645a27a374db7def07d4c1947bc3bcacd8955150a5707",
+  "prior_diagnostic": {
+    "failure_mechanism": "The realized signed bilinear value was small because positive and negative contributions cancelled.",
+    "normalization": "absolute difference divided by the magnitude of the realized signed bilinear value",
+    "reported_residual": 1.2176598254821837e-12
+  },
+  "repair_scope": "Change only the residual denominator to a normwise sum-of-absolute-terms scale and use 32 deterministic probes. H, E, S_H, W, the solver, and all wall outputs are unchanged.",
+  "repaired_diagnostic": {
+    "absolute_difference_max": 1.5443202272535927e-13,
+    "cancellation_factor_min": 0.0008081475946975641,
+    "identity": "H S_H = E^T W with H=h^2 I and S_H=h^-2 S_euclidean",
+    "normalization": "absolute bilinear-form difference divided by the larger sum of absolute left and right terms",
+    "normwise_relative_residual_max": 7.988044368758293e-15,
+    "probe_count": 32,
+    "signed_value_relative_residual_max_diagnostic_only": 1.230103064574687e-12
+  },
+  "schema_version": "ibm-cert-adjoint-normalization-resolution-v1",
+  "scientific_construction_changed": false,
+  "status": "complete_pass",
+  "target_matrix_producer_sha256": "ddd6b88772748da18defa1217ad2e5c8138e99ef9f1684ad6a902c58c996449c",
+  "threshold": 1e-12,
+  "wall_data_used": false
+}

@@ -1,0 +1,124 @@
+{
+  "N": 32,
+  "cell_id": "tiny__N032__tiny_shift_0_0__m016__BMC5",
+  "completed_at": "2026-08-13T18:52:01Z",
+  "completion_status": "complete",
+  "contract_sha256": "8d9384658cae444be5a8d5fa9114054a87b8198f25e892a588f2621874865ce3",
+  "derivative_route": "BMC5",
+  "evaluator": null,
+  "evaluator_certificate_sha256": "ff0b750fb5d18599f13d17de21abf1571059b0bc23f19e30860d2cb489dfeb84",
+  "evaluator_hash": "843d1f4485503f4885c73ad802e9b9f4915c0fa03a27fde5a6b9fb1ea5708c88",
+  "formal_order": 6,
+  "h": 0.19634954084936207,
+  "logical_aliases": [
+    "BMC5"
+  ],
+  "mode": "tiny",
+  "n_markers_per_obstacle": 16,
+  "n_markers_total": 48,
+  "n_queries_total": 48,
+  "nonranking": true,
+  "periodic_reference_certificate_sha256": "b0632f11790b2368379645a27a374db7def07d4c1947bc3bcacd8955150a5707",
+  "primary_route_id": "BMC5",
+  "producer_sha256": "ddd6b88772748da18defa1217ad2e5c8138e99ef9f1684ad6a902c58c996449c",
+  "purpose": "Validate end-to-end solve, invariant, atomic checkpoint, and reread semantics.",
+  "reference_translation_residual": 5.296609047271182e-16,
+  "result": {
+    "evaluation_amplification_bound": 56.25,
+    "evaluator_certificate_receipt": {
+      "applicable": false,
+      "certificate_all_pass": true,
+      "constant_residual": 0.0,
+      "moment_residual": 0.0
+    },
+    "exterior_above_ten_times_floor": 1.0,
+    "exterior_relative_l2": 0.0023191373701939373,
+    "exterior_relative_l2_numerical_floor": 2.289360657345964e-13,
+    "fielded_constant_residual": 4.440892098500626e-16,
+    "forward_error_floor_absolute": 3.444158284246715e-15,
+    "forward_error_floor_convention": "cond2(weight-balanced Schur) times (relative long-double 2-norm residual plus eps64) times max_abs(u_h)",
+    "forward_error_relative_bound": 1.6641404994909814e-14,
+    "invariant_checks": {
+      "certified_constant": true,
+      "evaluator_moment": true,
+      "fielded_constant": true,
+      "real_translation_equivariance": true,
+      "reference_translation": true,
+      "weighted_adjoint": true
+    },
+    "invariants_pass": true,
+    "longdouble_solve_residual": 8.076158823759202e-17,
+    "marker_constraint_residual": 8.326672684688674e-17,
+    "marker_nnz": 1728,
+    "peak_rss_kib_process_so_far": 179816,
+    "query_nnz": 1728,
+    "reference_exterior_rms": 0.015044192679713025,
+    "refinement_exterior_relative_change_diagnostic": 1.110705910752528e-18,
+    "refinement_multiplier_relative": 6.667646512275551e-16,
+    "refinement_trace_change_diagnostic": 1.6936873115392812e-19,
+    "schur_condition": 54.95728083068789,
+    "solution_amplitude_max": 0.20696319122695447,
+    "timing_aggregation": "median of 1 complete solves",
+    "timing_samples": [
+      {
+        "components": {
+          "bulk_solve": 3.547599771991372e-05,
+          "evaluator_and_coupling_construction": 0.010311862999515142,
+          "exterior_error_evaluation": 1.940299989655614e-05,
+          "marker_evaluation": 3.244400068069808e-05,
+          "off_marker_construction_and_evaluation": 3.608200131566264e-05,
+          "reconstruction": 5.872300243936479e-05,
+          "schur_assembly": 0.0023541440023109317,
+          "schur_solve_and_refinement": 0.00018630199701874517
+        },
+        "total_time_seconds": 0.013034437000897015
+      }
+    ],
+    "timings": {
+      "bulk_solve": 3.547599771991372e-05,
+      "evaluator_and_coupling_construction": 0.010311862999515142,
+      "exterior_error_evaluation": 1.940299989655614e-05,
+      "marker_evaluation": 3.244400068069808e-05,
+      "off_marker_construction_and_evaluation": 3.608200131566264e-05,
+      "reconstruction": 5.872300243936479e-05,
+      "schur_assembly": 0.0023541440023109317,
+      "schur_solve_and_refinement": 0.00018630199701874517
+    },
+    "total_time_seconds": 0.013034437000897015,
+    "trace_above_ten_times_floor": 1.0,
+    "trace_error": 0.00015580941423883055,
+    "trace_numerical_floor": 3.444158284246715e-15,
+    "weighted_adjoint_receipt": {
+      "absolute_difference_max": 2.7755575615628914e-15,
+      "cancellation_factor_min": 0.002304631010282705,
+      "identity": "H S_H = E^T W with H=h^2 I and S_H=h^-2 S_euclidean",
+      "normalization": "absolute bilinear-form difference divided by the larger sum of absolute left and right terms",
+      "normwise_relative_residual_max": 1.8339483233672625e-16,
+      "probe_count": 8,
+      "signed_value_relative_residual_max_diagnostic_only": 7.690130511778197e-14
+    },
+    "weighted_adjoint_residual": 1.8339483233672625e-16
+  },
+  "route_kind": "bmc",
+  "schema_version": "ibm-cert-primary-cell-v1",
+  "shared_case_hashes": {
+    "exterior_mask": "3d1f6008139c8b5206f1e57146c0a7c41632af50d1b3479cc200df7c6c5f46de",
+    "forcing": "a1469f0d7c6ad3fe85889b1517ec9773b9d80ee74986bdebd6c8c7dafd41b543",
+    "markers": "c78bed1dcc8d153f24527100b1732efd6cffb7d178b56aba5d38dc90c0de216a",
+    "quadrature_weights": "64767374e5ab794ef26e779b333b8e96b1b213dc36d32ae4653ca1ba238ed87d",
+    "queries": "855bc1d1575caae32003170f1f829bd68ee2975efdb935252fe129864dd7292d",
+    "reference_field": "a3a8941b64bc42f587a99c69621e8840a9d7f613595ece11095ee99111ac0d33",
+    "reference_grid": "a80d7610f7470940663d154a2b9ea9e363105a278426ae4705c3699e572e8fe6",
+    "reference_sampler": "801aa572bed97a5c265538d9b579c9b39aec41471da4c8f253d2a42b1dd5013a",
+    "reference_spectrum": "6dd57a0b94702ed0ca76ec6cc5be2e303f0bfec1bd7350352ca855d3262bdaf0"
+  },
+  "shift_cell_units": [
+    0.0,
+    0.0
+  ],
+  "shift_id": "tiny_shift_0_0",
+  "shift_physical": [
+    0.0,
+    0.0
+  ]
+}
