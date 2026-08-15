@@ -1,0 +1,139 @@
+{
+  "records": [
+    {
+      "bmc_label": "BMC3",
+      "bmg_label": "BMG1",
+      "bmc_degree": 3,
+      "bmg_degree": 1,
+      "npts": 32,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC5",
+      "bmg_label": "BMG2",
+      "bmc_degree": 5,
+      "bmg_degree": 2,
+      "npts": 32,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC7",
+      "bmg_label": "BMG3",
+      "bmc_degree": 7,
+      "bmg_degree": 3,
+      "npts": 32,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC9",
+      "bmg_label": "BMG4",
+      "bmc_degree": 9,
+      "bmg_degree": 4,
+      "npts": 32,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC11",
+      "bmg_label": "BMG5",
+      "bmc_degree": 11,
+      "bmg_degree": 5,
+      "npts": 32,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC3",
+      "bmg_label": "BMG1",
+      "bmc_degree": 3,
+      "bmg_degree": 1,
+      "npts": 48,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC5",
+      "bmg_label": "BMG2",
+      "bmc_degree": 5,
+      "bmg_degree": 2,
+      "npts": 48,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC7",
+      "bmg_label": "BMG3",
+      "bmc_degree": 7,
+      "bmg_degree": 3,
+      "npts": 48,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC9",
+      "bmg_label": "BMG4",
+      "bmc_degree": 9,
+      "bmg_degree": 4,
+      "npts": 48,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC11",
+      "bmg_label": "BMG5",
+      "bmc_degree": 11,
+      "bmg_degree": 5,
+      "npts": 48,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC3",
+      "bmg_label": "BMG1",
+      "bmc_degree": 3,
+      "bmg_degree": 1,
+      "npts": 64,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC5",
+      "bmg_label": "BMG2",
+      "bmc_degree": 5,
+      "bmg_degree": 2,
+      "npts": 64,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC7",
+      "bmg_label": "BMG3",
+      "bmc_degree": 7,
+      "bmg_degree": 3,
+      "npts": 64,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC9",
+      "bmg_label": "BMG4",
+      "bmc_degree": 9,
+      "bmg_degree": 4,
+      "npts": 64,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    },
+    {
+      "bmc_label": "BMC11",
+      "bmg_label": "BMG5",
+      "bmc_degree": 11,
+      "bmg_degree": 5,
+      "npts": 64,
+      "first_derivative_residual": 0.0,
+      "second_derivative_residual": 0.0
+    }
+  ]
+}

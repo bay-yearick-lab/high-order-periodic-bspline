@@ -1,0 +1,388 @@
+{
+ "description": "Section 7 sub-capability (4): local finite-volume balance in the spline metric.",
+ "statement": "Local FV balance holds at the banded compact relation: h d/dt (Bu)_j = -(F_{j+1/2} - F_{j-1/2}) with fixed-radius flux from the banded antisymmetric Q; the eliminated D is dense (exponentially decaying circulant) and admits no fixed-radius point-value flux.",
+ "records": [
+  {
+   "family": "BMC2",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 1,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.125,
+   "metric_row_sum": 1.0,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 2.220446049250313e-16,
+   "mass_tiling_residual": 0.0,
+   "rk4_march_mass_drift": 2.6260275054763943e-16,
+   "eliminated_operator": {
+    "max_entry": 0.6862915010152395,
+    "band_plus_one_entry": 0.11774900609143765,
+    "quarter_period_entry": 2.255475222468842e-12,
+    "decay_rate_per_node": 0.17157287525380993
+   }
+  },
+  {
+   "family": "BMC3",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 1,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.16666666666666666,
+   "metric_row_sum": 1.0,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 2.220446049250313e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 7.780199069359167e-15,
+   "eliminated_operator": {
+    "max_entry": 0.8038475772933681,
+    "band_plus_one_entry": 0.21539030917347246,
+    "quarter_period_entry": 2.1181684462357664e-09,
+    "decay_rate_per_node": 0.2679491924311227
+   }
+  },
+  {
+   "family": "BMC4",
+   "N": 64,
+   "relation_radius_mass": 2,
+   "relation_radius_flux": 2,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.002604166666666667,
+   "metric_row_sum": 0.9999999999999999,
+   "flux_entrywise_residual": 4.440892098500626e-16,
+   "per_cell_balance_residual": 3.3306690738754696e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 1.4099356461812898e-15,
+   "eliminated_operator": {
+    "max_entry": 0.8622783561290382,
+    "band_plus_one_entry": 0.10214314495461227,
+    "quarter_period_entry": 1.8284064505538425e-07,
+    "decay_rate_per_node": 0.3613183038458944
+   }
+  },
+  {
+   "family": "BMC5",
+   "N": 64,
+   "relation_radius_mass": 2,
+   "relation_radius_flux": 2,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 0.008333333333333335,
+   "metric_row_sum": 0.9999999999999999,
+   "flux_entrywise_residual": 3.0531133177191805e-16,
+   "per_cell_balance_residual": 6.661338147750939e-16,
+   "mass_tiling_residual": 2.203098814490545e-16,
+   "rk4_march_mass_drift": 9.056587796404492e-14,
+   "eliminated_operator": {
+    "max_entry": 0.9005734568756005,
+    "band_plus_one_entry": 0.14139805309947204,
+    "quarter_period_entry": 2.467670877214342e-06,
+    "decay_rate_per_node": 0.43043987065214334
+   }
+  },
+  {
+   "family": "BMC6",
+   "N": 64,
+   "relation_radius_mass": 3,
+   "relation_radius_flux": 3,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 2.1701388888888893e-05,
+   "metric_row_sum": 0.9999999999999998,
+   "flux_entrywise_residual": 3.3306690738754696e-16,
+   "per_cell_balance_residual": 9.43689570931383e-16,
+   "mass_tiling_residual": 8.881784197001252e-16,
+   "rk4_march_mass_drift": 5.781119876115302e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9245241197785692,
+    "band_plus_one_entry": 0.08436458261493221,
+    "quarter_period_entry": 1.548146610432267e-05,
+    "decay_rate_per_node": 0.48790594858233766
+   }
+  },
+  {
+   "family": "BMC7",
+   "N": 64,
+   "relation_radius_mass": 3,
+   "relation_radius_flux": 3,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.00019841269841269844,
+   "metric_row_sum": 0.9999999999999999,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 4.440892098500626e-16,
+   "mass_tiling_residual": 1.1102230246251565e-15,
+   "rk4_march_mass_drift": 6.21573264361152e-15,
+   "eliminated_operator": {
+    "max_entry": 0.9410962504622246,
+    "band_plus_one_entry": 0.10572098113831575,
+    "quarter_period_entry": 5.827507591733417e-05,
+    "decay_rate_per_node": 0.5345243819973556
+   }
+  },
+  {
+   "family": "BMC8",
+   "N": 64,
+   "relation_radius_mass": 4,
+   "relation_radius_flux": 4,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 9.688120039682542e-08,
+   "metric_row_sum": 0.9999999999999998,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 5.551115123125783e-16,
+   "mass_tiling_residual": 8.881784197001252e-16,
+   "rk4_march_mass_drift": 1.564379484014752e-15,
+   "eliminated_operator": {
+    "max_entry": 0.9527611653059851,
+    "band_plus_one_entry": 0.07104033616153128,
+    "quarter_period_entry": 0.00016003610777588808,
+    "decay_rate_per_node": 0.5734430319727847
+   }
+  },
+  {
+   "family": "BMC9",
+   "N": 64,
+   "relation_radius_mass": 4,
+   "relation_radius_flux": 4,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 2.7557319223985897e-06,
+   "metric_row_sum": 0.9999999999999998,
+   "flux_entrywise_residual": 3.3306690738754696e-16,
+   "per_cell_balance_residual": 3.885780586188048e-16,
+   "mass_tiling_residual": 4.440892098500626e-16,
+   "rk4_march_mass_drift": 7.206067281069025e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9613343500030118,
+    "band_plus_one_entry": 0.08447411723158438,
+    "quarter_period_entry": 0.00035277644203848607,
+    "decay_rate_per_node": 0.6061639774889584
+   }
+  },
+  {
+   "family": "BMC10",
+   "N": 64,
+   "relation_radius_mass": 5,
+   "relation_radius_flux": 5,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 2.691144455467373e-10,
+   "metric_row_sum": 0.9999999999999998,
+   "flux_entrywise_residual": 4.996003610813204e-16,
+   "per_cell_balance_residual": 4.440892098500626e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 2.0358122843641122e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9677856424251067,
+    "band_plus_one_entry": 0.061121955933575785,
+    "quarter_period_entry": 0.0006654521489169814,
+    "decay_rate_per_node": 0.6340350447695463
+   }
+  },
+  {
+   "family": "BMC11",
+   "N": 64,
+   "relation_radius_mass": 5,
+   "relation_radius_flux": 5,
+   "relation_residual": 1.3877787807814457e-16,
+   "metric_min_weight": 2.505210838544172e-08,
+   "metric_row_sum": 1.0,
+   "flux_entrywise_residual": 3.3306690738754696e-16,
+   "per_cell_balance_residual": 4.996003610813204e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 2.3573731349737016e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9727631578153453,
+    "band_plus_one_entry": 0.0703508849055758,
+    "quarter_period_entry": 0.0011184126133357017,
+    "decay_rate_per_node": 0.657988641257558
+   }
+  },
+  {
+   "family": "BMG1",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 1,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.16666666666666666,
+   "metric_row_sum": 1.0,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 4.440892098500626e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 1.8969509549128862e-16,
+   "eliminated_operator": {
+    "max_entry": 0.8038475772933681,
+    "band_plus_one_entry": 0.21539030917347246,
+    "quarter_period_entry": 2.1181684462357664e-09,
+    "decay_rate_per_node": 0.2679491924311227
+   }
+  },
+  {
+   "family": "BMG2",
+   "N": 64,
+   "relation_radius_mass": 2,
+   "relation_radius_flux": 2,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 0.008333333333333335,
+   "metric_row_sum": 0.9999999999999999,
+   "flux_entrywise_residual": 2.498001805406602e-16,
+   "per_cell_balance_residual": 4.440892098500626e-16,
+   "mass_tiling_residual": 8.881784197001252e-16,
+   "rk4_march_mass_drift": 4.724492918455212e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9005734568756005,
+    "band_plus_one_entry": 0.14139805309947204,
+    "quarter_period_entry": 2.467670877214342e-06,
+    "decay_rate_per_node": 0.43043987065214334
+   }
+  },
+  {
+   "family": "BMG3",
+   "N": 64,
+   "relation_radius_mass": 3,
+   "relation_radius_flux": 3,
+   "relation_residual": 1.1102230246251565e-16,
+   "metric_min_weight": 0.00019841269841269844,
+   "metric_row_sum": 0.9999999999999999,
+   "flux_entrywise_residual": 2.914335439641036e-16,
+   "per_cell_balance_residual": 4.440892098500626e-16,
+   "mass_tiling_residual": 1.3322676295501878e-15,
+   "rk4_march_mass_drift": 9.44255537704796e-16,
+   "eliminated_operator": {
+    "max_entry": 0.9410962504622246,
+    "band_plus_one_entry": 0.10572098113831575,
+    "quarter_period_entry": 5.827507591733417e-05,
+    "decay_rate_per_node": 0.5345243819973556
+   }
+  },
+  {
+   "family": "BMG4",
+   "N": 64,
+   "relation_radius_mass": 4,
+   "relation_radius_flux": 4,
+   "relation_residual": 1.6653345369377348e-16,
+   "metric_min_weight": 2.7557319223985897e-06,
+   "metric_row_sum": 0.9999999999999998,
+   "flux_entrywise_residual": 4.440892098500626e-16,
+   "per_cell_balance_residual": 8.881784197001252e-16,
+   "mass_tiling_residual": 1.1102230246251565e-15,
+   "rk4_march_mass_drift": 1.6178918432796896e-15,
+   "eliminated_operator": {
+    "max_entry": 0.9613343500030118,
+    "band_plus_one_entry": 0.08447411723158438,
+    "quarter_period_entry": 0.00035277644203848607,
+    "decay_rate_per_node": 0.6061639774889584
+   }
+  },
+  {
+   "family": "BMG5",
+   "N": 64,
+   "relation_radius_mass": 5,
+   "relation_radius_flux": 5,
+   "relation_residual": 1.3877787807814457e-16,
+   "metric_min_weight": 2.505210838544172e-08,
+   "metric_row_sum": 1.0,
+   "flux_entrywise_residual": 2.220446049250313e-16,
+   "per_cell_balance_residual": 6.661338147750939e-16,
+   "mass_tiling_residual": 4.440892098500626e-16,
+   "rk4_march_mass_drift": 2.6260785859988672e-15,
+   "eliminated_operator": {
+    "max_entry": 0.9727631578153453,
+    "band_plus_one_entry": 0.0703508849055758,
+    "quarter_period_entry": 0.0011184126133357017,
+    "decay_rate_per_node": 0.657988641257558
+   }
+  },
+  {
+   "family": "C4",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 1,
+   "relation_residual": 2.220446049250313e-16,
+   "metric_min_weight": 0.16666666666666666,
+   "metric_row_sum": 1.5,
+   "flux_entrywise_residual": 4.440892098500626e-16,
+   "per_cell_balance_residual": 8.881784197001252e-16,
+   "mass_tiling_residual": 1.7763568394002505e-15,
+   "rk4_march_mass_drift": 1.560374335541685e-15,
+   "eliminated_operator": {
+    "max_entry": 0.8038475772933681,
+    "band_plus_one_entry": 0.21539030917347246,
+    "quarter_period_entry": 2.1181684462357656e-09,
+    "decay_rate_per_node": 0.2679491924311227
+   }
+  },
+  {
+   "family": "C6",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 2,
+   "relation_residual": 2.220446049250313e-16,
+   "metric_min_weight": 0.2,
+   "metric_row_sum": 1.6666666666666665,
+   "flux_entrywise_residual": 4.718447854656915e-16,
+   "per_cell_balance_residual": 1.3322676295501878e-15,
+   "mass_tiling_residual": 8.881784197001252e-16,
+   "rk4_march_mass_drift": 6.389395307448828e-16,
+   "eliminated_operator": {
+    "max_entry": 0.8790958567710525,
+    "band_plus_one_entry": 0.11610018750175251,
+    "quarter_period_entry": 4.2771479648885113e-07,
+    "decay_rate_per_node": 0.38196601124946095
+   }
+  },
+  {
+   "family": "C8",
+   "N": 64,
+   "relation_radius_mass": 1,
+   "relation_radius_flux": 3,
+   "relation_residual": 2.220446049250313e-16,
+   "metric_min_weight": 0.21428571428571427,
+   "metric_row_sum": 1.75,
+   "flux_entrywise_residual": 4.440892098500626e-16,
+   "per_cell_balance_residual": 8.881784197001252e-16,
+   "mass_tiling_residual": 0.0,
+   "rk4_march_mass_drift": 4.4841032839436145e-16,
+   "eliminated_operator": {
+    "max_entry": 0.912769218608799,
+    "band_plus_one_entry": 0.07033601659400193,
+    "quarter_period_entry": 5.036209616834504e-06,
+    "decay_rate_per_node": 0.45130243483965016
+   }
+  }
+ ],
+ "matched_pairs": [
+  {
+   "pair": "BMC3 = BMG1",
+   "eliminated_agreement": 0.0,
+   "bmc_relation_radius": 1,
+   "bmg_relation_radius": 1
+  },
+  {
+   "pair": "BMC5 = BMG2",
+   "eliminated_agreement": 0.0,
+   "bmc_relation_radius": 2,
+   "bmg_relation_radius": 2
+  },
+  {
+   "pair": "BMC7 = BMG3",
+   "eliminated_agreement": 0.0,
+   "bmc_relation_radius": 3,
+   "bmg_relation_radius": 3
+  },
+  {
+   "pair": "BMC9 = BMG4",
+   "eliminated_agreement": 0.0,
+   "bmc_relation_radius": 4,
+   "bmg_relation_radius": 4
+  },
+  {
+   "pair": "BMC11 = BMG5",
+   "eliminated_agreement": 0.0,
+   "bmc_relation_radius": 5,
+   "bmg_relation_radius": 5
+  }
+ ],
+ "worst_residuals": {
+  "relation_residual": 2.220446049250313e-16,
+  "flux_entrywise_residual": 4.996003610813204e-16,
+  "per_cell_balance_residual": 1.3322676295501878e-15,
+  "mass_tiling_residual": 1.7763568394002505e-15,
+  "rk4_march_mass_drift": 9.056587796404492e-14
+ },
+ "min_metric_weight_across_catalog": 2.691144455467373e-10
+}
