@@ -1,0 +1,16 @@
+{
+ "producer": "code/analysis/exponential_family/gate9_reference_listing.py",
+ "member": "results/exponential_family/gate8/members/X9_m6_C_SLC1_SLC1992_6IIq2.json",
+ "grid": 64,
+ "b_max_deviation": 2.220446049250313e-16,
+ "kappa1_max_deviation": 1.6431300764452317e-14,
+ "kappa2_max_deviation": 8.881784197001252e-14,
+ "generator_points": 401,
+ "generator_max_deviation": 1.6653345369377348e-16,
+ "projection_relative_divergence": 2.136692964245919e-16,
+ "offgrid_value_at_0p37": 0.4950138887367032,
+ "d1_max_error_against_exact": 4.583996215945518e-08,
+ "d2_max_error_against_exact": 1.1973015172639379e-05,
+ "tolerance": 1e-12,
+ "pass": true
+}

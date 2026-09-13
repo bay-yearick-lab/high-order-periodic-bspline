@@ -1,0 +1,197 @@
+{
+  "producer": "code/analysis/exponential_family/gate4e_matched_truncation.py --reduce",
+  "written_utc": "2026-09-13T00:36:12Z",
+  "contract_sha256": "3b8226ed64125c15a70d5bba70255121db956bcbe5df96babe7697e05aba5ef6",
+  "grids_decided": [
+    64,
+    128
+  ],
+  "rule": "TRIUMPH if at both N = 64 and N = 128: e_full(exp) <= e_full(sl)/5 and e_full(exp) <= min(e_full(opt), e_full(bmc p11), e_full(cw12b)), and the N = 64 ratio changes by less than 20 percent under dt scale 0.5. PARTIAL if e_full(exp) <= e_full(sl)/1.5 at both N but the 5x or the other route conditions fail. REJECT otherwise. Mechanism confirmed if the realized ratio is within a factor of two of the predicted ratio.",
+  "outcome": "TRIUMPH",
+  "rule_inputs_complete": true,
+  "tests": {
+    "N64_exp_at_most_sl_over_5": true,
+    "N64_exp_at_most_sl_over_1.5": true,
+    "N64_exp_at_most_min_other": true,
+    "N64_exp_at_most_opt": true,
+    "N64_exp_at_most_bmc_p11": true,
+    "N64_exp_at_most_cw12b": true,
+    "N128_exp_at_most_sl_over_5": true,
+    "N128_exp_at_most_sl_over_1.5": true,
+    "N128_exp_at_most_min_other": true,
+    "N128_exp_at_most_opt": true,
+    "N128_exp_at_most_bmc_p11": true,
+    "N128_exp_at_most_cw12b": true
+  },
+  "triumph_core_conditions": true,
+  "partial_core_conditions": true,
+  "ratio_sl_over_exp": {
+    "N64": 37.72897430295415,
+    "N128": 42.680389805932826
+  },
+  "temporal_check": {
+    "definition": "R = e_full(sl)/e_full(exp) at N = 64 recomputed at dt scale 0.5 against the cfl 0.10 pseudospectral reference; the relative change must be below 20 percent",
+    "R_dt_scale_1.0": 37.72897430295415,
+    "R_dt_scale_0.5": 37.73887166922516,
+    "relative_change": 0.00026232799735128963,
+    "tolerance": 0.2,
+    "e_full_exp_dt_scale_0.5": 0.0002049022542332836,
+    "pass": true
+  },
+  "mechanism": {
+    "N64": {
+      "predicted_P_sl_over_P_exp": 30.06640097938106,
+      "realized_e_full_sl_over_exp": 37.72897430295415,
+      "realized_over_predicted": 1.2548550233474212,
+      "within_factor_two": true
+    },
+    "N128": {
+      "predicted_P_sl_over_P_exp": 34.87170347942751,
+      "realized_e_full_sl_over_exp": 42.680389805932826,
+      "realized_over_predicted": 1.2239261506427994,
+      "within_factor_two": true
+    },
+    "grids_evaluated": [
+      64,
+      128
+    ],
+    "confirmed": true,
+    "status": "confirmed"
+  },
+  "mechanism_confirmed": true,
+  "e_full": {
+    "N64": {
+      "bmc_p11": 0.00147647829441356,
+      "bmc_p9": 0.006899595388182397,
+      "c10": 0.04824939752149449,
+      "c12": 0.02297608721462599,
+      "cw12b": 0.00262007475121388,
+      "exp": 0.00020475886547941826,
+      "opt": 0.06963728469191703,
+      "sl": 0.007725341973975017
+    },
+    "N128": {
+      "bmc_p11": 0.000599590764182104,
+      "bmc_p9": 0.0028067630489139483,
+      "c10": 0.020286339540624577,
+      "c12": 0.009718890377040185,
+      "cw12b": 0.0011688737674679008,
+      "exp": 0.00010391543443420281,
+      "opt": 0.029138977567913622,
+      "sl": 0.004435151248504631
+    }
+  },
+  "reference_manifest": {
+    "N64_dt100": {
+      "field": "results/exponential_family/gate4e/reference/tgvfield_psN64_tstar.bin",
+      "field_sha256": "9df6080d7ffcb0367414f8ceee771a3cf12f8b2292188c004ac66bfc7b0ce214",
+      "landing_time": 9.00262644794325,
+      "cfl": 0.2
+    },
+    "N64_dt050": {
+      "field": "results/exponential_family/gate4e/reference/tgvfield_psN64_tstar_dt050.bin",
+      "field_sha256": "d55f05f04ac3ae31d8c6fab59810eda774e991ad69e2032dc333d90b31022d02",
+      "landing_time": 9.00262644794325,
+      "cfl": 0.1
+    },
+    "N128_dt100": {
+      "field": "results/exponential_family/gate4e/reference/tgvfield_psN128_tstar.bin",
+      "field_sha256": "8eaa019fa0ea144605b457ec310ec4d49d1a8953f78357726b45f5d4d078777a",
+      "landing_time": 9.00262644794325,
+      "cfl": 0.2
+    }
+  },
+  "missing_inputs": [],
+  "mid_outer_split": {
+    "bmc_p11_N64_da1_dt100": {
+      "e_mid": 0.00015622898876196375,
+      "e_outer": 0.00034986295379117976,
+      "outer_over_mid": 2.2394240439221167
+    },
+    "bmc_p9_N64_da1_dt100": {
+      "e_mid": 0.0006752927613534705,
+      "e_outer": 0.0016978361372901561,
+      "outer_over_mid": 2.514222326161516
+    },
+    "c10_N64_da1_dt100": {
+      "e_mid": 0.004614962437426905,
+      "e_outer": 0.01366998639880703,
+      "outer_over_mid": 2.962101335418192
+    },
+    "c12_N64_da1_dt100": {
+      "e_mid": 0.002290684750449897,
+      "e_outer": 0.006319479013649485,
+      "outer_over_mid": 2.7587729007268775
+    },
+    "cw12b_N64_da1_dt100": {
+      "e_mid": 0.0002524960046871909,
+      "e_outer": 0.0007560303953009041,
+      "outer_over_mid": 2.994227161089244
+    },
+    "exp_N64_da1_dt100": {
+      "e_mid": 2.268233362107728e-05,
+      "e_outer": 6.337903861157312e-05,
+      "outer_over_mid": 2.794202733738072
+    },
+    "opt_N64_da1_dt100": {
+      "e_mid": 0.005575696931129214,
+      "e_outer": 0.020694609975728282,
+      "outer_over_mid": 3.7115736797295975
+    },
+    "sl_N64_da1_dt100": {
+      "e_mid": 0.0008231356691191129,
+      "e_outer": 0.0020227220421249682,
+      "outer_over_mid": 2.457337372209377
+    },
+    "exp_N64_da1_dt050": {
+      "e_mid": 2.2717229519188082e-05,
+      "e_outer": 6.313181552673233e-05,
+      "outer_over_mid": 2.779027938834184
+    },
+    "sl_N64_da1_dt050": {
+      "e_mid": 0.0008234580506283702,
+      "e_outer": 0.002017164038557577,
+      "outer_over_mid": 2.449625742341465
+    },
+    "bmc_p11_N128_da1_dt100": {
+      "e_mid": 3.330078891489978e-05,
+      "e_outer": 0.00021608137603222233,
+      "outer_over_mid": 6.488776484677845
+    },
+    "bmc_p9_N128_da1_dt100": {
+      "e_mid": 0.00014179584375001084,
+      "e_outer": 0.000973261474552281,
+      "outer_over_mid": 6.863822301224585
+    },
+    "c10_N128_da1_dt100": {
+      "e_mid": 0.0012776477980496995,
+      "e_outer": 0.008393681517736519,
+      "outer_over_mid": 6.569636429185949
+    },
+    "c12_N128_da1_dt100": {
+      "e_mid": 0.0005831629278391222,
+      "e_outer": 0.003948482947548641,
+      "outer_over_mid": 6.770805822961903
+    },
+    "cw12b_N128_da1_dt100": {
+      "e_mid": 9.953807821285627e-05,
+      "e_outer": 0.0004963901224429671,
+      "outer_over_mid": 4.986936972818245
+    },
+    "exp_N128_da1_dt100": {
+      "e_mid": 7.872365707033841e-06,
+      "e_outer": 7.602503056306695e-05,
+      "outer_over_mid": 9.657202598596216
+    },
+    "opt_N128_da1_dt100": {
+      "e_mid": 0.002284818867939933,
+      "e_outer": 0.014181364702436633,
+      "outer_over_mid": 6.206778533487432
+    },
+    "sl_N128_da1_dt100": {
+      "e_mid": 0.00029683105881041813,
+      "e_outer": 0.0027455573890664236,
+      "outer_over_mid": 9.249562360723084
+    }
+  }
+}

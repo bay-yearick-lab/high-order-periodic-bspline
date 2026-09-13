@@ -1,0 +1,223 @@
+{
+  "producer": "code/analysis/exponential_family/gate6_timing.py",
+  "written_utc": "2026-09-13T07:59:36Z",
+  "purpose": "sequential wall time receipt at N = 128 replacing the five at a time Gate 4c timings of the same configuration",
+  "configuration": {
+    "N": 128,
+    "dealias": "none",
+    "cfl": 0.2,
+    "target_time": 9.00262644794325,
+    "reynolds": 1600,
+    "exact_time_landing": true,
+    "initial_condition": {
+      "path": "results/exponential_family/gate4c/ic/ic_tgv_N128.bin",
+      "sha256": "ab9bc7ae580f527504f8640a1ec91738cc8ead9b784b219eecfa2cbd5fc02b9e"
+    },
+    "member": {
+      "path": "results/exponential_family/members/E62_champion.json",
+      "sha256": "54e57a3f83908b1a93f0720f84d7deafb86c37dc53c4e63b36c70d6257aea3b0"
+    },
+    "solver": "code/solver/tgv_re1600",
+    "solver_sha256": "3d5c82067a878ea8623a03a70ef338324c60bbd3067d37af109e317f08ae0204",
+    "solver_source_sha256": "d789e2d53ac962f0ee9a665ae8a2c38fbb56d0105a7796b9b6b431d46d7b1f72",
+    "threads_per_process": 4,
+    "concurrent_processes": 1,
+    "nice": 19,
+    "replicates": 3,
+    "launch_order": "round robin over routes, replicate by replicate",
+    "timing_source": "solver VERDICT line, parsed by gate4c_tgv.parse_log"
+  },
+  "commands": {
+    "exp": "nice -n 19 code/solver/tgv_re1600 128 exp 1600 9.00262644794325 9 0.2 9.00262644794325 none - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time --exp-member results/exponential_family/members/E62_champion.json",
+    "sl": "nice -n 19 code/solver/tgv_re1600 128 sl 1600 9.00262644794325 5 0.2 9.00262644794325 none - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time",
+    "opt": "nice -n 19 code/solver/tgv_re1600 128 opt 1600 9.00262644794325 5 0.2 9.00262644794325 none - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time",
+    "bmc_p9": "nice -n 19 code/solver/tgv_re1600 128 bmc 1600 9.00262644794325 9 0.2 9.00262644794325 none - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time",
+    "bmc_p11": "nice -n 19 code/solver/tgv_re1600 128 bmc 1600 9.00262644794325 11 0.2 9.00262644794325 none - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+  },
+  "commands_identical_to_gate4c_registry": true,
+  "routes": {
+    "exp": {
+      "replicates": 3,
+      "wall_per_step_s": [
+        1.07477,
+        1.050162,
+        1.005525
+      ],
+      "wall_s": [
+        985.564,
+        962.9987,
+        922.0667
+      ],
+      "median_wall_per_step_s": 1.050162,
+      "min_wall_per_step_s": 1.005525,
+      "max_wall_per_step_s": 1.07477,
+      "spread_percent": 6.593744584168919,
+      "median_wall_s": 962.9987,
+      "steps": 917,
+      "field_sha256": [
+        "bbb3ca73ba3fc21182546b1a6c6ba4d696d253533daa48896bca63d81175ae8c"
+      ],
+      "registry_sha256": "bbb3ca73ba3fc21182546b1a6c6ba4d696d253533daa48896bca63d81175ae8c",
+      "all_replicates_match_registry": true,
+      "gate4c_registry_wall_per_step_s": 1.957537
+    },
+    "sl": {
+      "replicates": 3,
+      "wall_per_step_s": [
+        1.282671,
+        1.210403,
+        1.199142
+      ],
+      "wall_s": [
+        1176.2095,
+        1109.9398,
+        1099.6133
+      ],
+      "median_wall_per_step_s": 1.210403,
+      "min_wall_per_step_s": 1.199142,
+      "max_wall_per_step_s": 1.282671,
+      "spread_percent": 6.900924733332615,
+      "median_wall_s": 1109.9398,
+      "steps": 917,
+      "field_sha256": [
+        "84604595b1f32a1e1b8a33b702f99a48fe03e231240f39881c940d55115923bb"
+      ],
+      "registry_sha256": "84604595b1f32a1e1b8a33b702f99a48fe03e231240f39881c940d55115923bb",
+      "all_replicates_match_registry": true,
+      "gate4c_registry_wall_per_step_s": 2.235316
+    },
+    "opt": {
+      "replicates": 3,
+      "wall_per_step_s": [
+        0.951719,
+        0.890687,
+        0.896076
+      ],
+      "wall_s": [
+        872.7265,
+        816.7598,
+        821.7015
+      ],
+      "median_wall_per_step_s": 0.896076,
+      "min_wall_per_step_s": 0.890687,
+      "max_wall_per_step_s": 0.951719,
+      "spread_percent": 6.811029421611557,
+      "median_wall_s": 821.7015,
+      "steps": 917,
+      "field_sha256": [
+        "a0430114a1743aabc2160d2765b0710cd94959d2cd637cb326aa71f30e4ef30f"
+      ],
+      "registry_sha256": "a0430114a1743aabc2160d2765b0710cd94959d2cd637cb326aa71f30e4ef30f",
+      "all_replicates_match_registry": true,
+      "gate4c_registry_wall_per_step_s": 1.961624
+    },
+    "bmc_p9": {
+      "replicates": 3,
+      "wall_per_step_s": [
+        1.07252,
+        1.010703,
+        1.00751
+      ],
+      "wall_s": [
+        983.5009,
+        926.8146,
+        923.8864
+      ],
+      "median_wall_per_step_s": 1.010703,
+      "min_wall_per_step_s": 1.00751,
+      "max_wall_per_step_s": 1.07252,
+      "spread_percent": 6.432156627614642,
+      "median_wall_s": 926.8146,
+      "steps": 917,
+      "field_sha256": [
+        "59d500e051e4e2f6e76b261033bbd779272af99397c9d4ed4360b559edd01091"
+      ],
+      "registry_sha256": "59d500e051e4e2f6e76b261033bbd779272af99397c9d4ed4360b559edd01091",
+      "all_replicates_match_registry": true,
+      "gate4c_registry_wall_per_step_s": 1.962933
+    },
+    "bmc_p11": {
+      "replicates": 3,
+      "wall_per_step_s": [
+        1.238834,
+        1.196072,
+        1.167409
+      ],
+      "wall_s": [
+        1136.0103,
+        1096.7977,
+        1070.5138
+      ],
+      "median_wall_per_step_s": 1.196072,
+      "min_wall_per_step_s": 1.167409,
+      "max_wall_per_step_s": 1.238834,
+      "spread_percent": 5.9716304704064695,
+      "median_wall_s": 1096.7977,
+      "steps": 917,
+      "field_sha256": [
+        "85146311b8759a9d9feac9740e6a352cd8d53927b833f8a80a63ac92f02d6fee"
+      ],
+      "registry_sha256": "85146311b8759a9d9feac9740e6a352cd8d53927b833f8a80a63ac92f02d6fee",
+      "all_replicates_match_registry": true,
+      "gate4c_registry_wall_per_step_s": 2.156639
+    }
+  },
+  "median_wall_per_step_s": {
+    "exp": 1.050162,
+    "sl": 1.210403,
+    "opt": 0.896076,
+    "bmc_p9": 1.010703,
+    "bmc_p11": 1.196072
+  },
+  "ratios_median_wall_per_step": {
+    "exp_over_sl": 0.867613513846215,
+    "exp_over_opt": 1.1719563965556494,
+    "exp_over_bmc_p9": 1.0390411426502149,
+    "exp_over_bmc_p11": 0.878009016179628
+  },
+  "ratios_paired_within_replicate_round": {
+    "exp_over_sl": {
+      "by_replicate": [
+        0.8379155683725601,
+        0.867613513846215,
+        0.8385370539936055
+      ],
+      "median": 0.8385370539936055
+    },
+    "exp_over_opt": {
+      "by_replicate": [
+        1.1292934153883658,
+        1.1790471849257933,
+        1.1221425414808566
+      ],
+      "median": 1.1292934153883658
+    },
+    "exp_over_bmc_p9": {
+      "by_replicate": [
+        1.0020978629769142,
+        1.0390411426502149,
+        0.9980297962303105
+      ],
+      "median": 1.0020978629769142
+    },
+    "exp_over_bmc_p11": {
+      "by_replicate": [
+        0.8675657917041347,
+        0.878009016179628,
+        0.8613305191239746
+      ],
+      "median": 0.8675657917041347
+    }
+  },
+  "gate4c_registry_ratios_for_comparison": {
+    "exp_over_sl": 0.8757316638900272,
+    "exp_over_opt": 0.9979165222285209,
+    "exp_over_bmc_p9": 0.9972510523792713,
+    "exp_over_bmc_p11": 0.9076794957338711
+  },
+  "bit_reproducibility": {
+    "definition": "each replicate's landed field SHA-256 equals the Gate 4c registry digest of the same route",
+    "all_match": true
+  },
+  "fields_retained": false
+}

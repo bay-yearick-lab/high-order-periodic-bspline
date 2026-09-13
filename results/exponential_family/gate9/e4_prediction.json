@@ -1,0 +1,1818 @@
+{
+  "producer": "code/analysis/exponential_family/gate9_e4.py",
+  "written_utc": "2026-09-13T16:43:45Z",
+  "gate": "9.E4",
+  "imports": "code/analysis/exponential_family/gate5a_offgrid.py, unchanged",
+  "members": [
+    {
+      "route": "pert5",
+      "member": "X8_n10_C_SLC1_pert5",
+      "file": "results/exponential_family/gate8/members/X8_n10_C_SLC1_pert5.json",
+      "m": 4,
+      "omegas": [
+        1.1397172937450386
+      ],
+      "real_pairs": [],
+      "quads": [
+        [
+          0.13344498008928155,
+          2.140933267363202
+        ]
+      ],
+      "polynomial": [
+        0.24916127401208116,
+        -0.019462602044987426,
+        -0.0002787547464194911
+      ],
+      "n": 10,
+      "p": 9,
+      "smoothness": 2,
+      "cond": 93.36029953126994,
+      "taps_per_query": 10
+    },
+    {
+      "route": "core6",
+      "member": "X9_m6_C_SLC1_SLC1992_6IIq2",
+      "file": "results/exponential_family/gate8/members/X9_m6_C_SLC1_SLC1992_6IIq2.json",
+      "m": 6,
+      "omegas": [
+        1.8440731689491563,
+        2.4367989226785935
+      ],
+      "real_pairs": [],
+      "quads": [],
+      "polynomial": [
+        0.2736195824258023,
+        -0.02460263314270373
+      ],
+      "n": 10,
+      "p": 9,
+      "smoothness": 4,
+      "cond": 93.36740682260724,
+      "taps_per_query": 10
+    }
+  ],
+  "contract_symbol_prediction": {
+    "pert5": {
+      "contract_ec_max_B0": 0.00056,
+      "computed_ec_max_B0": 0.0005594884464766858,
+      "ratio_computed_over_contract": 0.9990865115655105,
+      "contract_reach_ec_1e-2_over_pi": 0.856,
+      "computed_reach_ec_1e-2_over_pi": 0.8561598390968773,
+      "contract_reach_ec_1e-3_over_pi": null,
+      "computed_reach_ec_1e-3_over_pi": 0.7604381425320255
+    },
+    "core6": {
+      "contract_ec_max_B0": 0.000798,
+      "computed_ec_max_B0": 0.000798196918375571,
+      "ratio_computed_over_contract": 1.000246764881668,
+      "contract_reach_ec_1e-2_over_pi": 0.858,
+      "computed_reach_ec_1e-2_over_pi": 0.8580238639427608,
+      "contract_reach_ec_1e-3_over_pi": 0.824,
+      "computed_reach_ec_1e-3_over_pi": 0.8239036987826637
+    }
+  },
+  "contract_baseline": {
+    "route": "slc_operator_L12",
+    "ec_max_B0": 0.069,
+    "reach_ec_1e-2_over_pi": 0.54
+  },
+  "decision_rule": "PASS if the realized errors lie within a factor of two of the symbol prediction at every N and below SLC plus L12 on every channel at every N; PARTIAL if that factor lies between two and four; REJECT otherwise.",
+  "pass_factor": 2.0,
+  "partial_factor": 4.0,
+  "anchor_packet": {
+    "grids": [
+      64,
+      128,
+      256
+    ],
+    "queries": 4096,
+    "seed": 20260912,
+    "top_mode": [
+      {
+        "N": 64,
+        "k_max": 15,
+        "modes": 4,
+        "theta_top_over_pi": 0.46875,
+        "points_per_wavelength_top": 4.266666666666667
+      },
+      {
+        "N": 128,
+        "k_max": 15,
+        "modes": 4,
+        "theta_top_over_pi": 0.234375,
+        "points_per_wavelength_top": 8.533333333333333
+      },
+      {
+        "N": 256,
+        "k_max": 15,
+        "modes": 4,
+        "theta_top_over_pi": 0.1171875,
+        "points_per_wavelength_top": 17.066666666666666
+      }
+    ]
+  },
+  "resolution_scaled_packet": {
+    "grids": [
+      48,
+      64,
+      96,
+      128,
+      192,
+      256
+    ],
+    "queries": 4096,
+    "seed": 20260912,
+    "phase_seed": 20260913,
+    "band_divisor": 3,
+    "top_mode": [
+      {
+        "N": 48,
+        "k_max": 16,
+        "modes": 16,
+        "theta_top_over_pi": 0.6666666666666666,
+        "points_per_wavelength_top": 3.0
+      },
+      {
+        "N": 64,
+        "k_max": 21,
+        "modes": 21,
+        "theta_top_over_pi": 0.65625,
+        "points_per_wavelength_top": 3.0476190476190474
+      },
+      {
+        "N": 96,
+        "k_max": 32,
+        "modes": 32,
+        "theta_top_over_pi": 0.6666666666666666,
+        "points_per_wavelength_top": 3.0
+      },
+      {
+        "N": 128,
+        "k_max": 42,
+        "modes": 42,
+        "theta_top_over_pi": 0.65625,
+        "points_per_wavelength_top": 3.0476190476190474
+      },
+      {
+        "N": 192,
+        "k_max": 64,
+        "modes": 64,
+        "theta_top_over_pi": 0.6666666666666666,
+        "points_per_wavelength_top": 3.0
+      },
+      {
+        "N": 256,
+        "k_max": 85,
+        "modes": 85,
+        "theta_top_over_pi": 0.6640625,
+        "points_per_wavelength_top": 3.011764705882353
+      }
+    ]
+  },
+  "symbol_level": [
+    {
+      "route": "pert5",
+      "description": "X8_n10_C_SLC1_pert5, X_{4}(i1.139717,q(0.133445,2.140933))xP[0.249161,-0.0194626,-0.000278755], degree 9, support [-5, 5], class C^2, cond 93.360",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 10,
+      "solves_per_field": 1,
+      "ec_max_B0": 0.0005594884464766858,
+      "c1_max_B0": 2.1754210467663226e-12,
+      "c2_max_B0": 1.6921533976586442e-08,
+      "e0_max_B0": 0.0001277596362714295,
+      "e1_max_B0": 0.00020609601039604396,
+      "e2_max_B0": 0.0005594884464766858,
+      "ec_max_B1": 0.000816614974706642,
+      "c1_max_B1": 2.1754210467663226e-12,
+      "c2_max_B1": 1.6921533976586442e-08,
+      "e0_max_B1": 0.00042063947381287825,
+      "e1_max_B1": 0.0005289325069217643,
+      "e2_max_B1": 0.000816614974706642,
+      "ec_max_B2": 0.001575313061077277,
+      "c1_max_B2": 2.1754210467663226e-12,
+      "c2_max_B2": 1.6921533976586442e-08,
+      "e0_max_B2": 0.0007540312654419346,
+      "e1_max_B2": 0.0008834275148831353,
+      "e2_max_B2": 0.001575313061077277,
+      "reach_ec_1e-2_over_pi": 0.8561598390968773,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 2.1754210467663226e-12,
+      "c2_max_full": 1.6921533976586442e-08,
+      "c1_max_theta_above_floor": 1.1764894614074706e-14,
+      "c2_max_theta_above_floor": 4.2427525594290114e-13,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.7604381425320255,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.08946397561998709,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "core6",
+      "description": "X9_m6_C_SLC1_SLC1992_6IIq2, X_{6}(i1.844073,i2.436799)xP[0.27362,-0.0246026], degree 9, support [-5, 5], class C^4, cond 93.367",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 10,
+      "solves_per_field": 1,
+      "ec_max_B0": 0.000798196918375571,
+      "c1_max_B0": 1.995129701639481e-12,
+      "c2_max_B0": 1.497171667302161e-08,
+      "e0_max_B0": 0.0003092858018067801,
+      "e1_max_B0": 0.0004408178935553231,
+      "e2_max_B0": 0.000798196918375571,
+      "ec_max_B1": 0.0009387634054057736,
+      "c1_max_B1": 1.995129701639481e-12,
+      "c2_max_B1": 1.497171667302161e-08,
+      "e0_max_B1": 0.0004158807380157947,
+      "e1_max_B1": 0.0005614214160580833,
+      "e2_max_B1": 0.0009387634054057736,
+      "ec_max_B2": 0.0009387634054057736,
+      "c1_max_B2": 1.995129701639481e-12,
+      "c2_max_B2": 1.497171667302161e-08,
+      "e0_max_B2": 0.0004158807380157947,
+      "e1_max_B2": 0.0005614214160580833,
+      "e2_max_B2": 0.0009387634054057736,
+      "reach_ec_1e-2_over_pi": 0.8580238639427608,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 1.995129701639481e-12,
+      "c2_max_full": 1.497171667302161e-08,
+      "c1_max_theta_above_floor": 1.1591422266477025e-14,
+      "c2_max_theta_above_floor": 3.8804230789270784e-13,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.8239036987826637,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.216144140602964,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "champion",
+      "description": "E_{6,2}(1.770193,2.060686), degree 9, support [-5, 5]",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 10,
+      "solves_per_field": 1,
+      "ec_max_B0": 7.166566335148339e-05,
+      "c1_max_B0": 2.7610478157166733e-12,
+      "c2_max_B0": 4.059773926226338e-08,
+      "e0_max_B0": 2.8629767093835135e-05,
+      "e1_max_B0": 4.2892351857615196e-05,
+      "e2_max_B0": 7.166566335148339e-05,
+      "ec_max_B1": 0.004045017385256755,
+      "c1_max_B1": 2.7610478157166733e-12,
+      "c2_max_B1": 4.059773926226338e-08,
+      "e0_max_B1": 0.0021402278810249697,
+      "e1_max_B1": 0.0028526535235168238,
+      "e2_max_B1": 0.004045017385256755,
+      "ec_max_B2": 0.016927396432275477,
+      "c1_max_B2": 2.7610478157166733e-12,
+      "c2_max_B2": 4.059773926226338e-08,
+      "e0_max_B2": 0.010413203931881054,
+      "e1_max_B2": 0.013014709087014187,
+      "e2_max_B2": 0.016927396432275477,
+      "reach_ec_1e-2_over_pi": 0.7806408717858832,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 2.7610478157166733e-12,
+      "c2_max_full": 4.059773926226338e-08,
+      "c1_max_theta_above_floor": 1.3905543383430086e-14,
+      "c2_max_theta_above_floor": 1.0385220964902275e-12,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.7101845623815529,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.6697924135155285,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "BMC9",
+      "description": "E_{10,0}, degree 9, support [-5, 5]",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 10,
+      "solves_per_field": 1,
+      "ec_max_B0": 0.00489168076383617,
+      "c1_max_B0": 1.2103849840497188e-12,
+      "c2_max_B0": 1.0535426753262027e-08,
+      "e0_max_B0": 0.001953125000000999,
+      "e1_max_B0": 0.002924568413794293,
+      "e2_max_B0": 0.00489168076383617,
+      "ec_max_B1": 0.022714969515169603,
+      "c1_max_B1": 1.2103849840497188e-12,
+      "c2_max_B1": 1.0535426753262027e-08,
+      "e0_max_B1": 0.012015496414754856,
+      "e1_max_B1": 0.01601163328828692,
+      "e2_max_B1": 0.022714969515169603,
+      "ec_max_B2": 0.05539294785065485,
+      "c1_max_B2": 1.2103849840497188e-12,
+      "c2_max_B2": 1.0535426753262027e-08,
+      "e0_max_B2": 0.0340709274038391,
+      "e1_max_B2": 0.04257761481070932,
+      "e2_max_B2": 0.05539294785065485,
+      "reach_ec_1e-2_over_pi": 0.705013657828613,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 1.2103849840497188e-12,
+      "c2_max_full": 1.0535426753262027e-08,
+      "c1_max_theta_above_floor": 6.1414910043928305e-15,
+      "c2_max_theta_above_floor": 2.450382398262109e-13,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.5847163429348289,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.47546017985288697,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "BMC11",
+      "description": "E_{12,0}, degree 11, support [-6, 6]",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 12,
+      "solves_per_field": 1,
+      "ec_max_B0": 0.001221317386240428,
+      "c1_max_B0": 1.013271687692538e-12,
+      "c2_max_B0": 1.1819641157001372e-08,
+      "e0_max_B0": 0.0004882812499934497,
+      "e1_max_B0": 0.0007320885498326435,
+      "e2_max_B0": 0.001221317386240428,
+      "ec_max_B1": 0.008200674731315694,
+      "c1_max_B1": 1.013271687692538e-12,
+      "c2_max_B1": 1.1819641157001372e-08,
+      "e0_max_B1": 0.004340286464655896,
+      "e1_max_B1": 0.005786557560933381,
+      "e2_max_B1": 0.008200674731315694,
+      "ec_max_B2": 0.024838490186713247,
+      "c1_max_B2": 1.013271687692538e-12,
+      "c2_max_B2": 1.1819641157001372e-08,
+      "e0_max_B2": 0.015282205899194712,
+      "e1_max_B2": 0.019102538838865146,
+      "e2_max_B2": 0.024838490186713247,
+      "reach_ec_1e-2_over_pi": 0.7588336861273693,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 1.013271687692538e-12,
+      "c2_max_full": 1.1819641157001372e-08,
+      "c1_max_theta_above_floor": 8.021361352916756e-15,
+      "c2_max_theta_above_floor": 3.017589715608813e-13,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.6581394375977374,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.5635747421776971,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_operator_L8",
+      "description": "SLC 1992 nodal D1 and D2, degree seven Lagrange on the nearest eight nodes for all three channels",
+      "kind": "three fields",
+      "fields": 3,
+      "taps_per_query": 24,
+      "solves_per_field": 2,
+      "ec_max_B0": 0.14126176643801835,
+      "c1_max_B0": 0.22359266675843362,
+      "c2_max_B0": 0.16466833631828798,
+      "e0_max_B0": 0.1411132812500001,
+      "e1_max_B0": 0.14122677237917947,
+      "e2_max_B0": 0.14126176643801835,
+      "ec_max_B1": 0.275085661295959,
+      "c1_max_B1": 0.38659430204752343,
+      "c2_max_B1": 0.1987274964270478,
+      "e0_max_B1": 0.275002929073751,
+      "e1_max_B1": 0.2749605299859178,
+      "e2_max_B1": 0.275085661295959,
+      "ec_max_B2": 0.38585214765477827,
+      "c1_max_B2": 0.5048217493015904,
+      "c2_max_B2": 0.20200565041036925,
+      "e0_max_B2": 0.3848641516532886,
+      "e1_max_B2": 0.38585214765477827,
+      "e2_max_B2": 0.38470636611377895,
+      "reach_ec_1e-2_over_pi": 0.44588052881647045,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.8223339063745023,
+      "c2_max_full": 0.2869762034666653,
+      "c1_max_theta_above_floor": 0.8223339063745023,
+      "c2_max_theta_above_floor": 0.2869762034666653,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.32549585675899007,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.2308757556232856,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_operator_L12",
+      "description": "SLC 1992 nodal D1 and D2, degree eleven Lagrange on the nearest twelve nodes for all three channels",
+      "kind": "three fields",
+      "fields": 3,
+      "taps_per_query": 36,
+      "solves_per_field": 2,
+      "ec_max_B0": 0.06881602588322411,
+      "c1_max_B0": 0.10681534311448791,
+      "c2_max_B0": 0.08164265603684294,
+      "e0_max_B0": 0.06865501403808605,
+      "e1_max_B0": 0.06877807962031568,
+      "e2_max_B0": 0.06881602588322411,
+      "ec_max_B1": 0.17689512795158446,
+      "c1_max_B1": 0.24441252715963716,
+      "c2_max_B1": 0.13036078935801437,
+      "e0_max_B1": 0.17680118954874302,
+      "e1_max_B1": 0.17675304745263232,
+      "e2_max_B1": 0.17689512795158446,
+      "ec_max_B2": 0.2834169747669426,
+      "c1_max_B2": 0.36384411817787266,
+      "c2_max_B2": 0.15026196109898607,
+      "e0_max_B2": 0.2822641885755358,
+      "e1_max_B2": 0.2834169747669426,
+      "e2_max_B2": 0.28208008561269393,
+      "reach_ec_1e-2_over_pi": 0.5399458979769628,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.8554816839042929,
+      "c2_max_full": 0.20335532298362735,
+      "c1_max_theta_above_floor": 0.8554816839042929,
+      "c2_max_theta_above_floor": 0.20335532298362735,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.43043964833747356,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.2308757556232856,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_operator_L16",
+      "description": "SLC 1992 nodal D1 and D2, degree fifteen Lagrange on the nearest sixteen nodes for all three channels",
+      "kind": "three fields",
+      "fields": 3,
+      "taps_per_query": 48,
+      "solves_per_field": 2,
+      "ec_max_B0": 0.03476657609388634,
+      "c1_max_B0": 0.053293769101017935,
+      "c2_max_B0": 0.041498685455287475,
+      "e0_max_B0": 0.03459967672824882,
+      "e1_max_B0": 0.0347272422970325,
+      "e2_max_B0": 0.03476657609388634,
+      "ec_max_B1": 0.11706894125287681,
+      "c1_max_B1": 0.16034153765061046,
+      "c2_max_B1": 0.08716557177538464,
+      "e0_max_B1": 0.11696817507314139,
+      "e1_max_B1": 0.11691653383843026,
+      "e2_max_B1": 0.11706894125287681,
+      "ec_max_B2": 0.21329791839478418,
+      "c1_max_B2": 0.27068870675559836,
+      "c2_max_B2": 0.11422140643496906,
+      "e0_max_B2": 0.2120323298105019,
+      "e1_max_B2": 0.21329791839478418,
+      "e2_max_B2": 0.2118302120111717,
+      "reach_ec_1e-2_over_pi": 0.598480582959146,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.8751208605806949,
+      "c2_max_full": 0.15692365840721204,
+      "c1_max_theta_above_floor": 0.8751208605806949,
+      "c2_max_theta_above_floor": 0.15692365840721204,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.49880885795125024,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.2308757556232856,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_field_L8",
+      "description": "degree seven Lagrange value interpolant on the nearest eight nodes, differentiated analytically",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 8,
+      "solves_per_field": 0,
+      "ec_max_B0": 0.3059301027563064,
+      "c1_max_B0": 0.0,
+      "c2_max_B0": 0.0,
+      "e0_max_B0": 0.1411132812500001,
+      "e1_max_B0": 0.2236965914914512,
+      "e2_max_B0": 0.3059301027563064,
+      "ec_max_B1": 0.4738131577230067,
+      "c1_max_B1": 0.0,
+      "c2_max_B1": 0.0,
+      "e0_max_B1": 0.275002929073751,
+      "e1_max_B1": 0.38654480962154514,
+      "e2_max_B1": 0.4738131577230067,
+      "ec_max_B2": 0.5853095688594951,
+      "c1_max_B2": 0.0,
+      "c2_max_B2": 0.0,
+      "e0_max_B2": 0.3848641516532886,
+      "e1_max_B2": 0.5062293444974038,
+      "e2_max_B2": 0.5853095688594951,
+      "reach_ec_1e-2_over_pi": 0.33187148065179517,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.0,
+      "c2_max_full": 0.0,
+      "c1_max_theta_above_floor": 0.0,
+      "c2_max_theta_above_floor": 0.0,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.220882966955836,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.1489715205124031,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_field_L12",
+      "description": "degree eleven Lagrange value interpolant on the nearest twelve nodes, differentiated analytically",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 12,
+      "solves_per_field": 0,
+      "ec_max_B0": 0.15045868192006706,
+      "c1_max_B0": 0.0,
+      "c2_max_B0": 0.0,
+      "e0_max_B0": 0.06865501403808605,
+      "e1_max_B0": 0.1069222736539003,
+      "e2_max_B0": 0.15045868192006706,
+      "ec_max_B1": 0.3072559173095988,
+      "c1_max_B1": 0.0,
+      "c2_max_B1": 0.0,
+      "e0_max_B1": 0.17680118954874302,
+      "e1_max_B1": 0.2443617478400092,
+      "e2_max_B1": 0.3072559173095988,
+      "ec_max_B2": 0.43234204671168,
+      "c1_max_B2": 0.0,
+      "c2_max_B2": 0.0,
+      "e0_max_B2": 0.2822641885755358,
+      "e1_max_B2": 0.36528526084634616,
+      "e2_max_B2": 0.43234204671168,
+      "reach_ec_1e-2_over_pi": 0.46483053449793543,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.0,
+      "c2_max_full": 0.0,
+      "c1_max_theta_above_floor": 0.0,
+      "c2_max_theta_above_floor": 0.0,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.3566517296335652,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.2778451812110988,
+      "reach_ec_1e-4_saturated": false
+    },
+    {
+      "route": "slc_field_L16",
+      "description": "degree fifteen Lagrange value interpolant on the nearest sixteen nodes, differentiated analytically",
+      "kind": "one field",
+      "fields": 1,
+      "taps_per_query": 16,
+      "solves_per_field": 0,
+      "ec_max_B0": 0.07626526154917368,
+      "c1_max_B0": 0.0,
+      "c2_max_B0": 0.0,
+      "e0_max_B0": 0.03459967672824882,
+      "e1_max_B0": 0.053402309074363226,
+      "e2_max_B0": 0.07626526154917368,
+      "ec_max_B1": 0.20423451302826146,
+      "c1_max_B1": 0.0,
+      "c2_max_B1": 0.0,
+      "e0_max_B1": 0.11696817507314139,
+      "e1_max_B1": 0.16029006172301732,
+      "e2_max_B1": 0.20423451302826146,
+      "ec_max_B2": 0.32605161844614083,
+      "c1_max_B2": 0.0,
+      "c2_max_B2": 0.0,
+      "e0_max_B2": 0.2120323298105019,
+      "e1_max_B2": 0.2721478456832284,
+      "e2_max_B2": 0.32605161844614083,
+      "reach_ec_1e-2_over_pi": 0.5431626695811237,
+      "reach_ec_1e-2_saturated": false,
+      "c1_max_full": 0.0,
+      "c2_max_full": 0.0,
+      "c1_max_theta_above_floor": 0.0,
+      "c2_max_theta_above_floor": 0.0,
+      "coherence_floor_theta_over_pi": 0.01,
+      "reach_ec_1e-3_over_pi": 0.4430462788447962,
+      "reach_ec_1e-3_saturated": false,
+      "reach_ec_1e-4_over_pi": 0.36677891131720924,
+      "reach_ec_1e-4_saturated": false
+    }
+  ],
+  "predicted_anchor": {
+    "pert5": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 4.943499706421952e-06,
+          "channel_1": 3.172424333022213e-05,
+          "channel_2": 0.00029656939771167756
+        },
+        "modal_bound": {
+          "channel_0": 6.2408718875883084e-06,
+          "channel_1": 3.968561981775121e-05,
+          "channel_2": 0.0003465301473127747
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 7.659068448678278e-07,
+          "channel_1": 1.0147466385994318e-05,
+          "channel_2": 0.00021280730506286505
+        },
+        "modal_bound": {
+          "channel_0": 1.0116948502129506e-06,
+          "channel_1": 1.3433021485504873e-05,
+          "channel_2": 0.00028653214982515807
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 7.36227928021623e-08,
+          "channel_1": 1.9970441556210546e-06,
+          "channel_2": 8.863425239051955e-05
+        },
+        "modal_bound": {
+          "channel_0": 9.21796510048728e-08,
+          "channel_1": 2.501829861746608e-06,
+          "channel_2": 0.00011174468639528606
+        }
+      }
+    },
+    "core6": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 7.7694542855025e-06,
+          "channel_1": 4.867162991509469e-05,
+          "channel_2": 0.00033004745925541986
+        },
+        "modal_bound": {
+          "channel_0": 9.18069638649549e-06,
+          "channel_1": 5.7573792920744525e-05,
+          "channel_2": 0.0004162469912413091
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 2.6479812275048846e-07,
+          "channel_1": 3.490822789596615e-06,
+          "channel_2": 6.18361593022511e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.9208764676460653e-07,
+          "channel_1": 3.851637858562133e-06,
+          "channel_2": 6.826967997999445e-05
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 4.705564385820106e-09,
+          "channel_1": 1.2819794572634693e-07,
+          "channel_2": 4.826483273649256e-06
+        },
+        "modal_bound": {
+          "channel_0": 5.125087288119536e-09,
+          "channel_1": 1.397793996356142e-07,
+          "channel_2": 5.256419095970013e-06
+        }
+      }
+    },
+    "champion": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 6.492282813671788e-07,
+          "channel_1": 4.213738045456824e-06,
+          "channel_2": 2.635049079046461e-05
+        },
+        "modal_bound": {
+          "channel_0": 7.037453516578687e-07,
+          "channel_1": 4.751734406963198e-06,
+          "channel_2": 2.9090913629456355e-05
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 1.0225929508014618e-08,
+          "channel_1": 1.3268504907942145e-07,
+          "channel_2": 2.087877212717949e-06
+        },
+        "modal_bound": {
+          "channel_0": 1.1049478919126163e-08,
+          "channel_1": 1.42498991265649e-07,
+          "channel_2": 2.2725413057323244e-06
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.2771197382759915e-10,
+          "channel_1": 3.444903751696627e-09,
+          "channel_2": 1.1766112168324631e-07
+        },
+        "modal_bound": {
+          "channel_0": 1.3788679098380943e-10,
+          "channel_1": 3.7272061626947454e-09,
+          "channel_2": 1.2724032930355434e-07
+        }
+      }
+    },
+    "BMC9": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 8.104603803336867e-07,
+          "channel_1": 5.242664528584575e-06,
+          "channel_2": 3.217015138338724e-05
+        },
+        "modal_bound": {
+          "channel_0": 8.12981028184347e-07,
+          "channel_1": 5.537253308305368e-06,
+          "channel_2": 3.224130210508417e-05
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 2.0754309978706533e-10,
+          "channel_1": 2.7070857260004248e-09,
+          "channel_2": 4.219825836977471e-08
+        },
+        "modal_bound": {
+          "channel_0": 2.1329188637994503e-10,
+          "channel_1": 2.73682238213598e-09,
+          "channel_2": 4.3374554542768164e-08
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.3158726547721895e-13,
+          "channel_1": 3.5515468471723363e-12,
+          "channel_2": 1.21364979054564e-10
+        },
+        "modal_bound": {
+          "channel_0": 1.3336752300825425e-13,
+          "channel_1": 3.588495847258307e-12,
+          "channel_2": 1.2218272887432273e-10
+        }
+      }
+    },
+    "BMC11": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 7.383151651582406e-08,
+          "channel_1": 4.909601758266252e-07,
+          "channel_2": 2.9033557048977692e-06
+        },
+        "modal_bound": {
+          "channel_0": 7.39812217496388e-08,
+          "channel_1": 5.096979026877776e-07,
+          "channel_2": 2.9054750363211077e-06
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 3.4473777855865456e-12,
+          "channel_1": 4.486036821532721e-11,
+          "channel_2": 6.886062855300914e-10
+        },
+        "modal_bound": {
+          "channel_0": 3.5078662492015513e-12,
+          "channel_1": 4.504096586408816e-11,
+          "channel_2": 7.005454615867335e-10
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.5131142977276428e-15,
+          "channel_1": 1.3046013519691895e-14,
+          "channel_2": 4.2518212499258367e-13
+        },
+        "modal_bound": {
+          "channel_0": 1.825746598151855e-15,
+          "channel_1": 1.3773849997029317e-14,
+          "channel_2": 4.2879249990297416e-13
+        }
+      }
+    },
+    "slc_operator_L8": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0009151166411953079,
+          "channel_1": 0.0026697918241136353,
+          "channel_2": 0.005339282192250545
+        },
+        "modal_bound": {
+          "channel_0": 0.000942955615950468,
+          "channel_1": 0.002699029143762712,
+          "channel_2": 0.005373408908411479
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 4.994946287428059e-06,
+          "channel_1": 2.4382039373925833e-05,
+          "channel_2": 4.3390365252779685e-05
+        },
+        "modal_bound": {
+          "channel_0": 5.215546157248895e-06,
+          "channel_1": 2.9979833462903872e-05,
+          "channel_2": 4.7766898766874336e-05
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 2.166863106300161e-08,
+          "channel_1": 1.819865856193078e-06,
+          "channel_2": 3.1340895094546387e-06
+        },
+        "modal_bound": {
+          "channel_0": 2.2234887096200712e-08,
+          "channel_1": 2.1425352292742574e-06,
+          "channel_2": 3.384481639586595e-06
+        }
+      }
+    },
+    "slc_operator_L12": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.00013915715182577135,
+          "channel_1": 0.0003549136134212858,
+          "channel_2": 0.0006700213020995863
+        },
+        "modal_bound": {
+          "channel_0": 0.00013979234300261716,
+          "channel_1": 0.00044291637789817544,
+          "channel_2": 0.0008190568332558905
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 6.224441927761794e-08,
+          "channel_1": 2.5344526831299265e-05,
+          "channel_2": 4.36260571590165e-05
+        },
+        "modal_bound": {
+          "channel_0": 6.376123742792292e-08,
+          "channel_1": 2.9979833463013926e-05,
+          "channel_2": 4.776689876691957e-05
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.8062252620076234e-11,
+          "channel_1": 1.8312846044203083e-06,
+          "channel_2": 3.144227463414352e-06
+        },
+        "modal_bound": {
+          "channel_0": 1.8197813527793437e-11,
+          "channel_1": 2.1425352294943653e-06,
+          "channel_2": 3.384481451934784e-06
+        }
+      }
+    },
+    "slc_operator_L16": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 2.3761769110104907e-05,
+          "channel_1": 0.00019258891560415173,
+          "channel_2": 0.00030464161218904243
+        },
+        "modal_bound": {
+          "channel_0": 2.3821178676634118e-05,
+          "channel_1": 0.00024839314377199,
+          "channel_2": 0.00037297167093443983
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 8.875080094885419e-10,
+          "channel_1": 2.5518940887551415e-05,
+          "channel_2": 4.3722192567124185e-05
+        },
+        "modal_bound": {
+          "channel_0": 8.975347974549266e-10,
+          "channel_1": 2.997983346312398e-05,
+          "channel_2": 4.7766898766964806e-05
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.7217418991013905e-14,
+          "channel_1": 1.8313340929377463e-06,
+          "channel_2": 3.1443018257442627e-06
+        },
+        "modal_bound": {
+          "channel_0": 1.7634974971504703e-14,
+          "channel_1": 2.1425352297346495e-06,
+          "channel_2": 3.3844814521757793e-06
+        }
+      }
+    },
+    "slc_field_L8": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0009151166411953079,
+          "channel_1": 0.006743480959957006,
+          "channel_2": 0.02657839914502291
+        },
+        "modal_bound": {
+          "channel_0": 0.000942955615950468,
+          "channel_1": 0.006943150770121642,
+          "channel_2": 0.027381630953687085
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 4.994946287428059e-06,
+          "channel_1": 7.309415333337947e-05,
+          "channel_2": 0.000577816695473668
+        },
+        "modal_bound": {
+          "channel_0": 5.215546157248895e-06,
+          "channel_1": 7.69684136504844e-05,
+          "channel_2": 0.0006032558053129049
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 2.166863106300161e-08,
+          "channel_1": 6.400779396493163e-07,
+          "channel_2": 1.0016312817616273e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.2234887096200712e-08,
+          "channel_1": 6.565771332744723e-07,
+          "channel_2": 1.0277645372035737e-05
+        }
+      }
+    },
+    "slc_field_L12": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.00013915715182577135,
+          "channel_1": 0.0010059574925678583,
+          "channel_2": 0.004101974401303415
+        },
+        "modal_bound": {
+          "channel_0": 0.00013979234300261716,
+          "channel_1": 0.001009370532737037,
+          "channel_2": 0.004120594034477721
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 6.224441927761794e-08,
+          "channel_1": 8.978704335722003e-07,
+          "channel_2": 7.322593567712568e-06
+        },
+        "modal_bound": {
+          "channel_0": 6.376123742792292e-08,
+          "channel_1": 9.219212039984196e-07,
+          "channel_2": 7.5002844683044406e-06
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.8062252620076234e-11,
+          "channel_1": 5.223704526208643e-10,
+          "channel_2": 8.495302595557406e-09
+        },
+        "modal_bound": {
+          "channel_0": 1.8197813527793437e-11,
+          "channel_1": 5.263760496664828e-10,
+          "channel_2": 8.558188962806382e-09
+        }
+      }
+    },
+    "slc_field_L16": {
+      "64": {
+        "modal_exact": {
+          "channel_0": 2.3761769110104907e-05,
+          "channel_1": 0.00017009372548864655,
+          "channel_2": 0.0007057249185803889
+        },
+        "modal_bound": {
+          "channel_0": 2.3821178676634118e-05,
+          "channel_1": 0.00017031956108183287,
+          "channel_2": 0.0007074783961138265
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 8.875080094885419e-10,
+          "channel_1": 1.2684778871235563e-08,
+          "channel_2": 1.052788170953427e-07
+        },
+        "modal_bound": {
+          "channel_0": 8.975347974549266e-10,
+          "channel_1": 1.2844988293611595e-08,
+          "channel_2": 1.0646840967467098e-07
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 1.7217418991013905e-14,
+          "channel_1": 4.899134686575628e-13,
+          "channel_2": 8.107267674897383e-12
+        },
+        "modal_bound": {
+          "channel_0": 1.7634974971504703e-14,
+          "channel_1": 4.972655331759369e-13,
+          "channel_2": 8.246873417721342e-12
+        }
+      }
+    }
+  },
+  "predicted_resolution_scaled": {
+    "pert5": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 1.5894887691495327e-05,
+          "channel_1": 7.023631650105946e-05,
+          "channel_2": 0.0002617915794651982
+        },
+        "modal_bound": {
+          "channel_0": 2.8343011149872495e-05,
+          "channel_1": 0.00012612727931209997,
+          "channel_2": 0.0005033799018384303
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 1.5184666932569449e-05,
+          "channel_1": 8.678148893463496e-05,
+          "channel_2": 0.00035965438232384917
+        },
+        "modal_bound": {
+          "channel_0": 2.534851871439035e-05,
+          "channel_1": 0.0001390693357555695,
+          "channel_2": 0.0006332679838540336
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 9.673029221907619e-06,
+          "channel_1": 7.74040082536896e-05,
+          "channel_2": 0.00029435018822369485
+        },
+        "modal_bound": {
+          "channel_0": 2.377793040473964e-05,
+          "channel_1": 0.0001699612416370354,
+          "channel_2": 0.0006896354513660637
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 9.428356934069949e-06,
+          "channel_1": 8.948174177838559e-05,
+          "channel_2": 0.00031331775832979015
+        },
+        "modal_bound": {
+          "channel_0": 2.38289723200561e-05,
+          "channel_1": 0.00022743577868350166,
+          "channel_2": 0.0009014421071373287
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 9.293386323936864e-06,
+          "channel_1": 0.00010714496823477238,
+          "channel_2": 0.00030279825406284374
+        },
+        "modal_bound": {
+          "channel_0": 2.3688686044230716e-05,
+          "channel_1": 0.000251166007271295,
+          "channel_2": 0.0008552433332764818
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 9.296913709620704e-06,
+          "channel_1": 0.0001089092577979995,
+          "channel_2": 0.0003706472092652796
+        },
+        "modal_bound": {
+          "channel_0": 2.3649705924147032e-05,
+          "channel_1": 0.00028967341607264455,
+          "channel_2": 0.0011096156801230232
+        }
+      }
+    },
+    "core6": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 2.2626227649872233e-05,
+          "channel_1": 9.787055916564172e-05,
+          "channel_2": 0.0003489392509963175
+        },
+        "modal_bound": {
+          "channel_0": 3.854660640264027e-05,
+          "channel_1": 0.00017300496325065826,
+          "channel_2": 0.0006238122665621252
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 1.5853202514007515e-05,
+          "channel_1": 9.318204793538274e-05,
+          "channel_2": 0.0003521019661390906
+        },
+        "modal_bound": {
+          "channel_0": 3.166331382148952e-05,
+          "channel_1": 0.0001745869611909606,
+          "channel_2": 0.0007281204907270789
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 1.5096622694514325e-05,
+          "channel_1": 0.0001078172548901312,
+          "channel_2": 0.00038145230762180434
+        },
+        "modal_bound": {
+          "channel_0": 3.070757437819398e-05,
+          "channel_1": 0.00022089557049868104,
+          "channel_2": 0.000816613293952357
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 1.4075100202867927e-05,
+          "channel_1": 0.00013270114177584322,
+          "channel_2": 0.00047413317110579767
+        },
+        "modal_bound": {
+          "channel_0": 2.8609674858221114e-05,
+          "channel_1": 0.00027398211619579705,
+          "channel_2": 0.001001355652035771
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 1.0641386527209913e-05,
+          "channel_1": 0.0001274141843695624,
+          "channel_2": 0.0003314619560933097
+        },
+        "modal_bound": {
+          "channel_0": 2.973820739138713e-05,
+          "channel_1": 0.00031695145400990123,
+          "channel_2": 0.000987962769618625
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 9.439743554034847e-06,
+          "channel_1": 0.0001133557115517862,
+          "channel_2": 0.0004045848729714428
+        },
+        "modal_bound": {
+          "channel_0": 2.900223089825764e-05,
+          "channel_1": 0.0003567597418785011,
+          "channel_2": 0.0012556180874191524
+        }
+      }
+    },
+    "champion": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 2.3588627016886345e-06,
+          "channel_1": 1.2445108181031838e-05,
+          "channel_2": 3.673133176775721e-05
+        },
+        "modal_bound": {
+          "channel_0": 3.858035128133501e-06,
+          "channel_1": 1.8591957582839248e-05,
+          "channel_2": 5.7963574921597e-05
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 1.3597768471189987e-06,
+          "channel_1": 9.287565389185342e-06,
+          "channel_2": 3.132315839065551e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.481166538256399e-06,
+          "channel_1": 1.4693185658069354e-05,
+          "channel_2": 5.392603720425766e-05
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 1.4579903220903385e-06,
+          "channel_1": 1.1484074430165033e-05,
+          "channel_2": 3.506210138720199e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.8649439961881068e-06,
+          "channel_1": 2.2156804888244832e-05,
+          "channel_2": 7.082725608830936e-05
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 1.1639438584736386e-06,
+          "channel_1": 1.3234701395480943e-05,
+          "channel_2": 3.834103001222894e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.47659705794487e-06,
+          "channel_1": 2.553850806360894e-05,
+          "channel_2": 8.093588609304907e-05
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 9.037584035032105e-07,
+          "channel_1": 1.0214856709661444e-05,
+          "channel_2": 2.6484814531767473e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.6535687365203357e-06,
+          "channel_1": 3.0419698380326207e-05,
+          "channel_2": 8.22202225695608e-05
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 7.523634672131787e-07,
+          "channel_1": 1.1039981563244075e-05,
+          "channel_2": 3.0635548392768405e-05
+        },
+        "modal_bound": {
+          "channel_0": 2.5743546423380494e-06,
+          "channel_1": 3.408386897759397e-05,
+          "channel_2": 0.00010390726870963428
+        }
+      }
+    },
+    "BMC9": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.00010608174719689099,
+          "channel_1": 0.0004854174339908446,
+          "channel_2": 0.0014736983612590592
+        },
+        "modal_bound": {
+          "channel_0": 0.00011242926488467335,
+          "channel_1": 0.0005461680797849929,
+          "channel_2": 0.0015688255354941547
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 6.081282519824438e-05,
+          "channel_1": 0.00037536161321524253,
+          "channel_2": 0.0012071922646776138
+        },
+        "modal_bound": {
+          "channel_0": 7.49171441016245e-05,
+          "channel_1": 0.00044883637678244914,
+          "channel_2": 0.001473826343435193
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 5.7868940685663935e-05,
+          "channel_1": 0.00047122537918867723,
+          "channel_2": 0.001314580171833519
+        },
+        "modal_bound": {
+          "channel_0": 7.872844719523934e-05,
+          "channel_1": 0.0006144751486235486,
+          "channel_2": 0.0017955849325167483
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 5.083760295826293e-05,
+          "channel_1": 0.0005310892535095717,
+          "channel_2": 0.0015147910448813915
+        },
+        "modal_bound": {
+          "channel_0": 6.126119513971749e-05,
+          "channel_1": 0.0006386020852083576,
+          "channel_2": 0.0018274565400236864
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 4.4457987663339966e-05,
+          "channel_1": 0.0005402019363967794,
+          "channel_2": 0.0012921940356657542
+        },
+        "modal_bound": {
+          "channel_0": 7.125955802980053e-05,
+          "channel_1": 0.0008250965189127965,
+          "channel_2": 0.0020249746133706933
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 3.75306603444379e-05,
+          "channel_1": 0.0005029900980285802,
+          "channel_2": 0.0014039998789442643
+        },
+        "modal_bound": {
+          "channel_0": 6.591298488340595e-05,
+          "channel_1": 0.0008817086666134575,
+          "channel_2": 0.0024360491394855256
+        }
+      }
+    },
+    "BMC11": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 2.4273397419135926e-05,
+          "channel_1": 0.00011084514473447903,
+          "channel_2": 0.0003357026589259053
+        },
+        "modal_bound": {
+          "channel_0": 2.518240356853323e-05,
+          "channel_1": 0.0001225910969608998,
+          "channel_2": 0.0003490336459431347
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 1.3246811457612879e-05,
+          "channel_1": 8.322304430806633e-05,
+          "channel_2": 0.00026242685936141093
+        },
+        "modal_bound": {
+          "channel_0": 1.574642663456932e-05,
+          "channel_1": 9.456901696132827e-05,
+          "channel_2": 0.0003075562184830384
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 1.3386224010791923e-05,
+          "channel_1": 0.00010944933358254744,
+          "channel_2": 0.0003025801718335075
+        },
+        "modal_bound": {
+          "channel_0": 1.7019817096343356e-05,
+          "channel_1": 0.0001331456485275654,
+          "channel_2": 0.0003853960368948118
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 1.0879547006236724e-05,
+          "channel_1": 0.00011479954454313024,
+          "channel_2": 0.0003231936360170421
+        },
+        "modal_bound": {
+          "channel_0": 1.2510245973283802e-05,
+          "channel_1": 0.0001307512378448919,
+          "channel_2": 0.00037039894172696163
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 9.827192265424609e-06,
+          "channel_1": 0.00011995549247897607,
+          "channel_2": 0.00028535562212988124
+        },
+        "modal_bound": {
+          "channel_0": 1.5092065345775342e-05,
+          "channel_1": 0.000175169642573686,
+          "channel_2": 0.00042572385953214503
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 8.013902805191558e-06,
+          "channel_1": 0.00010849442549824732,
+          "channel_2": 0.0002989527823204004
+        },
+        "modal_bound": {
+          "channel_0": 1.3722088211965115e-05,
+          "channel_1": 0.00018401947355138132,
+          "channel_2": 0.000503382216101195
+        }
+      }
+    },
+    "slc_operator_L8": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.011451399742870195,
+          "channel_1": 0.032416149378415915,
+          "channel_2": 0.055277449238991694
+        },
+        "modal_bound": {
+          "channel_0": 0.014662587858377193,
+          "channel_1": 0.042208938019636454,
+          "channel_2": 0.06477952815600509
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0073859601655085075,
+          "channel_1": 0.027515629685010673,
+          "channel_2": 0.04834670544180974
+        },
+        "modal_bound": {
+          "channel_0": 0.011686353017291897,
+          "channel_1": 0.040568317490982074,
+          "channel_2": 0.06902231396697547
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.005898443066522724,
+          "channel_1": 0.02992797404531461,
+          "channel_2": 0.0471298415249064
+        },
+        "modal_bound": {
+          "channel_0": 0.011426056618299926,
+          "channel_1": 0.05211087254473902,
+          "channel_2": 0.07987128973168563
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.006411576378495223,
+          "channel_1": 0.040606780802899714,
+          "channel_2": 0.0633044051250492
+        },
+        "modal_bound": {
+          "channel_0": 0.01038709330458714,
+          "channel_1": 0.062043006556805606,
+          "channel_2": 0.09065125417176213
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.005814386921741171,
+          "channel_1": 0.041695607168640784,
+          "channel_2": 0.05272950402504109
+        },
+        "modal_bound": {
+          "channel_0": 0.010963089153083637,
+          "channel_1": 0.07362169689951532,
+          "channel_2": 0.09382032588179066
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0053055272934499804,
+          "channel_1": 0.04259153755518589,
+          "channel_2": 0.062061152135110244
+        },
+        "modal_bound": {
+          "channel_0": 0.010626220787019918,
+          "channel_1": 0.08195698891421427,
+          "channel_2": 0.1166283757845327
+        }
+      }
+    },
+    "slc_operator_L12": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.00473882536363073,
+          "channel_1": 0.013532743329522185,
+          "channel_2": 0.02344024668898481
+        },
+        "modal_bound": {
+          "channel_0": 0.005421388561549847,
+          "channel_1": 0.01622539896351979,
+          "channel_2": 0.02560296943538251
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0029430174782552328,
+          "channel_1": 0.011104214583469111,
+          "channel_2": 0.01978920755980731
+        },
+        "modal_bound": {
+          "channel_0": 0.004074569335356739,
+          "channel_1": 0.014687302070794418,
+          "channel_2": 0.025689726558262328
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.002490707970888249,
+          "channel_1": 0.012865157228560263,
+          "channel_2": 0.02030065920372027
+        },
+        "modal_bound": {
+          "channel_0": 0.0040741274948833985,
+          "channel_1": 0.019310527370740013,
+          "channel_2": 0.030440943347992397
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.00254761500540251,
+          "channel_1": 0.01616830455870133,
+          "channel_2": 0.025623547367069906
+        },
+        "modal_bound": {
+          "channel_0": 0.0035179405885464587,
+          "channel_1": 0.02181937539982623,
+          "channel_2": 0.03276849575915269
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.0021873167618104545,
+          "channel_1": 0.016036607205866665,
+          "channel_2": 0.020722603985447383
+        },
+        "modal_bound": {
+          "channel_0": 0.003833478110792156,
+          "channel_1": 0.02675116979104885,
+          "channel_2": 0.03505711245369421
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0019768864056555688,
+          "channel_1": 0.016212777685666962,
+          "channel_2": 0.023850425245519894
+        },
+        "modal_bound": {
+          "channel_0": 0.003658622688943043,
+          "channel_1": 0.02931472275387019,
+          "channel_2": 0.042890664934838056
+        }
+      }
+    },
+    "slc_operator_L16": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.0021091245453395743,
+          "channel_1": 0.00600920945128247,
+          "channel_2": 0.01056655300819219
+        },
+        "modal_bound": {
+          "channel_0": 0.0022820847585832797,
+          "channel_1": 0.007127826937159126,
+          "channel_2": 0.011297770819353115
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0012687001019713643,
+          "channel_1": 0.004918407043923772,
+          "channel_2": 0.008587076203698895
+        },
+        "modal_bound": {
+          "channel_0": 0.0016218097563787091,
+          "channel_1": 0.006143183666891083,
+          "channel_2": 0.01074954796032848
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.0011314572457443639,
+          "channel_1": 0.0058749432014217305,
+          "channel_2": 0.00947934285247554
+        },
+        "modal_bound": {
+          "channel_0": 0.0016582947220135725,
+          "channel_1": 0.008240604302221502,
+          "channel_2": 0.01302508592249684
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.0010827741379150384,
+          "channel_1": 0.006915010405010963,
+          "channel_2": 0.010956266867155498
+        },
+        "modal_bound": {
+          "channel_0": 0.00136267292126391,
+          "channel_1": 0.008912296550822214,
+          "channel_2": 0.013367624082873552
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.0009161551192710764,
+          "channel_1": 0.006698091514036617,
+          "channel_2": 0.008816729567087548
+        },
+        "modal_bound": {
+          "channel_0": 0.001531763863575821,
+          "channel_1": 0.011227954305752207,
+          "channel_2": 0.014738336590674337
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0008061622323388923,
+          "channel_1": 0.006647393314134008,
+          "channel_2": 0.009859733050585795
+        },
+        "modal_bound": {
+          "channel_0": 0.0014402553803359475,
+          "channel_1": 0.012142034002932752,
+          "channel_2": 0.0177739255649338
+        }
+      }
+    },
+    "slc_field_L8": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.011451399742870195,
+          "channel_1": 0.05800423513217381,
+          "channel_2": 0.13543608453944134
+        },
+        "modal_bound": {
+          "channel_0": 0.014662587858377193,
+          "channel_1": 0.07560390822890632,
+          "channel_2": 0.1731836468848298
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0073859601655085075,
+          "channel_1": 0.047447177461925095,
+          "channel_2": 0.12217985614034263
+        },
+        "modal_bound": {
+          "channel_0": 0.011686353017291897,
+          "channel_1": 0.07437070417433082,
+          "channel_2": 0.19268880506354347
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.005898443066522724,
+          "channel_1": 0.0498835401294411,
+          "channel_2": 0.11415754118207576
+        },
+        "modal_bound": {
+          "channel_0": 0.011426056618299926,
+          "channel_1": 0.09470021116052246,
+          "channel_2": 0.21933567373780097
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.006411576378495223,
+          "channel_1": 0.07199586757770599,
+          "channel_2": 0.1598211453959728
+        },
+        "modal_bound": {
+          "channel_0": 0.01038709330458714,
+          "channel_1": 0.11505861285634628,
+          "channel_2": 0.2585021957782903
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.005814386921741171,
+          "channel_1": 0.07183766394448621,
+          "channel_2": 0.14003651501481199
+        },
+        "modal_bound": {
+          "channel_0": 0.010963089153083637,
+          "channel_1": 0.13482990271012937,
+          "channel_2": 0.261366280734813
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0053055272934499804,
+          "channel_1": 0.07238903366281917,
+          "channel_2": 0.16449906574999387
+        },
+        "modal_bound": {
+          "channel_0": 0.010626220787019918,
+          "channel_1": 0.151013035454476,
+          "channel_2": 0.32860976413503556
+        }
+      }
+    },
+    "slc_field_L12": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.00473882536363073,
+          "channel_1": 0.023713044182759605,
+          "channel_2": 0.05671606519095704
+        },
+        "modal_bound": {
+          "channel_0": 0.005421388561549847,
+          "channel_1": 0.027439073156799967,
+          "channel_2": 0.06485430158391879
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0029430174782552328,
+          "channel_1": 0.018545879835549398,
+          "channel_2": 0.049236541038027805
+        },
+        "modal_bound": {
+          "channel_0": 0.004074569335356739,
+          "channel_1": 0.025450078289879857,
+          "channel_2": 0.06805938543292554
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.002490707970888249,
+          "channel_1": 0.020790161493423606,
+          "channel_2": 0.0487477868097465
+        },
+        "modal_bound": {
+          "channel_0": 0.0040741274948833985,
+          "channel_1": 0.03314267237640668,
+          "channel_2": 0.07922148889241828
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.00254761500540251,
+          "channel_1": 0.028039052401459746,
+          "channel_2": 0.06427435091346227
+        },
+        "modal_bound": {
+          "channel_0": 0.0035179405885464587,
+          "channel_1": 0.03824530965873918,
+          "channel_2": 0.08870219093917267
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.0021873167618104545,
+          "channel_1": 0.026737187880516922,
+          "channel_2": 0.05328146741064586
+        },
+        "modal_bound": {
+          "channel_0": 0.003833478110792156,
+          "channel_1": 0.04627337010608678,
+          "channel_2": 0.09258421166442149
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0019768864056555688,
+          "channel_1": 0.026713189949043696,
+          "channel_2": 0.06204832913883305
+        },
+        "modal_bound": {
+          "channel_0": 0.003658622688943043,
+          "channel_1": 0.05103028256091795,
+          "channel_2": 0.1146226958583362
+        }
+      }
+    },
+    "slc_field_L16": {
+      "48": {
+        "modal_exact": {
+          "channel_0": 0.0021091245453395743,
+          "channel_1": 0.010486573748928248,
+          "channel_2": 0.025399781712620275
+        },
+        "modal_bound": {
+          "channel_0": 0.0022820847585832797,
+          "channel_1": 0.011443126894256486,
+          "channel_2": 0.02747638034306885
+        }
+      },
+      "64": {
+        "modal_exact": {
+          "channel_0": 0.0012687001019713643,
+          "channel_1": 0.007914066744557328,
+          "channel_2": 0.021349317331768005
+        },
+        "modal_bound": {
+          "channel_0": 0.0016218097563787091,
+          "channel_1": 0.010035501476767104,
+          "channel_2": 0.027268114585932285
+        }
+      },
+      "96": {
+        "modal_exact": {
+          "channel_0": 0.0011314572457443639,
+          "channel_1": 0.009224947507643024,
+          "channel_2": 0.02214714668331807
+        },
+        "modal_bound": {
+          "channel_0": 0.0016582947220135725,
+          "channel_1": 0.013364542354202594,
+          "channel_2": 0.032456496535096656
+        }
+      },
+      "128": {
+        "modal_exact": {
+          "channel_0": 0.0010827741379150384,
+          "channel_1": 0.011788010463534235,
+          "channel_2": 0.027490001316067134
+        },
+        "modal_bound": {
+          "channel_0": 0.00136267292126391,
+          "channel_1": 0.014675817699302398,
+          "channel_2": 0.03458676317359496
+        }
+      },
+      "192": {
+        "modal_exact": {
+          "channel_0": 0.0009161551192710764,
+          "channel_1": 0.011125675603799614,
+          "channel_2": 0.022438674777792104
+        },
+        "modal_bound": {
+          "channel_0": 0.001531763863575821,
+          "channel_1": 0.018317327129875376,
+          "channel_2": 0.037237753267693685
+        }
+      },
+      "256": {
+        "modal_exact": {
+          "channel_0": 0.0008061622323388923,
+          "channel_1": 0.01083861358292496,
+          "channel_2": 0.025463964369752828
+        },
+        "modal_bound": {
+          "channel_0": 0.0014402553803359475,
+          "channel_1": 0.019901071478085352,
+          "channel_2": 0.045420558848116376
+        }
+      }
+    }
+  }
+}

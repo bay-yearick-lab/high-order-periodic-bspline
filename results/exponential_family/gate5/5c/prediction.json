@@ -1,0 +1,57 @@
+{
+  "producer": "code/analysis/exponential_family/gate5c_ibm.py",
+  "written_utc": "2026-09-13T01:20:16Z",
+  "part": "5c",
+  "contract": {
+    "path": "results/exponential_family/gate5/contract.md",
+    "sha256": "bf20ab008f10b7dac50015afceede2e466aea8cc58c6b989d268ad0617a3df2a"
+  },
+  "routes": [
+    "EXP-E62",
+    "BMC9",
+    "C10|common_L12",
+    "SLC-SL|common_L12"
+  ],
+  "basis": "Section 5a coupled off-grid symbols: the value-channel transfer residual of each route's own evaluator, and the composed divergence-gradient Helmholtz symbol residual of each route's own nodal first derivative, both weighted by the modal amplitudes of the same 768-square Fourier reference restricted to the N = 96 grid.",
+  "prediction": {
+    "grid_used_for_the_prediction": 96,
+    "delta_points": 65,
+    "rows": [
+      {
+        "route": "EXP-E62",
+        "label": "champion E_{6,2}",
+        "amplitude_weighted_bulk_symbol_error": 5.105218727001607e-09,
+        "amplitude_weighted_offgrid_value_error": 8.089140110286007e-10,
+        "predicted_trace_magnitude": 5.914132738030208e-09
+      },
+      {
+        "route": "BMC9",
+        "label": "BMC9",
+        "amplitude_weighted_bulk_symbol_error": 1.5764325433037657e-10,
+        "amplitude_weighted_offgrid_value_error": 2.8721371726760888e-11,
+        "predicted_trace_magnitude": 1.8636462605713746e-10
+      },
+      {
+        "route": "C10|common_L12",
+        "label": "C10 + L12",
+        "amplitude_weighted_bulk_symbol_error": 3.904340956532567e-09,
+        "amplitude_weighted_offgrid_value_error": 8.165956723628564e-09,
+        "predicted_trace_magnitude": 1.207029768016113e-08
+      },
+      {
+        "route": "SLC-SL|common_L12",
+        "label": "SLC q4 + L12",
+        "amplitude_weighted_bulk_symbol_error": 1.73818893908517e-06,
+        "amplitude_weighted_offgrid_value_error": 8.165956723628564e-09,
+        "predicted_trace_magnitude": 1.7463548958087986e-06
+      }
+    ],
+    "predicted_trace_ordering_best_first": [
+      "BMC9",
+      "EXP-E62",
+      "C10|common_L12",
+      "SLC-SL|common_L12"
+    ],
+    "predicted_champion_over_slc_trace_factor": 295.285035552051
+  }
+}

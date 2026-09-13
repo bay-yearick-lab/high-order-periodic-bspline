@@ -1,0 +1,199 @@
+{
+  "producer": "gate6 symbol level prediction at N = 256 (no DNS run)",
+  "written_utc": "2026-09-13T03:46:12Z",
+  "machinery": {
+    "source": "code/analysis/exponential_family/gate4c_tgv.py",
+    "functions": [
+      "kappa1_curves",
+      "restrict_reference",
+      "energy_spectrum"
+    ]
+  },
+  "definition": "P = sqrt( sum_m E(m) e_1(theta_m)^2 / sum_m E(m) ), theta_m = 2 pi m / N, e_1 = kappa_1/theta - 1; P_band over 1 <= m < N/3, P_full over 1 <= m < N/2",
+  "reference": {
+    "path": "code/solver/psref/tgvfield_ps_N384_t9.bin",
+    "sha256": "1b1ec72d30358050e240a7b0687affadef1f7abf6da3583e0948f865fa92be77",
+    "grid": 384,
+    "time": 9.00262644794325,
+    "restriction": "signed Fourier mode cube"
+  },
+  "member": {
+    "path": "results/exponential_family/members/E62_champion.json",
+    "sha256": "54e57a3f83908b1a93f0720f84d7deafb86c37dc53c4e63b36c70d6257aea3b0",
+    "omegas": [
+      1.7701927977475826,
+      2.0606855355641316
+    ]
+  },
+  "requested_routes": [
+    "exp",
+    "sl",
+    "opt",
+    "bmc_p11",
+    "cw12b"
+  ],
+  "grids": {
+    "128": {
+      "P_band": {
+        "shells": [
+          1,
+          41
+        ],
+        "theta_range": [
+          0.04908738521234052,
+          2.012582793705961
+        ],
+        "weight_energy": 0.08550379849431093,
+        "values": {
+          "exp": 2.9978543232783326e-06,
+          "sl": 0.000114827206574313,
+          "opt": 0.0007212827153520499,
+          "bmc_p11": 1.4507186265604217e-05,
+          "cw12b": 2.7010349322485723e-05,
+          "bmc_p9": 7.0335006707066e-05,
+          "c10": 0.000497475823235099,
+          "c12": 0.0002365695596039921
+        },
+        "ordering_best_first": [
+          "exp",
+          "bmc_p11",
+          "cw12b",
+          "bmc_p9",
+          "sl",
+          "c12",
+          "c10",
+          "opt"
+        ]
+      },
+      "P_full": {
+        "shells": [
+          1,
+          63
+        ],
+        "theta_range": [
+          0.04908738521234052,
+          3.0925052683774528
+        ],
+        "weight_energy": 0.08619106740276086,
+        "values": {
+          "exp": 0.01631499079929506,
+          "sl": 0.014211239388232537,
+          "opt": 0.012912181852621801,
+          "bmc_p11": 0.01681369470221054,
+          "cw12b": 0.015097644508449623,
+          "bmc_p9": 0.0192537787321506,
+          "c10": 0.024315204658755342,
+          "c12": 0.022430854810927055
+        },
+        "ordering_best_first": [
+          "opt",
+          "sl",
+          "cw12b",
+          "exp",
+          "bmc_p11",
+          "bmc_p9",
+          "c12",
+          "c10"
+        ]
+      },
+      "requested_ordering_best_first": {
+        "P_band": [
+          "exp",
+          "bmc_p11",
+          "cw12b",
+          "sl",
+          "opt"
+        ],
+        "P_full": [
+          "opt",
+          "sl",
+          "cw12b",
+          "exp",
+          "bmc_p11"
+        ]
+      }
+    },
+    "256": {
+      "P_band": {
+        "shells": [
+          1,
+          84
+        ],
+        "theta_range": [
+          0.02454369260617026,
+          2.061670178918302
+        ],
+        "weight_energy": 0.08632696521637652,
+        "values": {
+          "exp": 1.2193883760179233e-06,
+          "sl": 5.394043137071807e-05,
+          "opt": 0.00026920175747283364,
+          "bmc_p11": 6.087313832527354e-06,
+          "cw12b": 1.0296424066140026e-05,
+          "bmc_p9": 2.8159134089636844e-05,
+          "c10": 0.0001911838665462534,
+          "c12": 9.278453432387858e-05
+        },
+        "ordering_best_first": [
+          "exp",
+          "bmc_p11",
+          "cw12b",
+          "bmc_p9",
+          "sl",
+          "c12",
+          "c10",
+          "opt"
+        ]
+      },
+      "P_full": {
+        "shells": [
+          1,
+          127
+        ],
+        "theta_range": [
+          0.02454369260617026,
+          3.117048960983623
+        ],
+        "weight_energy": 0.08636825686271174,
+        "values": {
+          "exp": 0.0035272524523494845,
+          "sl": 0.003116031456975609,
+          "opt": 0.0028769595353816103,
+          "bmc_p11": 0.003627252014298906,
+          "cw12b": 0.0032875306670134092,
+          "bmc_p9": 0.004122903101648174,
+          "c10": 0.005216184943874917,
+          "c12": 0.0047962672243161844
+        },
+        "ordering_best_first": [
+          "opt",
+          "sl",
+          "cw12b",
+          "exp",
+          "bmc_p11",
+          "bmc_p9",
+          "c12",
+          "c10"
+        ]
+      },
+      "requested_ordering_best_first": {
+        "P_band": [
+          "exp",
+          "bmc_p11",
+          "cw12b",
+          "sl",
+          "opt"
+        ],
+        "P_full": [
+          "opt",
+          "sl",
+          "cw12b",
+          "exp",
+          "bmc_p11"
+        ]
+      }
+    }
+  },
+  "exp_above_sl_tail_weighted_N256": false,
+  "exp_above_sl_band_N256": true
+}

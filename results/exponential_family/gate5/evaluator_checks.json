@@ -1,0 +1,320 @@
+{
+  "gate": "5.0",
+  "generated": "2026-09-12",
+  "member": {
+    "name": "E62_champion",
+    "m": 6,
+    "omegas": [
+      1.7701927977475826,
+      2.0606855355641316
+    ],
+    "p": 9,
+    "n": 10,
+    "normalization": 1.8881923627474941,
+    "cell_conditioning": 17.17306885337427
+  },
+  "producers": {
+    "python": "code/analysis/exponential_family/evaluator.py",
+    "cpp": "code/solver/exp_eval.h",
+    "entry_point": "code/analysis/exponential_family/gate5_evaluator.py"
+  },
+  "checks": {
+    "i_integer_samples": {
+      "achieved": 3.094746681142624e-15,
+      "tolerance": 1e-14,
+      "pass": true,
+      "members": [
+        {
+          "member": "champion E_{6,2}",
+          "n": 10,
+          "p": 9,
+          "conditioning": 17.17306885337427,
+          "max_dev_phi": 1.240327285323417e-16,
+          "max_dev_d1": 9.71445146547012e-17,
+          "max_dev_d2": 2.463307335887066e-16
+        },
+        {
+          "member": "BMC9 E_{10,0}",
+          "n": 10,
+          "p": 9,
+          "conditioning": 37.76323708303988,
+          "max_dev_phi": 9.454242944073599e-17,
+          "max_dev_d1": 1.0695191070476796e-16,
+          "max_dev_d2": 1.4988010832439613e-15
+        },
+        {
+          "member": "BMC11 E_{12,0}",
+          "n": 12,
+          "p": 11,
+          "conditioning": 81.9792781187374,
+          "max_dev_phi": 2.0426368929626904e-16,
+          "max_dev_d1": 1.1135481583387217e-16,
+          "max_dev_d2": 6.106226635438361e-16
+        },
+        {
+          "member": "anchor E_{4,2}(0.1, 2.36)",
+          "n": 8,
+          "p": 7,
+          "conditioning": 250637.53450719398,
+          "max_dev_phi": 1.6930901125533637e-15,
+          "max_dev_d1": 3.094746681142624e-15,
+          "max_dev_d2": 1.682681771697503e-16
+        },
+        {
+          "member": "confluent E_{4,2}(0.73, 0.73)",
+          "n": 8,
+          "p": 7,
+          "conditioning": 1358.0652576681694,
+          "max_dev_phi": 2.1172232433958366e-16,
+          "max_dev_d1": 1.2896875719015028e-16,
+          "max_dev_d2": 1.7763568394002505e-15
+        }
+      ]
+    },
+    "ii_offgrid_transfers": {
+      "achieved": 1.61159264493472e-13,
+      "tolerance": 1e-12,
+      "pass": true,
+      "angles": 200,
+      "positions": 2000,
+      "members": [
+        {
+          "member": "champion E_{6,2}",
+          "max_dev_T0": 5.618907889917725e-14,
+          "max_dev_T1": 4.822272698245821e-14,
+          "max_dev_T2": 7.571725381436449e-14
+        },
+        {
+          "member": "BMC9 E_{10,0}",
+          "max_dev_T0": 1.618737912775378e-14,
+          "max_dev_T1": 6.282332143745565e-15,
+          "max_dev_T2": 7.361040045503723e-14
+        },
+        {
+          "member": "anchor E_{4,2}(0.1, 2.36)",
+          "max_dev_T0": 1.61159264493472e-13,
+          "max_dev_T1": 3.8791175004077806e-14,
+          "max_dev_T2": 7.716071349553709e-14
+        }
+      ]
+    },
+    "iii_knot_smoothness": {
+      "achieved": 4.263256414560601e-14,
+      "tolerance": 1e-13,
+      "pass": true,
+      "members": [
+        {
+          "member": "champion E_{6,2}",
+          "p": 9,
+          "max_jump_orders_0_to_p_minus_1": 7.105427357601002e-15,
+          "max_jump_order_0": 1.1102230246251565e-16,
+          "max_jump_order_1": 2.220446049250313e-16,
+          "max_jump_order_2": 1.1102230246251565e-16,
+          "max_jump_order_p": 36.51714636683428
+        },
+        {
+          "member": "BMC9 E_{10,0}",
+          "p": 9,
+          "max_jump_orders_0_to_p_minus_1": 3.552713678800501e-15,
+          "max_jump_order_0": 5.551115123125783e-17,
+          "max_jump_order_1": 5.551115123125783e-17,
+          "max_jump_order_2": 1.6653345369377348e-16,
+          "max_jump_order_p": 252.0
+        },
+        {
+          "member": "BMC11 E_{12,0}",
+          "p": 11,
+          "max_jump_orders_0_to_p_minus_1": 1.4210854715202004e-14,
+          "max_jump_order_0": 1.1102230246251565e-16,
+          "max_jump_order_1": 5.551115123125783e-17,
+          "max_jump_order_2": 9.020562075079397e-17,
+          "max_jump_order_p": 924.0
+        },
+        {
+          "member": "anchor E_{4,2}(0.1, 2.36)",
+          "p": 7,
+          "max_jump_orders_0_to_p_minus_1": 4.309223591302689e-15,
+          "max_jump_order_0": 2.9976021664879227e-15,
+          "max_jump_order_1": 4.309223591302689e-15,
+          "max_jump_order_2": 1.8735013540549517e-16,
+          "max_jump_order_p": 12.15512949017431
+        },
+        {
+          "member": "confluent E_{4,2}(0.73, 0.73)",
+          "p": 7,
+          "max_jump_orders_0_to_p_minus_1": 4.263256414560601e-14,
+          "max_jump_order_0": 5.551115123125783e-16,
+          "max_jump_order_1": 1.3739009929736312e-15,
+          "max_jump_order_2": 1.2337353361147052e-14,
+          "max_jump_order_p": 55.947577552606504
+        }
+      ]
+    },
+    "iv_partition_of_unity": {
+      "achieved": 2.886579864025407e-15,
+      "tolerance": 1e-14,
+      "pass": true,
+      "points": 1000,
+      "members": [
+        {
+          "member": "champion E_{6,2}",
+          "max_dev_sum_phi": 3.3306690738754696e-16,
+          "max_sum_d1": 4.909267437014364e-16,
+          "max_sum_d2": 1.0894063429134349e-15
+        },
+        {
+          "member": "BMC9 E_{10,0}",
+          "max_dev_sum_phi": 4.440892098500626e-16,
+          "max_sum_d1": 3.7443345543260523e-16,
+          "max_sum_d2": 3.4850323581830933e-16
+        },
+        {
+          "member": "BMC11 E_{12,0}",
+          "max_dev_sum_phi": 4.440892098500626e-16,
+          "max_sum_d1": 2.7895205141409313e-16,
+          "max_sum_d2": 3.6404810358032846e-16
+        },
+        {
+          "member": "anchor E_{4,2}(0.1, 2.36)",
+          "max_dev_sum_phi": 2.886579864025407e-15,
+          "max_sum_d1": 7.8236028766554e-16,
+          "max_sum_d2": 5.93275428784068e-16
+        },
+        {
+          "member": "confluent E_{4,2}(0.73, 0.73)",
+          "max_dev_sum_phi": 1.3322676295501878e-15,
+          "max_sum_d1": 4.028027911218146e-15,
+          "max_sum_d2": 1.4988010832439613e-14
+        }
+      ]
+    },
+    "v_polynomial_limit": {
+      "achieved": 6.661338147750939e-16,
+      "tolerance": 1e-13,
+      "pass": true,
+      "gated_cases": [
+        {
+          "case": "r = 0, degree 3",
+          "max_dev_phi": 2.220446049250313e-16,
+          "max_dev_d1": 1.1102230246251565e-16,
+          "max_dev_d2": 0.0
+        },
+        {
+          "case": "r = 0, degree 5",
+          "max_dev_phi": 2.220446049250313e-16,
+          "max_dev_d1": 1.942890293094024e-16,
+          "max_dev_d2": 6.661338147750939e-16
+        },
+        {
+          "case": "r = 0, degree 7",
+          "max_dev_phi": 2.220446049250313e-16,
+          "max_dev_d1": 1.6653345369377348e-16,
+          "max_dev_d2": 3.3306690738754696e-16
+        },
+        {
+          "case": "r = 0, degree 9",
+          "max_dev_phi": 2.220446049250313e-16,
+          "max_dev_d1": 2.220446049250313e-16,
+          "max_dev_d2": 2.7755575615628914e-16
+        },
+        {
+          "case": "r = 0, degree 11",
+          "max_dev_phi": 2.7755575615628914e-16,
+          "max_dev_d1": 1.6653345369377348e-16,
+          "max_dev_d2": 2.3592239273284576e-16
+        },
+        {
+          "case": "E_{6,2}(omega = 1.0e-08) collapsed by the zero tolerance",
+          "max_dev_phi": 2.220446049250313e-16,
+          "max_dev_d1": 2.220446049250313e-16,
+          "max_dev_d2": 2.7755575615628914e-16
+        }
+      ],
+      "approach_to_the_limit": [
+        {
+          "omega": 0.8,
+          "max_dev_phi": 0.0030648496575522155,
+          "conditioning": 8220.132085151938
+        },
+        {
+          "omega": 0.4,
+          "max_dev_phi": 0.0007555418781999279,
+          "conditioning": 3699900.517840011
+        },
+        {
+          "omega": 0.2,
+          "max_dev_phi": 0.0001882267149482253,
+          "conditioning": 1974161234.716419
+        },
+        {
+          "omega": 0.1,
+          "max_dev_phi": 4.703670138994642e-05,
+          "conditioning": 1021123017605.4609
+        },
+        {
+          "omega": 0.05,
+          "max_dev_phi": 1.525459418777464e-05,
+          "conditioning": 524146670412461.4
+        }
+      ],
+      "zero_frequency_tolerance": 1e-07
+    },
+    "vi_cpp_agreement": {
+      "achieved": 3.330669e-16,
+      "tolerance": 1e-14,
+      "pass": true,
+      "per_channel": {
+        "d0": 5.551115e-17,
+        "d1": 1.665335e-16,
+        "d2": 3.330669e-16
+      },
+      "stdout": [
+        "EXPEVAL: member results/exponential_family/members/E62_champion.json  n=10 cells=10 poly degree=5 groups=2 terms=2",
+        "EXPEVAL: rows 10000",
+        "EXPEVAL: max|C++ - Python| d0 5.551115e-17 at x = +0.903446895469116",
+        "EXPEVAL: max|C++ - Python| d1 1.665335e-16 at x = +0.893745711341992",
+        "EXPEVAL: max|C++ - Python| d2 3.330669e-16 at x = +1.912273532399902",
+        "EXPEVAL: max deviation 3.330669e-16 (tolerance 1e-14) -> PASS"
+      ]
+    }
+  },
+  "member_file": {
+    "file": "results/exponential_family/members/E62_champion.json",
+    "evaluator_fields": [
+      "eval_support_n",
+      "eval_cells",
+      "eval_poly_degree",
+      "eval_group_count",
+      "eval_term_count",
+      "eval_group_omega",
+      "eval_group_multiplicity",
+      "eval_normalization",
+      "eval_conditioning",
+      "eval_poly",
+      "eval_cos",
+      "eval_sin"
+    ],
+    "fields_written_for_the_first_time": [],
+    "pre_existing_fields_unchanged": [
+      "name",
+      "m",
+      "r",
+      "omegas",
+      "p",
+      "radius",
+      "cond",
+      "beta",
+      "dbeta",
+      "ddbeta"
+    ]
+  },
+  "table": {
+    "file": "results/exponential_family/gate5/exp_eval_table.csv",
+    "rows": 10000,
+    "range": [
+      -5.499999443787001,
+      5.496622175213481
+    ]
+  },
+  "all_pass": true
+}

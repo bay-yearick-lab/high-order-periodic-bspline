@@ -1,0 +1,380 @@
+{
+  "gate": "9.E4",
+  "generated": "2026-09-13",
+  "members": [
+    {
+      "name": "X8_n10_C_SLC1_pert5",
+      "file": "results/exponential_family/gate8/members/X8_n10_C_SLC1_pert5.json",
+      "m": 4,
+      "omegas": [
+        1.1397172937450386
+      ],
+      "real_pairs": [],
+      "quads": [
+        [
+          0.13344498008928155,
+          2.140933267363202
+        ]
+      ],
+      "polynomial": [
+        0.24916127401208116,
+        -0.019462602044987426,
+        -0.0002787547464194911
+      ],
+      "n": 10,
+      "p": 9,
+      "smoothness": 2,
+      "fold_order": 10,
+      "normalization": 2.4622736569529216,
+      "assembly_conditioning": 0.7563444829452496,
+      "representation_conditioning": 1.4753693598964002,
+      "working_digits": 50
+    },
+    {
+      "name": "X8_n10_C_BMC11_SLC1992_pert12",
+      "file": "results/exponential_family/gate8/members/X8_n10_C_BMC11_SLC1992_pert12.json",
+      "m": 4,
+      "omegas": [
+        0.43191510936913796
+      ],
+      "real_pairs": [],
+      "quads": [
+        [
+          0.1702814423163552,
+          2.2272202365231797
+        ]
+      ],
+      "polynomial": [
+        0.27378392976743005,
+        -0.029954848060985022,
+        0.000319568683931901
+      ],
+      "n": 10,
+      "p": 9,
+      "smoothness": 2,
+      "fold_order": 10,
+      "normalization": 2.394452036923508,
+      "assembly_conditioning": 34.61141843873837,
+      "representation_conditioning": 72.68634509128194,
+      "working_digits": 50
+    }
+  ],
+  "producers": {
+    "python": "code/analysis/exponential_family/general_evaluator.py",
+    "cpp": "code/solver/exp_eval.h",
+    "entry_point": "code/analysis/exponential_family/gate9_evaluator.py"
+  },
+  "checks": {
+    "i_integer_samples": {
+      "achieved": 2.8622937353617317e-16,
+      "tolerance": 1e-13,
+      "pass": true,
+      "route": "alias with the exact zeta tail, as stored in the member file",
+      "members": [
+        {
+          "member": "X8_n10_C_SLC1_pert5",
+          "n": 10,
+          "p": 9,
+          "smoothness": 2,
+          "assembly_conditioning": 0.7563444829452496,
+          "representation_conditioning": 1.4753693598964002,
+          "max_dev_psi": 1.1102230246251565e-16,
+          "max_dev_d1": 1.6653345369377348e-16,
+          "max_dev_d2": 2.654126918244515e-16
+        },
+        {
+          "member": "X8_n10_C_BMC11_SLC1992_pert12",
+          "n": 10,
+          "p": 9,
+          "smoothness": 2,
+          "assembly_conditioning": 34.61141843873837,
+          "representation_conditioning": 72.68634509128194,
+          "max_dev_psi": 1.5785983631388945e-16,
+          "max_dev_d1": 1.6653345369377348e-16,
+          "max_dev_d2": 2.8622937353617317e-16
+        }
+      ]
+    },
+    "ii_offgrid_transfers": {
+      "achieved": 1.2769413732546014e-13,
+      "tolerance": 1e-12,
+      "pass": true,
+      "angles": 200,
+      "positions": 2000,
+      "gated_member": "X8_n10_C_SLC1_pert5",
+      "reference": "gate8_family.PolynomialGenerator.offgrid_transfers, residue route",
+      "members": [
+        {
+          "member": "X8_n10_C_SLC1_pert5",
+          "gated": true,
+          "max_dev_T0": 1.2769413732546014e-13,
+          "max_dev_T1": 8.708397548468349e-14,
+          "max_dev_T2": 9.348079835956658e-14
+        },
+        {
+          "member": "X8_n10_C_BMC11_SLC1992_pert12",
+          "gated": false,
+          "max_dev_T0": 4.882129445949764e-12,
+          "max_dev_T1": 1.4064790423236199e-12,
+          "max_dev_T2": 9.636750308935921e-14,
+          "attribution": {
+            "theta": 3.1258846903218442,
+            "positions": [
+              0.0029073936873711403,
+              0.020467263865327823,
+              -0.06040400175482041,
+              0.026764379758889234
+            ],
+            "b_at_theta": 0.008891197727628364,
+            "residue_versus_direct_S0": 4.3347496553215786e-14,
+            "evaluator_versus_direct_S0": 7.807838491884513e-17,
+            "residue_versus_direct_S1": 1.9362793765680614e-14,
+            "evaluator_versus_direct_S1": 1.9525189793559035e-16,
+            "residue_versus_direct_S2": 1.2989612091782585e-13,
+            "evaluator_versus_direct_S2": 1.34947608995973e-13
+          }
+        }
+      ]
+    },
+    "iii_knot_smoothness": {
+      "achieved": 1.6653345369377348e-16,
+      "tolerance": 1e-13,
+      "pass": true,
+      "smallest_order_3_jump": 0.004625909924548385,
+      "class": "exactly C^2: orders 0 to 2 continuous, order 3 discontinuous",
+      "members": [
+        {
+          "member": "X8_n10_C_SLC1_pert5",
+          "smoothness_class": 2,
+          "max_jump_orders_0_to_2": 1.1102230246251565e-16,
+          "max_jump_order_0": 1.1102230246251565e-16,
+          "max_jump_order_1": 5.551115123125783e-17,
+          "max_jump_order_2": 5.551115123125783e-17,
+          "max_jump_order_3": 0.004625909924548385
+        },
+        {
+          "member": "X8_n10_C_BMC11_SLC1992_pert12",
+          "smoothness_class": 2,
+          "max_jump_orders_0_to_2": 1.6653345369377348e-16,
+          "max_jump_order_0": 5.551115123125783e-17,
+          "max_jump_order_1": 5.551115123125783e-17,
+          "max_jump_order_2": 1.6653345369377348e-16,
+          "max_jump_order_3": 0.006990982080520907
+        }
+      ]
+    },
+    "iv_partition_of_unity": {
+      "achieved": 5.551115123125783e-16,
+      "tolerance": 1e-14,
+      "pass": true,
+      "points": 1000,
+      "members": [
+        {
+          "member": "X8_n10_C_SLC1_pert5",
+          "max_dev_sum_psi": 4.440892098500626e-16,
+          "max_sum_d1": 5.398242616805327e-16,
+          "max_sum_d2": 5.299580219109146e-16
+        },
+        {
+          "member": "X8_n10_C_BMC11_SLC1992_pert12",
+          "max_dev_sum_psi": 5.551115123125783e-16,
+          "max_sum_d1": 4.68985202235761e-16,
+          "max_sum_d2": 4.858852035993788e-16
+        }
+      ]
+    },
+    "v_gate5_regression": {
+      "achieved": 0.0,
+      "tolerance": 1e-14,
+      "pass": true,
+      "table": "results/exponential_family/gate5/exp_eval_table.csv",
+      "rows": 10000,
+      "max_dev_phi": 0.0,
+      "max_dev_d1": 0.0,
+      "max_dev_d2": 0.0,
+      "receipt": "results/exponential_family/gate5/evaluator_checks.json",
+      "receipt_numbers_recomputed": {
+        "i_integer_samples": 3.094746681142624e-15,
+        "ii_offgrid_transfers": 1.61159264493472e-13,
+        "iii_knot_smoothness": 4.263256414560601e-14,
+        "iv_partition_of_unity": 2.886579864025407e-15,
+        "v_polynomial_limit": 6.661338147750939e-16
+      },
+      "receipt_differences": []
+    },
+    "vi_cpp_agreement": {
+      "achieved": 1.110223e-16,
+      "tolerance": 1e-14,
+      "pass": true,
+      "per_channel": {
+        "d0": 5.551115e-17,
+        "d1": 5.551115e-17,
+        "d2": 1.110223e-16
+      },
+      "version_1_block_still_reads": {
+        "member": "results/exponential_family/members/E62_champion.json",
+        "max_deviation": 3.330669e-16
+      },
+      "stdout": [
+        "EXPEVAL: member results/exponential_family/gate8/members/X8_n10_C_SLC1_pert5.json  block version=2 n=10 cells=10 poly degree=9 groups=3 terms=3 fold=10",
+        "EXPEVAL: rows 10000",
+        "EXPEVAL: max|C++ - Python| d0 5.551115e-17 at x = +0.774696584139157",
+        "EXPEVAL: max|C++ - Python| d1 5.551115e-17 at x = +0.701380719246150",
+        "EXPEVAL: max|C++ - Python| d2 1.110223e-16 at x = -0.118689663837134",
+        "EXPEVAL: max deviation 1.110223e-16 (tolerance 1e-14) -> PASS"
+      ]
+    }
+  },
+  "member_files": [
+    {
+      "file": "results/exponential_family/gate8/members/X8_n10_C_SLC1_pert5.json",
+      "evaluator_fields": [
+        "eval_version",
+        "eval_support_n",
+        "eval_cells",
+        "eval_poly_degree",
+        "eval_fold_order",
+        "eval_group_count",
+        "eval_term_count",
+        "eval_group_alpha",
+        "eval_group_omega",
+        "eval_group_multiplicity",
+        "eval_normalization",
+        "eval_conditioning",
+        "eval_representation_conditioning",
+        "eval_poly",
+        "eval_cos",
+        "eval_sin"
+      ],
+      "fields_written_for_the_first_time": [],
+      "evaluator_fields_rewritten": [
+        "eval_poly"
+      ],
+      "pre_existing_fields_unchanged": [
+        "name",
+        "m",
+        "r",
+        "omegas",
+        "real_pairs",
+        "quads",
+        "exponents",
+        "parameters",
+        "p",
+        "radius",
+        "cond",
+        "beta",
+        "dbeta",
+        "ddbeta",
+        "schema",
+        "polynomial",
+        "polynomial_scaled",
+        "polynomial_degree",
+        "polynomial_roots",
+        "smoothness",
+        "truncation",
+        "dominates",
+        "budget",
+        "margins",
+        "margins_fine",
+        "verification"
+      ]
+    },
+    {
+      "file": "results/exponential_family/gate8/members/X8_n10_C_BMC11_SLC1992_pert12.json",
+      "evaluator_fields": [
+        "eval_version",
+        "eval_support_n",
+        "eval_cells",
+        "eval_poly_degree",
+        "eval_fold_order",
+        "eval_group_count",
+        "eval_term_count",
+        "eval_group_alpha",
+        "eval_group_omega",
+        "eval_group_multiplicity",
+        "eval_normalization",
+        "eval_conditioning",
+        "eval_representation_conditioning",
+        "eval_poly",
+        "eval_cos",
+        "eval_sin"
+      ],
+      "fields_written_for_the_first_time": [],
+      "evaluator_fields_rewritten": [
+        "eval_poly"
+      ],
+      "pre_existing_fields_unchanged": [
+        "name",
+        "m",
+        "r",
+        "omegas",
+        "real_pairs",
+        "quads",
+        "exponents",
+        "parameters",
+        "p",
+        "radius",
+        "cond",
+        "beta",
+        "dbeta",
+        "ddbeta",
+        "schema",
+        "polynomial",
+        "polynomial_scaled",
+        "polynomial_degree",
+        "polynomial_roots",
+        "smoothness",
+        "truncation",
+        "dominates",
+        "budget",
+        "margins",
+        "margins_fine",
+        "margins_other_comparator",
+        "verification"
+      ]
+    }
+  ],
+  "table": {
+    "file": "results/exponential_family/gate9/e4_eval_table_pert5.csv",
+    "rows": 10000,
+    "range": [
+      -5.4984065747602635,
+      5.498478458299463
+    ]
+  },
+  "double_versus_decimal": {
+    "achieved": 6.544854448778214e-16,
+    "tolerance": 1e-13,
+    "pass": true,
+    "reference": "general_evaluator.GeneralEvaluator.reference, decimal at the working precision, unfolded cell form",
+    "members": [
+      {
+        "member": "X8_n10_C_SLC1_pert5",
+        "points": 600,
+        "max_abs_dev_d0": 1.6653345369377348e-16,
+        "channel_max_d0": 0.479117852252251,
+        "relative_d0": 3.475834868413444e-16,
+        "max_abs_dev_d1": 1.6653345369377348e-16,
+        "channel_max_d1": 0.3394769269104997,
+        "relative_d1": 4.905589761559219e-16,
+        "max_abs_dev_d2": 1.1102230246251565e-16,
+        "channel_max_d2": 0.5663825589581096,
+        "relative_d2": 1.9601998809205387e-16
+      },
+      {
+        "member": "X8_n10_C_BMC11_SLC1992_pert12",
+        "points": 600,
+        "max_abs_dev_d0": 1.1102230246251565e-16,
+        "channel_max_d0": 0.4803323496259991,
+        "relative_d0": 2.3113642574555076e-16,
+        "max_abs_dev_d1": 2.220446049250313e-16,
+        "channel_max_d1": 0.33926591746663265,
+        "relative_d1": 6.544854448778214e-16,
+        "max_abs_dev_d2": 3.3306690738754696e-16,
+        "channel_max_d2": 0.5600646660861203,
+        "relative_d2": 5.9469366227851225e-16
+      }
+    ]
+  },
+  "all_pass": true
+}

@@ -1,0 +1,16 @@
+{
+  "producer": "code/analysis/exponential_family/gate9_e5.py",
+  "written_utc": "2026-09-13T17:05:12Z",
+  "part": "5c",
+  "routes": [
+    "EXP-X8_n10_C_SLC1_pert5",
+    "EXP-X9_m6_C_SLC1_SLC1992_6IIq2",
+    "EXP-E62",
+    "BMC9",
+    "C10|common_L12",
+    "SLC-SL|common_L12"
+  ],
+  "basis": "The coupled off-grid symbols of part 5a: the value-channel transfer residual of each route's own evaluator and the composed divergence-gradient Helmholtz symbol residual of each route's own nodal first derivative, both weighted by the modal amplitudes of the same 768-square Fourier reference.",
+  "contract_expectation": "The wall error ratio of each member against SLC q4 plus L12 is above 100 at the finest grid.",
+  "contract_ratio": 100.0
+}

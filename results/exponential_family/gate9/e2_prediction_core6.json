@@ -1,0 +1,151 @@
+{
+  "producer": "code/analysis/exponential_family/gate9_e2.py --predict",
+  "written_utc": "2026-09-13T16:40:56Z",
+  "contract": {
+    "path": "results/exponential_family/gate9/contract.md",
+    "sha256": "2502b65658fbc28b88563e63fbcd1e4a07fe4a4da27a377d276166ec569d32c6"
+  },
+  "definition": "P(route) = sqrt( sum_m E(m) |e_1(theta_m)|^2 / sum_m E(m) ) over shells 1 <= m < N/3 with theta_m = 2 pi m / N and e_1 = kappa_1/theta - 1, weighted by the SAME N dealiased pseudospectral energy spectrum at t*, the Gate 4e predict formula verbatim",
+  "member": {
+    "path": "results/exponential_family/gate8/members/X9_m6_C_SLC1_SLC1992_6IIq2.json",
+    "sha256": "e68f78b4e166409b4f39f17d227a1d8c61cf6c4039d39bea9987ab9b74b0b8e4",
+    "name": "X9_m6_C_SLC1_SLC1992_6IIq2",
+    "cond": 93.36740682260724,
+    "p": 9,
+    "radius": 5
+  },
+  "champion": {
+    "path": "results/exponential_family/members/E62_champion.json",
+    "sha256": "54e57a3f83908b1a93f0720f84d7deafb86c37dc53c4e63b36c70d6257aea3b0",
+    "label_in_stored_routes": "exp"
+  },
+  "symbol_cross_check_dense": {
+    "points": 200001,
+    "max_absolute_deviation": 2.4868995751603507e-14,
+    "tolerance": 1e-13,
+    "agree": true,
+    "route_a": "kappa_1 = -a/b from the member JSON beta and dbeta samples, EXP_ROUTE.md convention",
+    "route_b": "gate8_family.from_record(record).symbols(theta)[1]"
+  },
+  "mechanism_agreement_factor": 2.0,
+  "grids": {
+    "64": {
+      "reference_field": "results/exponential_family/gate4e/reference/tgvfield_psN64_tstar.bin",
+      "reference_sha256": "9df6080d7ffcb0367414f8ceee771a3cf12f8b2292188c004ac66bfc7b0ce214",
+      "shells": [
+        1,
+        20
+      ],
+      "theta_range": [
+        0.09817477042468103,
+        1.9634954084936207
+      ],
+      "reference_band_energy": 0.07402082000104607,
+      "symbol_cross_check_band": {
+        "points": 20,
+        "max_absolute_deviation": 8.881784197001252e-16,
+        "tolerance": 1e-13,
+        "agree": true,
+        "route_a": "kappa_1 = -a/b from the member JSON beta and dbeta samples, EXP_ROUTE.md convention",
+        "route_b": "gate8_family.from_record(record).symbols(theta)[1]"
+      },
+      "P": {
+        "exp": 7.585351492806465e-06,
+        "sl": 0.0002280642195522659,
+        "opt": 0.002077939620256501,
+        "bmc_p9": 0.00019489728838793831,
+        "bmc_p11": 3.869811500688932e-05,
+        "c10": 0.0014221597632665334,
+        "c12": 0.0006659391706539342,
+        "cw12b": 7.760173578977442e-05,
+        "core6": 6.0143705601591434e-05
+      },
+      "e1_band_max_absolute": {
+        "exp": 3.55676281933448e-05,
+        "sl": 0.0006553382986187462,
+        "opt": 0.009028581488711773,
+        "bmc_p9": 0.0012027902215939745,
+        "bmc_p11": 0.00024881498207218744,
+        "c10": 0.008283839080100552,
+        "c12": 0.00402412211292813,
+        "cw12b": 0.00045551352839212633,
+        "core6": 0.00019611044946554745
+      },
+      "predicted_ordering_best_first": [
+        "exp",
+        "bmc_p11",
+        "core6",
+        "cw12b",
+        "bmc_p9",
+        "sl",
+        "c12",
+        "c10",
+        "opt"
+      ],
+      "ratio_sl_over_core6": 3.791988160207927,
+      "ratio_core6_over_champion": 7.928927968417608,
+      "ratio_sl_over_champion": 30.06640097938106,
+      "ratio_bmc_p11_over_core6": 0.6434275144806733,
+      "ratio_cw12b_over_core6": 1.290271941403641
+    },
+    "128": {
+      "reference_field": "results/exponential_family/gate4e/reference/tgvfield_psN128_tstar.bin",
+      "reference_sha256": "8eaa019fa0ea144605b457ec310ec4d49d1a8953f78357726b45f5d4d078777a",
+      "shells": [
+        1,
+        41
+      ],
+      "theta_range": [
+        0.04908738521234052,
+        2.012582793705961
+      ],
+      "reference_band_energy": 0.08291610331743132,
+      "symbol_cross_check_band": {
+        "points": 41,
+        "max_absolute_deviation": 8.881784197001252e-16,
+        "tolerance": 1e-13,
+        "agree": true,
+        "route_a": "kappa_1 = -a/b from the member JSON beta and dbeta samples, EXP_ROUTE.md convention",
+        "route_b": "gate8_family.from_record(record).symbols(theta)[1]"
+      },
+      "P": {
+        "exp": 3.5914125544575702e-06,
+        "sl": 0.0001252386736713377,
+        "opt": 0.0009271131962683206,
+        "bmc_p9": 9.633090579443225e-05,
+        "bmc_p11": 2.0053956901432345e-05,
+        "c10": 0.0006734094293759605,
+        "c12": 0.00032252993644025526,
+        "cw12b": 3.659094204959093e-05,
+        "core6": 3.2326488378273656e-05
+      },
+      "e1_band_max_absolute": {
+        "exp": 3.55676281933448e-05,
+        "sl": 0.0006576797124768774,
+        "opt": 0.009537452591880546,
+        "bmc_p9": 0.001684103681913851,
+        "bmc_p11": 0.0003744684638374851,
+        "c10": 0.010764611926880385,
+        "c12": 0.00544170307880909,
+        "cw12b": 0.0005846072659836388,
+        "core6": 0.0002898149279579876
+      },
+      "predicted_ordering_best_first": [
+        "exp",
+        "bmc_p11",
+        "core6",
+        "cw12b",
+        "bmc_p9",
+        "sl",
+        "c12",
+        "c10",
+        "opt"
+      ],
+      "ratio_sl_over_core6": 3.874181204151747,
+      "ratio_core6_over_champion": 9.001051226529471,
+      "ratio_sl_over_champion": 34.87170347942751,
+      "ratio_bmc_p11_over_core6": 0.6203568004902886,
+      "ratio_cw12b_over_core6": 1.1319182467769489
+    }
+  }
+}

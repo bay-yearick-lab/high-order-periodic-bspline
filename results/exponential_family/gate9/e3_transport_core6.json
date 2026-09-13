@@ -1,0 +1,447 @@
+{
+ "producer": "code/analysis/exponential_family/gate9_e3.py --closed-form",
+ "written_utc": "2026-09-13T16:41:51Z",
+ "prediction": "results/exponential_family/gate9/e3_prediction_core6.json",
+ "prediction_written_utc": "2026-09-13T16:41:37Z",
+ "level": 0.01,
+ "definitions": {
+  "crossing": "the horizon at which the closed form relative L2 packet error first reaches one percent, by gate4b_long_horizon.crossing_horizon on the frozen packet spectrum",
+  "displacement": "the signed carrier displacement per crossing in box fractions, -e_1(theta_c); negative is a forward displacement",
+  "3d": "the Gate 4b three dimensional cell, N = 64, theta_c = 0.5 pi, velocity (1, 1/2, 1/3), one crossing counted on the x period"
+ },
+ "N_1d": 128,
+ "N_3d": 64,
+ "routes": [
+  "core6",
+  "slc_q4",
+  "tuned_q8",
+  "bmc11",
+  "cw12b",
+  "champion"
+ ],
+ "cells_1d": {
+  "1.256637": {
+   "core6": {
+    "horizon_at_1_percent": 0.47960427335361944,
+    "e1_at_theta_c": 0.00011804089546729735,
+    "kappa1_at_theta_c": 1.2567853959999264,
+    "displacement_per_crossing_boxes": -0.00011804089546729735,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.0005607404385704617,
+    "e1_max_on_the_packet_band": 0.0001835266815333192,
+    "e1_sign_changes_on_the_packet_band": 1,
+    "packet_width_factor": 1.0981643948199826,
+    "error_at_H10": 0.20793712098079287,
+    "error_at_H100": 1.5887568211856988,
+    "crossing_ratio_over_slc_q4": 4.213188429788363
+   },
+   "slc_q4": {
+    "horizon_at_1_percent": 0.11383404311155174,
+    "e1_at_theta_c": 0.0005306988119020417,
+    "kappa1_at_theta_c": 1.2573039572314133,
+    "displacement_per_crossing_boxes": -0.0005306988119020417,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.00015703864371607867,
+    "e1_max_on_the_packet_band": 0.0006576797124768774,
+    "e1_sign_changes_on_the_packet_band": 1,
+    "packet_width_factor": 1.0291108225244838,
+    "error_at_H10": 0.8438538373878184,
+    "error_at_H100": 1.4207500208049657,
+    "crossing_ratio_over_slc_q4": 1.0
+   },
+   "tuned_q8": {
+    "horizon_at_1_percent": 0.04831501534704094,
+    "e1_at_theta_c": -0.0008435569133945497,
+    "kappa1_at_theta_c": 1.2555770165551152,
+    "displacement_per_crossing_boxes": 0.0008435569133945497,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.00995216895412121,
+    "e1_max_on_the_packet_band": -3.2190703436185686e-09,
+    "e1_sign_changes_on_the_packet_band": 0,
+    "packet_width_factor": 1.525425022944056,
+    "error_at_H10": 1.3187017492179351,
+    "error_at_H100": 1.4991791983728109,
+    "crossing_ratio_over_slc_q4": 0.42443379876874454
+   },
+   "bmc11": {
+    "horizon_at_1_percent": 35.86086139002116,
+    "e1_at_theta_c": -2.9575867666054023e-07,
+    "kappa1_at_theta_c": 1.2566366897746029,
+    "displacement_per_crossing_boxes": 2.9575867666054023e-07,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.0026997089271978414,
+    "e1_max_on_the_packet_band": -4.440892098500626e-16,
+    "e1_sign_changes_on_the_packet_band": 0,
+    "packet_width_factor": 5.868521257289422,
+    "error_at_H10": 0.002791545587244259,
+    "error_at_H100": 0.027703982985389803,
+    "crossing_ratio_over_slc_q4": 315.02756477584904
+   },
+   "cw12b": {
+    "horizon_at_1_percent": 6.8022068670868165,
+    "e1_at_theta_c": 2.6393208609754026e-06,
+    "kappa1_at_theta_c": 1.256640378104328,
+    "displacement_per_crossing_boxes": -2.6393208609754026e-06,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": 8.215650382226158e-15,
+    "e1_max_on_the_packet_band": 0.001391844850332058,
+    "e1_sign_changes_on_the_packet_band": 0,
+    "packet_width_factor": 3.463487917207404,
+    "error_at_H10": 0.01469815141890907,
+    "error_at_H100": 0.14256624182799743,
+    "crossing_ratio_over_slc_q4": 59.755471044993016
+   },
+   "champion": {
+    "horizon_at_1_percent": 4.992497472908784,
+    "e1_at_theta_c": -1.0726337796307384e-05,
+    "kappa1_at_theta_c": 1.2566235823223089,
+    "displacement_per_crossing_boxes": 1.0726337796307384e-05,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.0009289760404908032,
+    "e1_max_on_the_packet_band": 3.556762819356685e-05,
+    "e1_sign_changes_on_the_packet_band": 2,
+    "packet_width_factor": 1.1609511846509526,
+    "error_at_H10": 0.020029622322503923,
+    "error_at_H100": 0.19972628005339024,
+    "crossing_ratio_over_slc_q4": 43.85768383906371
+   }
+  },
+  "1.570796": {
+   "core6": {
+    "horizon_at_1_percent": 0.3052738559431101,
+    "e1_at_theta_c": 0.0001828585336478561,
+    "kappa1_at_theta_c": 1.5710835603078739,
+    "displacement_per_crossing_boxes": -0.0001828585336478561,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.0011902153581916375,
+    "e1_max_on_the_packet_band": 0.0001835266815333192,
+    "e1_sign_changes_on_the_packet_band": 3,
+    "packet_width_factor": 0.8909786516435092,
+    "error_at_H10": 0.3259686090394294,
+    "error_at_H100": 1.9193470498332794,
+    "crossing_ratio_over_slc_q4": 3.702671468239906
+   },
+   "slc_q4": {
+    "horizon_at_1_percent": 0.08244691935583051,
+    "e1_at_theta_c": 0.0006466945027381321,
+    "kappa1_at_theta_c": 1.571812152144356,
+    "displacement_per_crossing_boxes": -0.0006466945027381321,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.006997294022987766,
+    "e1_max_on_the_packet_band": 0.0006576797124768774,
+    "e1_sign_changes_on_the_packet_band": 3,
+    "packet_width_factor": 0.9328212321175341,
+    "error_at_H10": 1.1375473731292296,
+    "error_at_H100": 0.8045510881641087,
+    "crossing_ratio_over_slc_q4": 1.0
+   },
+   "tuned_q8": {
+    "horizon_at_1_percent": 0.012246198309038114,
+    "e1_at_theta_c": -0.003368258275438296,
+    "kappa1_at_theta_c": 1.5655054790681415,
+    "displacement_per_crossing_boxes": 0.003368258275438296,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.00995216895412121,
+    "e1_max_on_the_packet_band": 0.009494871565285612,
+    "e1_sign_changes_on_the_packet_band": 1,
+    "packet_width_factor": 1.205777201118574,
+    "error_at_H10": 1.4281470396802622,
+    "error_at_H100": 1.229206550165858,
+    "crossing_ratio_over_slc_q4": 0.14853433463274796
+   },
+   "bmc11": {
+    "horizon_at_1_percent": 1.6886487337828373,
+    "e1_at_theta_c": -7.510860595361102e-06,
+    "kappa1_at_theta_c": 1.5707845287626623,
+    "displacement_per_crossing_boxes": 7.510860595361102e-06,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.03688246961196018,
+    "e1_max_on_the_packet_band": -4.849121104655296e-12,
+    "e1_sign_changes_on_the_packet_band": 0,
+    "packet_width_factor": 3.923225430265225,
+    "error_at_H10": 0.0584786118817841,
+    "error_at_H100": 0.4426193323153656,
+    "crossing_ratio_over_slc_q4": 20.48164742814516
+   },
+   "cw12b": {
+    "horizon_at_1_percent": 0.6075169168970158,
+    "e1_at_theta_c": 3.714298228740809e-05,
+    "kappa1_at_theta_c": 1.5708546708550397,
+    "displacement_per_crossing_boxes": -3.714298228740809e-05,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.01244127080116686,
+    "e1_max_on_the_packet_band": 0.0014159312676276237,
+    "e1_sign_changes_on_the_packet_band": 1,
+    "packet_width_factor": 2.2042268034456773,
+    "error_at_H10": 0.16251522675818864,
+    "error_at_H100": 1.0176680269160479,
+    "crossing_ratio_over_slc_q4": 7.368582375710721
+   },
+   "champion": {
+    "horizon_at_1_percent": 3.0493488214774294,
+    "e1_at_theta_c": -1.8898678796452906e-05,
+    "kappa1_at_theta_c": 1.5707666408196619,
+    "displacement_per_crossing_boxes": 1.8898678796452906e-05,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.028097358976534537,
+    "e1_max_on_the_packet_band": 3.556762819356685e-05,
+    "e1_sign_changes_on_the_packet_band": 2,
+    "packet_width_factor": 0.8630580657831607,
+    "error_at_H10": 0.032789744241657065,
+    "error_at_H100": 0.3259382047468277,
+    "crossing_ratio_over_slc_q4": 36.98560049668835
+   }
+  },
+  "1.884956": {
+   "core6": {
+    "horizon_at_1_percent": 0.19635459069096867,
+    "e1_at_theta_c": -5.999090017050346e-05,
+    "kappa1_at_theta_c": 1.8848425119711212,
+    "displacement_per_crossing_boxes": 5.999090017050346e-05,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.12571628639407306,
+    "e1_max_on_the_packet_band": 0.0001835266815333192,
+    "e1_sign_changes_on_the_packet_band": 3,
+    "packet_width_factor": 3.518598671562807,
+    "error_at_H10": 0.48786641904304223,
+    "error_at_H100": 1.4468725742541801,
+    "crossing_ratio_over_slc_q4": 1.3696932835360054
+   },
+   "slc_q4": {
+    "horizon_at_1_percent": 0.14335661352157536,
+    "e1_at_theta_c": 0.00023076009572653433,
+    "kappa1_at_theta_c": 1.8853905646867615,
+    "displacement_per_crossing_boxes": -0.00023076009572653433,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.1847733018910257,
+    "e1_max_on_the_packet_band": 0.0006576797124768774,
+    "e1_sign_changes_on_the_packet_band": 3,
+    "packet_width_factor": 1.2528933480780473,
+    "error_at_H10": 0.6700747288043051,
+    "error_at_H100": 1.42602251974638,
+    "crossing_ratio_over_slc_q4": 1.0
+   },
+   "tuned_q8": {
+    "horizon_at_1_percent": 0.005108975946513985,
+    "e1_at_theta_c": -0.007968782360055826,
+    "kappa1_at_theta_c": 1.8699347912816315,
+    "displacement_per_crossing_boxes": 0.007968782360055826,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.1222166392340649,
+    "e1_max_on_the_packet_band": 0.009769918462184224,
+    "e1_sign_changes_on_the_packet_band": 2,
+    "packet_width_factor": 1.0180410489094032,
+    "error_at_H10": 1.3864129658001412,
+    "error_at_H100": 1.2454523446774242,
+    "crossing_ratio_over_slc_q4": 0.03563822987312042
+   },
+   "bmc11": {
+    "horizon_at_1_percent": 0.10445640686673424,
+    "e1_at_theta_c": -0.00012790948734608953,
+    "kappa1_at_theta_c": 1.8847144884504132,
+    "displacement_per_crossing_boxes": 0.00012790948734608953,
+    "displacement_sign": 1,
+    "e1_min_on_the_packet_band": -0.2875082924804073,
+    "e1_max_on_the_packet_band": -2.533885101740907e-09,
+    "e1_sign_changes_on_the_packet_band": 0,
+    "packet_width_factor": 3.1028502010368717,
+    "error_at_H10": 0.6516862988586177,
+    "error_at_H100": 1.4961763742799137,
+    "crossing_ratio_over_slc_q4": 0.7286472824709508
+   },
+   "cw12b": {
+    "horizon_at_1_percent": 0.09140576327768146,
+    "e1_at_theta_c": 0.0002956370502040784,
+    "kappa1_at_theta_c": 1.885512854864906,
+    "displacement_per_crossing_boxes": -0.0002956370502040784,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.2202024226093544,
+    "e1_max_on_the_packet_band": 0.0014159312676276237,
+    "e1_sign_changes_on_the_packet_band": 1,
+    "packet_width_factor": 1.533779284979732,
+    "error_at_H10": 0.9323077753521382,
+    "error_at_H100": 1.4406360327619305,
+    "crossing_ratio_over_slc_q4": 0.637611066781546
+   },
+   "champion": {
+    "horizon_at_1_percent": 0.4458495493686767,
+    "e1_at_theta_c": 2.4512929987841048e-05,
+    "kappa1_at_theta_c": 1.8850017979383367,
+    "displacement_per_crossing_boxes": -2.4512929987841048e-05,
+    "displacement_sign": -1,
+    "e1_min_on_the_packet_band": -0.2683579952551889,
+    "e1_max_on_the_packet_band": 3.556762819356685e-05,
+    "e1_sign_changes_on_the_packet_band": 2,
+    "packet_width_factor": 3.818206049914561,
+    "error_at_H10": 0.15030608435036316,
+    "error_at_H100": 0.6081613909135131,
+    "crossing_ratio_over_slc_q4": 3.1100731135893898
+   }
+  }
+ },
+ "cells_3d": {
+  "core6": {
+   "horizon_at_1_percent": 0.5233283498227785,
+   "e1_at_theta_c": 0.0001828585336478561,
+   "largest_abs_S": 4.940427233960808,
+   "displacement_per_crossing_boxes_per_axis": [
+    -0.0001828585336478561,
+    -9.142926682392805e-05,
+    -6.095284454928536e-05
+   ],
+   "displacement_sign": -1,
+   "errors": {
+    "10": 0.19053526495982553,
+    "100": 1.4325949818814012
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 3.7026710431392686
+  },
+  "slc_q4": {
+   "horizon_at_1_percent": 0.14133806209775535,
+   "e1_at_theta_c": 0.0006466945027381321,
+   "largest_abs_S": 4.822041921315023,
+   "displacement_per_crossing_boxes_per_axis": [
+    -0.0006466945027381321,
+    -0.00032334725136906606,
+    -0.00021556483424604403
+   ],
+   "displacement_sign": -1,
+   "errors": {
+    "10": 0.6805806341854554,
+    "100": 1.1529718436625338
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 1.0
+  },
+  "tuned_q8": {
+   "horizon_at_1_percent": 0.020993520172496317,
+   "e1_at_theta_c": -0.003368258275438296,
+   "largest_abs_S": 5.0214143727507405,
+   "displacement_per_crossing_boxes_per_axis": [
+    0.003368258275438296,
+    0.001684129137719148,
+    0.001122752758479432
+   ],
+   "displacement_sign": 1,
+   "errors": {
+    "10": 1.4068821837335614,
+    "100": 1.4143231276028687
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 0.14853408813527044
+  },
+  "bmc11": {
+   "horizon_at_1_percent": 2.8942792957610255,
+   "e1_at_theta_c": -7.510860595361102e-06,
+   "largest_abs_S": 4.602865459422428,
+   "displacement_per_crossing_boxes_per_axis": [
+    7.510860595361102e-06,
+    3.755430297680551e-06,
+    2.5036201984537003e-06
+   ],
+   "displacement_sign": 1,
+   "errors": {
+    "10": 0.03445515763208847,
+    "100": 0.307686156592517
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 20.47770609561082
+  },
+  "cw12b": {
+   "horizon_at_1_percent": 1.0414416211010455,
+   "e1_at_theta_c": 3.714298228740809e-05,
+   "largest_abs_S": 4.751452197979428,
+   "displacement_per_crossing_boxes_per_axis": [
+    -3.714298228740809e-05,
+    -1.8571491143704044e-05,
+    -1.2380994095802695e-05
+   ],
+   "displacement_sign": -1,
+   "errors": {
+    "10": 0.09572868124321549,
+    "100": 0.7842426434427298
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 7.3684441801723635
+  },
+  "champion": {
+   "horizon_at_1_percent": 5.22744184193596,
+   "e1_at_theta_c": -1.8898678796452906e-05,
+   "largest_abs_S": 4.6543189921946695,
+   "displacement_per_crossing_boxes_per_axis": [
+    1.8898678796452906e-05,
+    9.449339398226453e-06,
+    6.299559598817635e-06
+   ],
+   "displacement_sign": 1,
+   "errors": {
+    "10": 0.019129058636646216,
+    "100": 0.19065525822259272
+   },
+   "energy_checksum": 16601155962811.076,
+   "crossing_ratio_over_slc_q4": 36.985379340495285
+  }
+ },
+ "ratio_agreement": {
+  "1.256637": {
+   "predicted_ratio": 4.4958894102008,
+   "realized_ratio_1d": 4.213188429788363,
+   "relative_departure_1d": 0.06287987862223918,
+   "packet_width_factor_core6": 1.0981643948199826,
+   "packet_width_factor_slc_q4": 1.0291108225244838,
+   "packet_width_corrected_ratio": 4.213183809942507,
+   "relative_departure_of_the_corrected_ratio_1d": 1.0965213160623815e-06,
+   "e1_sign_changes_on_the_packet_band_core6": 1,
+   "e1_sign_changes_on_the_packet_band_slc_q4": 1,
+   "tolerance": 0.1,
+   "within_tolerance_1d": true
+  },
+  "1.570796": {
+   "predicted_ratio": 3.536583662994468,
+   "realized_ratio_1d": 3.702671468239906,
+   "relative_departure_1d": 0.04696278133706285,
+   "packet_width_factor_core6": 0.8909786516435092,
+   "packet_width_factor_slc_q4": 0.9328212321175341,
+   "packet_width_corrected_ratio": 3.702670455589333,
+   "relative_departure_of_the_corrected_ratio_1d": 2.7349195271880284e-07,
+   "e1_sign_changes_on_the_packet_band_core6": 3,
+   "e1_sign_changes_on_the_packet_band_slc_q4": 3,
+   "tolerance": 0.1,
+   "within_tolerance_1d": true,
+   "realized_ratio_3d": 3.7026710431392686,
+   "relative_departure_3d": 0.0469626611361351,
+   "within_tolerance_3d": true
+  },
+  "1.884956": {
+   "predicted_ratio": 3.846584983233762,
+   "realized_ratio_1d": 1.3696932835360054,
+   "relative_departure_1d": 0.6439196613343698,
+   "packet_width_factor_core6": 3.518598671562807,
+   "packet_width_factor_slc_q4": 1.2528933480780473,
+   "packet_width_corrected_ratio": 1.3696818501241403,
+   "relative_departure_of_the_corrected_ratio_1d": 8.347494612716774e-06,
+   "e1_sign_changes_on_the_packet_band_core6": 3,
+   "e1_sign_changes_on_the_packet_band_slc_q4": 3,
+   "tolerance": 0.1,
+   "within_tolerance_1d": false
+  }
+ },
+ "run_check": {
+  "route": "core6",
+  "N": 128,
+  "theta_c": 1.5707963267948966,
+  "horizon": 10,
+  "cfl": 0.0013000000000000002,
+  "cfl_source": "results/exponential_family/gate4b/prediction.json, time_stepping.cfl_by_grid.128.cfl",
+  "stepper": "gate4b_long_horizon.rk3_time_loop, SSP-RK3 on the assembled periodic circulant of the member, with one partial final step landing on the horizon",
+  "operator": "spline_analysis.compact_derivative_matrix on the member left side beta and the advection entries -beta'",
+  "steps_full": 984615,
+  "partial_step_in_h": 0.0004999999998603016,
+  "relative_difference": 6.038042802547845e-11,
+  "tolerance": 1e-06,
+  "ok": true,
+  "symbol_versus_assembled_operator_N64": 6.196532554641147e-13,
+  "seconds": 9.205842018127441
+ }
+}

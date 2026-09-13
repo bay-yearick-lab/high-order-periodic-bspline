@@ -1,0 +1,95 @@
+{
+  "producer": "code/analysis/exponential_family/gate4c_tgv.py --predict",
+  "written_utc": "2026-09-12T20:40:02Z",
+  "contract": {
+    "path": "results/exponential_family/gate4c/contract.md",
+    "sha256": "a8eba3c0790809653f6fa9d0a4ec4c960b1b4cda89fbd777f30f07e54c14cbb0"
+  },
+  "definition": "P(route) = sqrt( sum_m E(m) |e_1(theta_m)|^2 / sum_m E(m) ) over shells 1 <= m < N/3 with theta_m = 2 pi m / N and e_1 = kappa_1/theta - 1",
+  "reference": {
+    "path": "code/solver/psref/tgvfield_ps_N384_t9.bin",
+    "sha256": "1b1ec72d30358050e240a7b0687affadef1f7abf6da3583e0948f865fa92be77",
+    "grid": 384,
+    "time": 9.00262644794325,
+    "restriction": "signed Fourier mode cube"
+  },
+  "member": {
+    "path": "results/exponential_family/members/E62_champion.json",
+    "sha256": "93e1504dd224da6360bbac24607ebe0768ff8bd13aa4eee724960df62280793e",
+    "omegas": [
+      1.7701927977475826,
+      2.0606855355641316
+    ]
+  },
+  "grids": {
+    "64": {
+      "shells": [
+        1,
+        20
+      ],
+      "theta_range": [
+        0.09817477042468103,
+        1.9634954084936207
+      ],
+      "reference_band_energy": 0.08157768077473561,
+      "P": {
+        "exp": 5.389575343913499e-06,
+        "sl": 0.00019754479484932987,
+        "opt": 0.0013068261243975358,
+        "bmc_p9": 0.00011627651860002181,
+        "bmc_p11": 2.2940230279605352e-05,
+        "c10": 0.0008553799070818703,
+        "c12": 0.00039848893196620035,
+        "cw12b": 4.661638723176358e-05
+      },
+      "predicted_ordering_best_first": [
+        "exp",
+        "bmc_p11",
+        "cw12b",
+        "bmc_p9",
+        "sl",
+        "c12",
+        "c10",
+        "opt"
+      ],
+      "ratio_sl_over_exp": 36.65312798204393,
+      "ratio_opt_over_exp": 242.47292987068963,
+      "ratio_bmc_p11_over_exp": 4.256407753073159
+    },
+    "128": {
+      "shells": [
+        1,
+        41
+      ],
+      "theta_range": [
+        0.04908738521234052,
+        2.012582793705961
+      ],
+      "reference_band_energy": 0.08550379849431093,
+      "P": {
+        "exp": 2.9978543232783326e-06,
+        "sl": 0.000114827206574313,
+        "opt": 0.0007212827153520499,
+        "bmc_p9": 7.0335006707066e-05,
+        "bmc_p11": 1.4507186265604217e-05,
+        "c10": 0.000497475823235099,
+        "c12": 0.0002365695596039921,
+        "cw12b": 2.7010349322485723e-05
+      },
+      "predicted_ordering_best_first": [
+        "exp",
+        "bmc_p11",
+        "cw12b",
+        "bmc_p9",
+        "sl",
+        "c12",
+        "c10",
+        "opt"
+      ],
+      "ratio_sl_over_exp": 38.303130903553246,
+      "ratio_opt_over_exp": 240.59965481020578,
+      "ratio_bmc_p11_over_exp": 4.839189867551584
+    }
+  },
+  "mechanism_agreement_factor": 2.0
+}

@@ -1,0 +1,163 @@
+{
+  "producer": "code/analysis/exponential_family/gate4c_tgv.py --reduce",
+  "written_utc": "2026-09-12T23:06:54Z",
+  "contract_sha256": "a8eba3c0790809653f6fa9d0a4ec4c960b1b4cda89fbd777f30f07e54c14cbb0",
+  "rule": "TRIUMPH if, at both N = 64 and N = 128 with dealias = 1, e_band(exp) <= e_band(sl)/1.5 and e_band(exp) <= e_band(opt), e_band(bmc11), and the temporal check passes; and, with dealias = 0, e_band(exp) <= e_band(sl) at both grids. PARTIAL if the dealias = 1 conditions hold but the base runs do not. REJECT if exp does not beat sl at both grids with dealias = 1.",
+  "outcome": "REJECT",
+  "tests": {
+    "N64_da1_exp_at_most_sl_over_1.5": false,
+    "N64_da1_exp_at_most_opt": true,
+    "N64_da1_exp_at_most_bmc_p11": true,
+    "N64_da0_exp_at_most_sl": true,
+    "N128_da1_exp_at_most_sl_over_1.5": false,
+    "N128_da1_exp_at_most_opt": true,
+    "N128_da1_exp_at_most_bmc_p11": false,
+    "N128_da0_exp_at_most_sl": false,
+    "N64_da1_exp_beats_sl": false,
+    "N128_da1_exp_beats_sl": false
+  },
+  "dealias1_conditions": false,
+  "base_conditions": false,
+  "exp_beats_sl_dealias1_both_grids": false,
+  "temporal_check": {
+    "definition": "exp and sl at N = 64, both dealiasing modes, rerun at dt scale 0.5; each resolved band error must move by less than half the smallest exp versus sl e_band margin of the matrix",
+    "exp_versus_sl_margins": {
+      "N64_da0": 0.007742543135416141,
+      "N64_da1": 0.0002848454335202255,
+      "N128_da0": 0.0024832567707333796,
+      "N128_da1": 0.00011844708785301028
+    },
+    "smallest_margin": 0.00011844708785301028,
+    "allowance": 5.922354392650514e-05,
+    "cells": {
+      "exp_N64_da0": {
+        "e_band_dt_scale_1.0": 0.16135457263968664,
+        "e_band_dt_scale_0.5": 0.16125814290808585,
+        "shift": 9.642973160078894e-05,
+        "allowance": 5.922354392650514e-05,
+        "pass": false
+      },
+      "exp_N64_da1": {
+        "e_band_dt_scale_1.0": 0.22089589976999524,
+        "e_band_dt_scale_0.5": 0.22144442001227416,
+        "shift": 0.0005485202422789159,
+        "allowance": 5.922354392650514e-05,
+        "pass": false
+      },
+      "sl_N64_da0": {
+        "e_band_dt_scale_1.0": 0.16909711577510278,
+        "e_band_dt_scale_0.5": 0.16919106660308164,
+        "shift": 9.395082797886145e-05,
+        "allowance": 5.922354392650514e-05,
+        "pass": false
+      },
+      "sl_N64_da1": {
+        "e_band_dt_scale_1.0": 0.22061105433647502,
+        "e_band_dt_scale_0.5": 0.221159683572311,
+        "shift": 0.0005486292358359846,
+        "allowance": 5.922354392650514e-05,
+        "pass": false
+      }
+    },
+    "pass": false
+  },
+  "mechanism": {
+    "N64": {
+      "predicted_P_sl_over_P_exp": 36.65312798204393,
+      "realized_e_band_sl_over_exp": 0.9987104992269353,
+      "realized_over_predicted": 0.02724761989525684,
+      "within_factor_two": false
+    },
+    "N128": {
+      "predicted_P_sl_over_P_exp": 38.303130903553246,
+      "realized_e_band_sl_over_exp": 0.9988546839741167,
+      "realized_over_predicted": 0.026077624998573065,
+      "within_factor_two": false
+    },
+    "confirmed": false
+  },
+  "e_band": {
+    "exp_N64_da0": 0.16135457263968664,
+    "exp_N64_da1": 0.22089589976999524,
+    "exp_N128_da0": 0.022128653957152827,
+    "exp_N128_da1": 0.1034186942085793,
+    "sl_N64_da0": 0.16909711577510278,
+    "sl_N64_da1": 0.22061105433647502,
+    "sl_N128_da0": 0.019645397186419448,
+    "sl_N128_da1": 0.10330024712072629,
+    "opt_N64_da0": 0.17305324753719414,
+    "opt_N64_da1": 0.22427687003610522,
+    "opt_N128_da0": 0.019696657016923032,
+    "opt_N128_da1": 0.10476364378476184,
+    "bmc_p9_N64_da0": 0.18362855767380795,
+    "bmc_p9_N64_da1": 0.22110745614261057,
+    "bmc_p9_N128_da0": 0.029440062279775376,
+    "bmc_p9_N128_da1": 0.1033661623316101,
+    "bmc_p11_N64_da0": 0.1621600974749041,
+    "bmc_p11_N64_da1": 0.22094265981977407,
+    "bmc_p11_N128_da0": 0.023223665893595907,
+    "bmc_p11_N128_da1": 0.10340820819445232,
+    "c10_N64_da0": 0.20618659237019965,
+    "c10_N64_da1": 0.22333415422207362,
+    "c10_N128_da0": 0.04305268500539985,
+    "c10_N128_da1": 0.10417889893116078,
+    "c12_N64_da0": 0.2063943620987793,
+    "c12_N64_da1": 0.2220508244153879,
+    "c12_N128_da0": 0.038259234658271586,
+    "c12_N128_da1": 0.10376374163305302,
+    "cw12b_N64_da0": 0.1665763985499945,
+    "cw12b_N64_da1": 0.22074873590041547,
+    "cw12b_N128_da0": 0.02023478205941535,
+    "cw12b_N128_da1": 0.10335230398736556
+  },
+  "timings": {
+    "exp": {
+      "replicates_s_per_step": [
+        0.183185,
+        0.183234,
+        0.183937
+      ],
+      "median_s_per_step": 0.183234,
+      "steps": 459,
+      "threads": 4,
+      "N": 64,
+      "dealias": 1
+    },
+    "sl": {
+      "replicates_s_per_step": [
+        0.191878,
+        0.192274,
+        0.192164
+      ],
+      "median_s_per_step": 0.192164,
+      "steps": 459,
+      "threads": 4,
+      "N": 64,
+      "dealias": 1
+    },
+    "opt": {
+      "replicates_s_per_step": [
+        0.158451,
+        0.156183,
+        0.154523
+      ],
+      "median_s_per_step": 0.156183,
+      "steps": 459,
+      "threads": 4,
+      "N": 64,
+      "dealias": 1
+    },
+    "bmc_p9": {
+      "replicates_s_per_step": [
+        0.183901,
+        0.183412,
+        0.185381
+      ],
+      "median_s_per_step": 0.183901,
+      "steps": 459,
+      "threads": 4,
+      "N": 64,
+      "dealias": 1
+    }
+  }
+}

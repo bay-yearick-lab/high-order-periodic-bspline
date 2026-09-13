@@ -1,0 +1,161 @@
+{
+  "name": "X8_n10_C_BMC11_TunedQ8_pert10",
+  "m": 4,
+  "r": 1,
+  "omegas": [
+    0.8851906655754025
+  ],
+  "real_pairs": [],
+  "quads": [
+    [
+      0.02000007747260026,
+      2.7468865088971874
+    ]
+  ],
+  "exponents": 10,
+  "parameters": 6,
+  "p": 9,
+  "radius": 5,
+  "cond": 112.82465213625893,
+  "beta": [
+    0.4969384272631272,
+    0.25608636633007553,
+    0.003082709937529888,
+    -0.008302194123615412,
+    0.000663904224446608,
+    4.675603893121182e-17
+  ],
+  "dbeta": [
+    0.0,
+    -0.3642147445045688,
+    -0.09972076158004745,
+    0.022356153579336818,
+    -0.0008530482683365623,
+    -2.481045140483002e-17
+  ],
+  "ddbeta": [
+    -0.6165110126585537,
+    0.03590771373160363,
+    0.2910331001526573,
+    -0.014132115219644605,
+    -0.004553192335339677,
+    8.424764289312753e-17
+  ],
+  "schema": "E62_champion.json fields plus real_pairs, quads, exponents, parameters (gate7_family.py) plus polynomial: psi_hat(xi) = P(xi^2) phi_hat(xi) with P(t) = 1 + sum_l polynomial[l-1] t^l; psi = P(-D^2) phi (gate8_family.py)",
+  "polynomial": [
+    0.3039617064516709,
+    0.017723888724085358,
+    -0.0016272207467072687
+  ],
+  "polynomial_scaled": [
+    2.999981795758043,
+    1.7264678902009596,
+    -1.5643924414459054
+  ],
+  "polynomial_degree": 3,
+  "polynomial_roots": {
+    "real_positive_xi": [
+      4.59526135658537
+    ],
+    "soft_contacts_theta": [
+      1.6879239505942163
+    ],
+    "inside_band": [],
+    "negative_t": [],
+    "complex_t": [
+      [
+        -5.112151905349182,
+        1.7229597240934194
+      ],
+      [
+        -5.112151905349182,
+        -1.7229597240934194
+      ]
+    ],
+    "positive_on_line": false
+  },
+  "smoothness": 2,
+  "truncation": {
+    "route": "alias_plus_zeta_tail",
+    "K": 64,
+    "A": 8,
+    "quadrature_points": 28,
+    "tail_bound": 4.17475828646957e-36
+  },
+  "dominates": "TunedQ8",
+  "budget": "C_BMC11",
+  "margins": {
+    "reach_d1_0.01": 0.02379891384147065,
+    "reach_d1_0.001": 0.4139746408166083,
+    "reach_d1_0.0001": 0.18946941849219812,
+    "gv_reach_1e-2": 0.2832891129843592,
+    "e1_max_B0": 0.5166747773217679,
+    "e2_max_B0": 0.37596078671759725,
+    "coupled": 0.25478135207852004
+  },
+  "margins_fine": {
+    "reach_d1_0.01": 0.023798913841469392,
+    "reach_d1_0.001": 0.4139746408166213,
+    "reach_d1_0.0001": 0.18946941849232904,
+    "gv_reach_1e-2": 0.2832891200851428,
+    "e1_max_B0": 0.5166747773217679,
+    "e2_max_B0": 0.3759607714760851,
+    "coupled": 0.25478137027971404
+  },
+  "margins_other_comparator": {
+    "SLC1992": {
+      "reach_d1_0.01": 0.07855387799778887,
+      "reach_d1_0.001": -0.2680609701327003,
+      "reach_d1_0.0001": 0.5224768615243712,
+      "gv_reach_1e-2": -0.28052880350856624,
+      "e1_max_B0": -6.308129082917226,
+      "e2_max_B0": -8.076689318923078,
+      "coupled": 0.25478135207852004
+    }
+  },
+  "verification": {
+    "routes": {
+      "decimal_deviation": 3.3306690738754696e-16,
+      "decimal_ok": true,
+      "residue_deviation": 3.3306690738754696e-16,
+      "residue_ok": true,
+      "residue_symbol_deviation": 1.424914349701826e-15,
+      "symbols_from_samples_versus_alias": 1.3014533744066075e-14,
+      "symbols_ok": true,
+      "endpoint_samples": 8.424764289312753e-17,
+      "endpoint_ok": true,
+      "gate7_deviation": null,
+      "gate7_ok": true,
+      "K": 64,
+      "A": 8,
+      "tail_bound": 4.17475828646957e-36,
+      "decimal_K": 128,
+      "decimal_A": 16,
+      "decimal_series_bound": 7.980584247891362e-86
+    },
+    "positivity": {
+      "grid_points": 200001,
+      "b_min": 0.008863311174159838,
+      "b_margin_needed": 4.552387438359845e-06,
+      "b_certified": true,
+      "kappa2b_second_moment": 0.9999999999999989,
+      "kappa2b_series_radius": 1.3090496815767807,
+      "kappa2b_min_on_tail": 0.08710239404783644,
+      "kappa2b_margin_needed": 1.065915729437006e-05,
+      "kappa2b_certified": true
+    },
+    "ec_ratio": 0.74521864792148,
+    "fine_cond": 112.82465213057107,
+    "sufficient_conditions": {
+      "omega_below_pi": true,
+      "has_imaginary": true,
+      "P_positive_on_line": false,
+      "P_min_on_band": 1.0,
+      "m_minus_2q": -2,
+      "S_m_P": Infinity,
+      "S_m_minus_2_P": Infinity,
+      "theorem_P": false,
+      "theorem_N": false
+    }
+  }
+}

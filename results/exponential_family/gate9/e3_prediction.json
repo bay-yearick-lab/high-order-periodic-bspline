@@ -1,0 +1,66 @@
+{
+ "producer": "code/analysis/exponential_family/gate9_e3.py --predict",
+ "written_utc": "2026-09-13T16:12:03Z",
+ "contract": "results/exponential_family/gate9/contract.md, section E3",
+ "gate4b_contract_sha256": "c627c49da813c7d64ab2d7c9d23252aae2cabcf4ba9fa66d8e068128e19c1335",
+ "member": {
+  "path": "results/exponential_family/gate8/members/X8_n10_C_SLC1_pert5.json",
+  "sha256": "0dff29346f90c9068f5c064b08dfcb16d9c8210bafbf337528deb8dcce18b9ab"
+ },
+ "sign_convention": {
+  "convention": "kappa_1 = -a / b with a = 2 sum beta'(n) sin(n theta), the applied-operator convention of EXP_ROUTE.md and the kappa_1 of gate8_family.symbols",
+  "theta_points": 4001,
+  "max_abs_kappa1": 2.6897917096795045,
+  "versus_spline_analysis_kprime_exp_member": 1.199040866595169e-14,
+  "versus_gate8_family_from_record_symbols": 1.0658141036401503e-14,
+  "versus_the_opposite_sign": 5.379583419359005,
+  "tolerance": 1e-13,
+  "ok": true
+ },
+ "packet": {
+  "definition": "the Gate 4b Gaussian packet, 99 percent of the energy inside theta_c +- 0.1 pi",
+  "sigma_theta_energy": 0.12196431841432198
+ },
+ "level": 0.01,
+ "N_1d": 128,
+ "tolerance_on_the_ratio": 0.1,
+ "prediction": "the crossings to one percent of pert5 over those of SLC q4 equal |e_1^{SLC}(theta_c)| / |e_1^{pert5}(theta_c)| to within the packet width correction, under 10 percent; the sign of pert5's displacement per crossing is the sign of -e_1^{pert5}(theta_c)",
+ "carriers": {
+  "1.256637": {
+   "theta_c": 1.2566370614359172,
+   "theta_c_over_pi": 0.4,
+   "points_per_wavelength": 5.0,
+   "e1_pert5": 3.13984052016103e-05,
+   "e1_slc_q4": 0.0005306988119020417,
+   "abs_ratio_slc_over_pert5": 16.90209450111894,
+   "predicted_crossing_ratio_pert5_over_slc_q4": 16.90209450111894,
+   "displacement_per_crossing_boxes_pert5": -3.13984052016103e-05,
+   "sign_of_minus_e1_pert5": -1,
+   "reading": "a negative signed displacement is a forward displacement, the packet leading the exact one"
+  },
+  "1.570796": {
+   "theta_c": 1.5707963267948966,
+   "theta_c_over_pi": 0.5,
+   "points_per_wavelength": 4.0,
+   "e1_pert5": 0.00016174018892178843,
+   "e1_slc_q4": 0.0006466945027381321,
+   "abs_ratio_slc_over_pert5": 3.9983538231852176,
+   "predicted_crossing_ratio_pert5_over_slc_q4": 3.9983538231852176,
+   "displacement_per_crossing_boxes_pert5": -0.00016174018892178843,
+   "sign_of_minus_e1_pert5": -1,
+   "reading": "a negative signed displacement is a forward displacement, the packet leading the exact one"
+  },
+  "1.884956": {
+   "theta_c": 1.8849555921538759,
+   "theta_c_over_pi": 0.6,
+   "points_per_wavelength": 3.3333333333333335,
+   "e1_pert5": 0.00018034904912411776,
+   "e1_slc_q4": 0.00023076009572653433,
+   "abs_ratio_slc_over_pert5": 1.2795193367929723,
+   "predicted_crossing_ratio_pert5_over_slc_q4": 1.2795193367929723,
+   "displacement_per_crossing_boxes_pert5": -0.00018034904912411776,
+   "sign_of_minus_e1_pert5": -1,
+   "reading": "a negative signed displacement is a forward displacement, the packet leading the exact one"
+  }
+ }
+}

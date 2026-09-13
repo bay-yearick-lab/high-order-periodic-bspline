@@ -1,0 +1,110 @@
+{
+  "producer": "results/exponential_family/gate4e/rerun/regenerate.py",
+  "amendment": "Amendment 1 of results/exponential_family/gate4e/contract.md",
+  "registry": "results/exponential_family/gate4c/process_registry.csv",
+  "threads_per_process": 4,
+  "max_concurrent": 5,
+  "nice": 19,
+  "total_wall_s": 4074.6904187202454,
+  "runs": {
+    "c10_N64_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 118.0113730430603,
+      "expected_sha256": "876cc79dcc32c70b47b9cda5364dbb1504e0a0882aec9bd42095ab9eea40cf0e",
+      "actual_sha256": "876cc79dcc32c70b47b9cda5364dbb1504e0a0882aec9bd42095ab9eea40cf0e",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_c10_cic_da23_p5_N64.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 64 c10 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N64.bin --exact-time"
+    },
+    "c12_N64_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 124.0178005695343,
+      "expected_sha256": "15201fd69ee1c2a24fcced70226d1b5d77eb2a9f1e774705748afdbd869cc628",
+      "actual_sha256": "15201fd69ee1c2a24fcced70226d1b5d77eb2a9f1e774705748afdbd869cc628",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_c12_cic_da23_p5_N64.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 64 c12 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N64.bin --exact-time"
+    },
+    "bmc_p11_N64_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 152.0289580821991,
+      "expected_sha256": "9163b989023edbc2c3a166119e5f425ac789514a6d2da4dfd3358fbd14a09f5c",
+      "actual_sha256": "9163b989023edbc2c3a166119e5f425ac789514a6d2da4dfd3358fbd14a09f5c",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_bmc_cic_da23_p11_N64.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 64 bmc 1600 9.00262644794325 11 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N64.bin --exact-time"
+    },
+    "cw12b_N64_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 156.0332314968109,
+      "expected_sha256": "f709924c58a473af1e0cf5eedaf2cc942856c02e0c326e149cebaa6feccb4616",
+      "actual_sha256": "f709924c58a473af1e0cf5eedaf2cc942856c02e0c326e149cebaa6feccb4616",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_cw12b_cic_da23_p5_N64.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 64 cw12b 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N64.bin --exact-time"
+    },
+    "opt_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 2126.3185641765594,
+      "expected_sha256": "459e14e6dffcf4bdea63211b769924d859a271807a967dd38d09ebfd29ed858f",
+      "actual_sha256": "459e14e6dffcf4bdea63211b769924d859a271807a967dd38d09ebfd29ed858f",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_opt_cic_da23_p5_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 opt 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "bmc_p9_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 2172.3519291877747,
+      "expected_sha256": "83d177c0009f0b31c2c1ef579962eef9fbd08cb4c08ce422e21e010fb4d261ab",
+      "actual_sha256": "83d177c0009f0b31c2c1ef579962eef9fbd08cb4c08ce422e21e010fb4d261ab",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_bmc_cic_da23_p9_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 bmc 1600 9.00262644794325 9 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "sl_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 2316.4174768924713,
+      "expected_sha256": "f49536b042a126857ea61bbd094c7927de6a86e14225006fa528682397bbeb5e",
+      "actual_sha256": "f49536b042a126857ea61bbd094c7927de6a86e14225006fa528682397bbeb5e",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_sl_cic_da23_p5_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 sl 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "c10_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 2290.429715156555,
+      "expected_sha256": "e9ca856f70ba2ecd39c0d8110e5a743ab92b51fe2827c4aff6eae607b9c8cd79",
+      "actual_sha256": "e9ca856f70ba2ecd39c0d8110e5a743ab92b51fe2827c4aff6eae607b9c8cd79",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_c10_cic_da23_p5_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 c10 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "bmc_p11_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 2374.4744102954865,
+      "expected_sha256": "44788a25438d231dfb6da5a3d006d3d7e004b8311d6c6940c10f779b3d29064c",
+      "actual_sha256": "44788a25438d231dfb6da5a3d006d3d7e004b8311d6c6940c10f779b3d29064c",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_bmc_cic_da23_p11_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 bmc 1600 9.00262644794325 11 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "c12_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 1396.2365474700928,
+      "expected_sha256": "3c1230abdb807dd1ca8529ea9b43430af2977755dccacc8be0bd9817a6acd736",
+      "actual_sha256": "3c1230abdb807dd1ca8529ea9b43430af2977755dccacc8be0bd9817a6acd736",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_c12_cic_da23_p5_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 c12 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    },
+    "cw12b_N128_da1_dt100": {
+      "returncode": 0,
+      "wall_s": 1778.2480907440186,
+      "expected_sha256": "8b73a4bc16dcc3abd59ec04013e0c434db399537cb134c67d67c7ee4f77319ae",
+      "actual_sha256": "8b73a4bc16dcc3abd59ec04013e0c434db399537cb134c67d67c7ee4f77319ae",
+      "hash_match": true,
+      "field": "results/exponential_family/gate4e/rerun/data/tgvfield_cw12b_cic_da23_p5_N128.bin",
+      "command": "nice -n 19 code/solver/tgv_re1600 128 cw12b 1600 9.00262644794325 5 0.2 9.00262644794325 twothirds - --load-ic results/exponential_family/gate4c/ic/ic_tgv_N128.bin --exact-time"
+    }
+  }
+}

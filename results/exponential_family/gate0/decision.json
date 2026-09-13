@@ -1,0 +1,39 @@
+{
+  "outcome": "TRIUMPH",
+  "rule": "TRIUMPH if some member with p <= 11 at cond <= C_SLC1 has E1max(B0) <= E_SLC1/3 and E2max(B0) <= E_SLC2/3; PARTIAL if the best member beats SLC on both by less than three times; REJECT otherwise.",
+  "E_SLC1": 0.0006583077207367172,
+  "E_SLC2": 0.0005952169235621252,
+  "C_SLC1": 93.36740899597527,
+  "members_at_C_SLC1": 17,
+  "members_beating_slc_on_both": 8,
+  "members_meeting_threefold": 3,
+  "controlling_member": {
+    "name": "E_{4,3}(0.789912,1.789722,2.062232)@C_SLC1",
+    "m": 4,
+    "r": 3,
+    "p": 9,
+    "omegas": [
+      0.7899121120124106,
+      1.7897222796550945,
+      2.0622319676360448
+    ],
+    "E1max_B0": 3.457468150869225e-05,
+    "E2max_B0": 3.472683148131317e-05,
+    "E1_gain": 19.040167313507002,
+    "E2_gain": 17.139972124506002,
+    "cond": 93.36740899591796,
+    "budget_name": "C_SLC1"
+  },
+  "best_member": {
+    "name": "E_{4,3}(0.789912,1.789722,2.062232)@C_SLC1",
+    "omegas": [
+      0.7899121120124106,
+      1.7897222796550945,
+      2.0622319676360448
+    ],
+    "ratio_to_slc": 0.058343152062087816,
+    "cond": 93.36740899591796
+  },
+  "scan_seconds": 2929.649924993515,
+  "reproduction_failures": []
+}
