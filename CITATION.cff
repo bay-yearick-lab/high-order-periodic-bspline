@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "high-order-periodic-bspline: periodic exponential cardinal B-spline operators for Navier-Stokes"
+type: software
+license: MIT
+authors:
+  - family-names: "Bay"
+    given-names: "Yong Yi"
+  - family-names: "Yearick"
+    given-names: "Kathleen A."
+keywords:
+  - exponential B-splines
+  - spline collocation
+  - compact finite differences
+  - modified wavenumber
+  - summation by parts
+  - Navier-Stokes
+  - Taylor-Green vortex
+preferred-citation:
+  type: article
+  title: "Periodic Exponential Cardinal B-Splines with Three Dials: Two Compact Schemes Realized as Members, and One Banded Solve for Resolution, Conservation, and Off-Grid Coupling"
+  authors:
+    - family-names: "Bay"
+      given-names: "Yong Yi"
+    - family-names: "Yearick"
+      given-names: "Kathleen A."
+  year: 2026

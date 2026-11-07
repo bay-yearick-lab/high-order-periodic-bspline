@@ -1,0 +1,30 @@
+[project]
+name = "high-order-periodic-bspline"
+version = "1.0.0"
+description = "Periodic exponential cardinal B-spline operators: high-order, spectral-like, conservative discretizations for Navier-Stokes"
+readme = "README.md"
+license = "MIT"
+authors = [
+  { name = "Yong Yi Bay" },
+  { name = "Kathleen A. Yearick" },
+]
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.14",
+  "matplotlib>=3.8",
+  "joblib>=1.4",
+  "mpmath>=1.3",
+  "sympy>=1.13",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "code/tests"]
+addopts = "-q"
+markers = ["slow: long-running regression checks (deselect with -m 'not slow')"]

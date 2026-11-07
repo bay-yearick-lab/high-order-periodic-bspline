@@ -1,0 +1,161 @@
+
+ COMPRESSIBLE NS -- verification suite
+
+=================================================================
+ (1) Inviscid conservation (split skew-symmetric form)
+=================================================================
+   convective dKE/dt   = 1.12e-20  (rel 5.32e-19)  -- split convection conserves KE
+   300 steps, dt=0.0226, min(rho)=0.5393
+   |dMass|     = 1.05e-14   (round-off: mass conserved)
+   |dMom_x|    = 2.05e-19   (round-off: momentum conserved)
+   |dMom_y|    = 1.87e-18
+   |dMom_z|    = 1.15e-17
+   |dEnergy|   = 3.55e-14   (round-off: TOTAL energy conserved -- the
+                            inviscid invariant; KE alone is not, it
+                            trades with internal energy by pdV work)
+
+=================================================================
+ (2) Isentropic vortex: spatial order (rel-L2 of density)
+=================================================================
+  p=2  (formal order 2)
+     N        h          rel-L2        order
+     24   0.41667   2.3637e-03      -- 0.00
+     32   0.31250   1.1665e-03   2.45
+     48   0.20833   4.6689e-04   2.26
+     64   0.15625   2.5474e-04   2.11
+     => asymptotic order ~2.3  (formal 2; finest N flattens at the
+        ~1e-6 vortex periodicity floor for high p)
+
+  p=4  (formal order 4)
+     N        h          rel-L2        order
+     24   0.41667   5.4772e-04      -- 0.00
+     32   0.31250   8.1385e-05   6.63
+     48   0.20833   9.3132e-06   5.35
+     64   0.15625   2.4923e-06   4.58
+     => asymptotic order ~5.3  (formal 4; finest N flattens at the
+        ~1e-6 vortex periodicity floor for high p)
+
+  p=6  (formal order 6)
+     N        h          rel-L2        order
+     24   0.41667   2.9229e-04      -- 0.00
+     32   0.31250   1.6968e-05   9.89
+     48   0.20833   6.9607e-07   7.88
+     64   0.15625   3.2800e-07   2.62
+     => asymptotic order ~7.9  (formal 6; finest N flattens at the
+        ~1e-6 vortex periodicity floor for high p)
+
+=================================================================
+ (3) Viscous operator MMS:  rhs(mu)-rhs(0)  vs analytic d_j tau_ij
+=================================================================
+  p=2  (formal order 2)
+     N        h          rel-L2        order
+     16   0.39270   2.0511e-02      -- 0.00
+     24   0.26180   8.7961e-03   2.09
+     32   0.19635   4.8859e-03   2.04
+     48   0.13090   2.1520e-03   2.02
+     => measured ~2.0  (formal 2)
+
+  p=4  (formal order 4)
+     N        h          rel-L2        order
+     16   0.39270   3.0332e-04      -- 0.00
+     24   0.26180   5.3186e-05   4.29
+     32   0.19635   1.6124e-05   4.15
+     48   0.13090   3.0879e-06   4.08
+     => measured ~4.1  (formal 4)
+
+  p=6  (formal order 6)
+     N        h          rel-L2        order
+     16   0.39270   5.5396e-06      -- 0.00
+     24   0.26180   3.9279e-07   6.53
+     32   0.19635   6.4569e-08   6.28
+     48   0.13090   5.3465e-09   6.14
+     => measured ~6.1  (formal 6)
+
+=================================================================
+ (4) Full inviscid RHS MMS: discrete split RHS vs analytic Euler RHS
+=================================================================
+  p=2  (formal order 2)
+     N        h          rel-L2        order
+     16   0.39270   6.9401e-03      -- 0.00
+     24   0.26180   3.0275e-03   2.05
+     32   0.19635   1.6919e-03   2.02
+     48   0.13090   7.4846e-04   2.01
+     => measured ~2.0  (formal 2)
+
+  p=4  (formal order 4)
+     N        h          rel-L2        order
+     16   0.39270   5.1774e-05      -- 0.00
+     24   0.26180   9.2954e-06   4.24
+     32   0.19635   2.8458e-06   4.11
+     48   0.13090   5.4913e-07   4.06
+     => measured ~4.1  (formal 4)
+
+  p=6  (formal order 6)
+     N        h          rel-L2        order
+     16   0.39270   9.6130e-07      -- 0.00
+     24   0.26180   6.3397e-08   6.71
+     32   0.19635   1.0194e-08   6.35
+     48   0.13090   8.3181e-10   6.18
+     => measured ~6.2  (formal 6)
+
+=================================================================
+ (5) Heat conduction MMS: energy RHS (u=0) vs analytic kappa lap T
+=================================================================
+  p=2  (formal order 2)
+     N        h          rel-L2        order
+     16   0.39270   6.3661e-03      -- 0.00
+     24   0.26180   2.8442e-03   1.99
+     32   0.19635   1.6027e-03   1.99
+     48   0.13090   7.1323e-04   2.00
+     => measured ~2.0  (formal 2)
+
+  p=4  (formal order 4)
+     N        h          rel-L2        order
+     16   0.39270   8.7284e-05      -- 0.00
+     24   0.26180   1.7178e-05   4.01
+     32   0.19635   5.4281e-06   4.00
+     48   0.13090   1.0712e-06   4.00
+     => measured ~4.0  (formal 4)
+
+  p=6  (formal order 6)
+     N        h          rel-L2        order
+     16   0.39270   6.0050e-07      -- 0.00
+     24   0.26180   5.2080e-08   6.03
+     32   0.19635   9.2295e-09   6.01
+     48   0.13090   8.0778e-10   6.01
+     => measured ~6.0  (formal 6)
+
+=================================================================
+ (7) CHANNEL (z-wall) inviscid RHS MMS: discrete split RHS vs analytic
+     (x,y periodic + z clamped wall; boundary BMC/BMG/BMF for compressible)
+=================================================================
+  p=2  (formal order 2)
+     N        h          rel-L2        order
+     16   0.12500   5.2694e-03      -- 0.00
+     24   0.08333   2.3058e-03   2.04
+     32   0.06250   1.2905e-03   2.02
+     48   0.04167   5.7167e-04   2.01
+     => measured ~2.0  (formal 2)
+
+  p=4  (formal order 4)
+     N        h          rel-L2        order
+     16   0.12500   4.1370e-05      -- 0.00
+     24   0.08333   7.3228e-06   4.27
+     32   0.06250   2.2286e-06   4.14
+     48   0.04167   4.2778e-07   4.07
+     => measured ~4.1  (formal 4)
+
+  p=6  (formal order 6)
+     N        h          rel-L2        order
+     16   0.12500   8.4400e-07      -- 0.00
+     24   0.08333   5.3735e-08   6.79
+     32   0.06250   8.5078e-09   6.41
+     48   0.04167   6.8463e-10   6.21
+     => measured ~6.2  (formal 6)
+
+=================================================================
+ (6) Acoustic propagation: right-moving pulse speed vs c=sqrt(gamma p/rho)
+=================================================================
+   exact c = 1.18322,  measured c = 1.18393,  rel err = 6.06e-04  (94 steps)
+
+Done.

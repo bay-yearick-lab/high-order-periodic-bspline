@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --locked
+      - run: uv run python tools/verify.py
+      - run: uv run pytest
+
+  solver:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y g++ make
+      - run: make -C code/solver all CXXFLAGS="-std=c++17 -O3 -Wall -fno-exceptions -fno-rtti -fopenmp"
+      - run: make -C code/solver test CXXFLAGS="-std=c++17 -O3 -Wall -fno-exceptions -fno-rtti -fopenmp"

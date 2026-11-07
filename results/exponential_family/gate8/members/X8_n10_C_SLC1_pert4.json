@@ -1,0 +1,150 @@
+{
+  "name": "X8_n10_C_SLC1_pert4",
+  "m": 4,
+  "r": 1,
+  "omegas": [
+    1.190186931045006
+  ],
+  "real_pairs": [],
+  "quads": [
+    [
+      0.020388414465005916,
+      1.9989151098635671
+    ]
+  ],
+  "exponents": 10,
+  "parameters": 6,
+  "p": 9,
+  "radius": 5,
+  "cond": 93.3674090720212,
+  "beta": [
+    0.4225840802775508,
+    0.24479529143061948,
+    0.0409389813795516,
+    0.0025271147228259567,
+    0.0004465723282278583,
+    3.666716228640623e-18
+  ],
+  "dbeta": [
+    0.0,
+    -0.2732350168654092,
+    -0.1034531797662614,
+    -0.004917962500518009,
+    -0.0012761840251285421,
+    1.279027109555226e-16
+  ],
+  "ddbeta": [
+    -0.4502122314357295,
+    0.00624300698907003,
+    0.1983279065913354,
+    0.018302552507680044,
+    0.0022326496297792376,
+    9.520734751566733e-17
+  ],
+  "schema": "E62_champion.json fields plus real_pairs, quads, exponents, parameters (gate7_family.py) plus polynomial: psi_hat(xi) = P(xi^2) phi_hat(xi) with P(t) = 1 + sum_l polynomial[l-1] t^l; psi = P(-D^2) phi (gate8_family.py)",
+  "polynomial": [
+    0.023893565966313503,
+    0.011361753548272183,
+    -0.0012578965322411861
+  ],
+  "polynomial_scaled": [
+    0.23582004381884666,
+    1.106738085689545,
+    -1.2093281327325256
+  ],
+  "polynomial_degree": 3,
+  "polynomial_roots": {
+    "real_positive_xi": [
+      3.777357490096959
+    ],
+    "soft_contacts_theta": [
+      2.5058278170826274
+    ],
+    "inside_band": [],
+    "negative_t": [],
+    "complex_t": [
+      [
+        -2.6180430613052383,
+        6.990115794793997
+      ],
+      [
+        -2.6180430613052383,
+        -6.990115794793997
+      ]
+    ],
+    "positive_on_line": false
+  },
+  "smoothness": 2,
+  "truncation": {
+    "route": "alias_plus_zeta_tail",
+    "K": 64,
+    "A": 8,
+    "quadrature_points": 28,
+    "tail_bound": 4.9633321480418795e-39
+  },
+  "dominates": "SLC1992",
+  "budget": "C_SLC1",
+  "margins": {
+    "reach_d1_0.01": 0.007742067111659688,
+    "reach_d1_0.001": 0.02072060686148626,
+    "reach_d1_0.0001": 1.9441660340186921,
+    "gv_reach_1e-2": 0.013635745956301506,
+    "e1_max_B0": 0.8490928867497476,
+    "e2_max_B0": 0.03973746919456311,
+    "coupled": 0.5
+  },
+  "margins_fine": {
+    "reach_d1_0.01": 0.007742067111664069,
+    "reach_d1_0.001": 0.02072060686148318,
+    "reach_d1_0.0001": 1.944166034018698,
+    "gv_reach_1e-2": 0.013635764747614432,
+    "e1_max_B0": 0.8490928831349456,
+    "e2_max_B0": 0.03973746578378334,
+    "coupled": 0.500000001775962
+  },
+  "verification": {
+    "routes": {
+      "decimal_deviation": 3.3306690738754696e-16,
+      "decimal_ok": true,
+      "residue_deviation": 6.002143226879753e-16,
+      "residue_ok": true,
+      "residue_symbol_deviation": 7.993605777301127e-15,
+      "symbols_from_samples_versus_alias": 1.8408804394695344e-14,
+      "symbols_ok": true,
+      "endpoint_samples": 1.279027109555226e-16,
+      "endpoint_ok": true,
+      "gate7_deviation": null,
+      "gate7_ok": true,
+      "K": 64,
+      "A": 8,
+      "tail_bound": 4.9633321480418795e-39,
+      "decimal_K": 128,
+      "decimal_A": 16,
+      "decimal_series_bound": 6.635244617327121e-86
+    },
+    "positivity": {
+      "grid_points": 200001,
+      "b_min": 0.010710375386218829,
+      "b_margin_needed": 5.278517920066791e-06,
+      "b_certified": true,
+      "kappa2b_second_moment": 1.0000000000000022,
+      "kappa2b_series_radius": 1.5142313888939989,
+      "kappa2b_min_on_tail": 0.09818223798700067,
+      "kappa2b_margin_needed": 7.3314888489578115e-06,
+      "kappa2b_certified": true
+    },
+    "ec_ratio": 0.5,
+    "fine_cond": 93.36740906192074,
+    "sufficient_conditions": {
+      "omega_below_pi": true,
+      "has_imaginary": true,
+      "P_positive_on_line": false,
+      "P_min_on_band": 1.0,
+      "m_minus_2q": -2,
+      "S_m_P": Infinity,
+      "S_m_minus_2_P": Infinity,
+      "theorem_P": false,
+      "theorem_N": false
+    }
+  }
+}
